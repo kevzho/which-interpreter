@@ -1,0 +1,224 @@
+{
+ "fusion_weight_on_embedding": 0.5,
+ "tau": 0.85,
+ "tau_mayan": 0.83,
+ "tau_branch": 0.82,
+ "bloom_heldout_books_macro_f1_fused": 0.8019063929253668,
+ "bloom_heldout_books_macro_f1_embedding": 0.7881084221205281,
+ "bloom_heldout_books_routing": {
+  "named_language": 0.662944582299421,
+  "said_mayan_try_two": 0.27770885028949543,
+  "said_not_sure": 0.05934656741108354,
+  "named_language_correct": 0.9507174048658765,
+  "try_two_family_correct": 0.9932985852568875,
+  "try_two_contains_true": 0.6947133283693224,
+  "mayan_routed_to_spanish": 0.007597734493714601,
+  "useful_answer": 0.7919602154993783
+ },
+ "heldout_recordings": {
+  "coerll": {
+   "n": 263,
+   "accuracy": 0.8555133079847909,
+   "routing": {
+    "named_language": 0.5437262357414449,
+    "said_mayan_try_two": 0.41064638783269963,
+    "said_not_sure": 0.045627376425855515,
+    "named_language_correct": 1.0,
+    "try_two_family_correct": 1.0,
+    "try_two_contains_true": 0.9351851851851852,
+    "mayan_routed_to_spanish": 0.0,
+    "useful_answer": 0.9277566539923955
+   }
+  },
+  "tachiwin": {
+   "n": 370,
+   "accuracy": 0.927027027027027,
+   "routing": {
+    "named_language": 0.9,
+    "said_mayan_try_two": 0.0945945945945946,
+    "said_not_sure": 0.005405405405405406,
+    "named_language_correct": 0.984984984984985,
+    "try_two_family_correct": 1.0,
+    "try_two_contains_true": 0.8285714285714286,
+    "mayan_routed_to_spanish": 0.005405405405405406,
+    "useful_answer": 0.9648648648648649
+   }
+  },
+  "tzijonel": {
+   "n": 609,
+   "accuracy": 0.9277504105090312,
+   "routing": {
+    "named_language": 0.8243021346469622,
+    "said_mayan_try_two": 0.1297208538587849,
+    "said_not_sure": 0.04597701149425287,
+    "named_language_correct": 0.9721115537848606,
+    "try_two_family_correct": 1.0,
+    "try_two_contains_true": 0.9873417721518988,
+    "mayan_routed_to_spanish": 0.019704433497536946,
+    "useful_answer": 0.9293924466338259
+   }
+  },
+  "fleurs": {
+   "n": 817,
+   "accuracy": 1.0,
+   "routing": {
+    "named_language": 1.0,
+    "said_mayan_try_two": 0.0,
+    "said_not_sure": 0.0,
+    "named_language_correct": 1.0
+   }
+  },
+  "google_es": {
+   "n": 144,
+   "accuracy": 0.9930555555555556,
+   "routing": {
+    "named_language": 0.9861111111111112,
+    "said_mayan_try_two": 0.0,
+    "said_not_sure": 0.013888888888888888,
+    "named_language_correct": 1.0
+   }
+  },
+  "librispeech": {
+   "n": 200,
+   "accuracy": 1.0,
+   "routing": {
+    "named_language": 1.0,
+    "said_mayan_try_two": 0.0,
+    "said_not_sure": 0.0,
+    "named_language_correct": 1.0
+   }
+  }
+ },
+ "openset": {
+  "Tz'utujil": {
+   "nearest_covered_relatives": [
+    "cak",
+    "quc"
+   ],
+   "nearest branch": 0.61,
+   "said Mayan": 0.22,
+   "named nearest relative": 0.146,
+   "declined": 0.024
+  },
+  "Itza'": {
+   "nearest_covered_relatives": null,
+   "said Mayan": 0.574,
+   "named unrelated language": 0.284,
+   "other branch": 0.098,
+   "declined": 0.044
+  },
+  "Poqomam": {
+   "nearest_covered_relatives": [
+    "cak",
+    "kek",
+    "quc"
+   ],
+   "nearest branch": 0.333,
+   "named nearest relative": 0.311,
+   "said Mayan": 0.258,
+   "declined": 0.064,
+   "said Spanish/English": 0.03,
+   "named unrelated language": 0.004
+  },
+  "Sipakapense": {
+   "nearest_covered_relatives": [
+    "cak",
+    "quc"
+   ],
+   "named nearest relative": 0.345,
+   "nearest branch": 0.33,
+   "said Mayan": 0.3,
+   "named unrelated language": 0.015,
+   "declined": 0.005,
+   "other branch": 0.005
+  },
+  "Sakapulteko": {
+   "nearest_covered_relatives": [
+    "cak",
+    "quc"
+   ],
+   "nearest branch": 0.553,
+   "named nearest relative": 0.226,
+   "said Mayan": 0.183,
+   "said Spanish/English": 0.019,
+   "declined": 0.01,
+   "named unrelated language": 0.01
+  },
+  "Popti' (Jakalteko)": {
+   "nearest_covered_relatives": [
+    "kjb"
+   ],
+   "named nearest relative": 0.66,
+   "said Mayan": 0.234,
+   "nearest branch": 0.05,
+   "named unrelated language": 0.028,
+   "declined": 0.028
+  },
+  "Yucatec Maya": {
+   "nearest_covered_relatives": null,
+   "said Mayan": 0.595,
+   "declined": 0.176,
+   "other branch": 0.108,
+   "named unrelated language": 0.068,
+   "said Spanish/English": 0.054
+  },
+  "Tseltal": {
+   "nearest_covered_relatives": null,
+   "said Mayan": 0.383,
+   "named unrelated language": 0.362,
+   "declined": 0.227,
+   "other branch": 0.021,
+   "said Spanish/English": 0.007
+  },
+  "Tsotsil": {
+   "nearest_covered_relatives": null,
+   "said Mayan": 0.541,
+   "named unrelated language": 0.216,
+   "declined": 0.115,
+   "other branch": 0.108,
+   "said Spanish/English": 0.02
+  },
+  "Ch'ol": {
+   "nearest_covered_relatives": null,
+   "said Mayan": 0.463,
+   "named unrelated language": 0.295,
+   "declined": 0.154,
+   "other branch": 0.087
+  },
+  "Tojolabal": {
+   "nearest_covered_relatives": [
+    "kjb"
+   ],
+   "said Mayan": 0.603,
+   "named nearest relative": 0.192,
+   "named unrelated language": 0.116,
+   "declined": 0.041,
+   "other branch": 0.041,
+   "nearest branch": 0.007
+  },
+  "Huastec": {
+   "nearest_covered_relatives": null,
+   "said Mayan": 0.467,
+   "named unrelated language": 0.387,
+   "other branch": 0.06,
+   "declined": 0.047,
+   "said Spanish/English": 0.04
+  },
+  "Chuj": {
+   "nearest_covered_relatives": [
+    "kjb"
+   ],
+   "said Mayan": 0.458,
+   "said Spanish/English": 0.186,
+   "named unrelated language": 0.153,
+   "named nearest relative": 0.119,
+   "nearest branch": 0.034,
+   "other branch": 0.034,
+   "declined": 0.017
+  }
+ },
+ "english_heldout_books": {
+  "accuracy": 0.9705882352941176,
+  "sent_to_spanish": 0.006535947712418301
+ }
+}

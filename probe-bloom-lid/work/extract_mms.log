@@ -1,0 +1,31 @@
+Loading weights:   0%|          | 0/422 [00:00<?, ?it/s]Loading weights: 100%|██████████| 422/422 [00:00<00:00, 12470.47it/s]
+[transformers] [1mWav2Vec2Model LOAD REPORT[0m from: facebook/mms-300m
+Key                          | Status     |  | 
+-----------------------------+------------+--+-
+project_hid.weight           | UNEXPECTED |  | 
+project_q.weight             | UNEXPECTED |  | 
+project_q.bias               | UNEXPECTED |  | 
+quantizer.weight_proj.weight | UNEXPECTED |  | 
+quantizer.codevectors        | UNEXPECTED |  | 
+quantizer.weight_proj.bias   | UNEXPECTED |  | 
+project_hid.bias             | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+device mps nlayers 24
+0 0.3
+100 15.6
+200 26.2
+300 38.0
+400 51.7
+500 62.5
+600 72.6
+700 87.3
+800 100.4
+900 111.5
+1000 125.4
+1100 136.7
+1200 148.3
+1300 162.0
+1400 173.0
+saved (1474, 9, 1024) secs 183.5

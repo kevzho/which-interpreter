@@ -1,0 +1,9 @@
+{
+ "router.joblib": "78f0918ea84e0b7e3636ce20b1d611aedb4eda02ca85c2c036ea96002148daa8",
+ "openset.joblib": "f54c3a4aa73944269f955fe1d472080f6171b3b71669f5fd7d15b2b2cf3e27a2",
+ "frozen_at": "2026-11-15 08:47 EST",
+ "backbones": [
+  "facebook/mms-lid-4017 (frozen, layer 24)",
+  "facebook/wav2vec2-xlsr-53-espeak-cv-ft (frozen)"
+ ]
+}

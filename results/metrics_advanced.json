@@ -1,0 +1,945 @@
+{
+ "tau": 0.99,
+ "tau_mayan": 0.98,
+ "A3_family_tree": {
+  "bloom_heldout_books_flat": {
+   "accuracy": 0.7793631100082713,
+   "branch_accuracy": 0.8187551695616212,
+   "mean_tree_distance_of_errors": 5.507497656982193,
+   "if_errors_were_random": 5.784832864729772
+  },
+  "bloom_heldout_books_hier": {
+   "accuracy": 0.7567204301075269,
+   "branch_accuracy": 0.8028329197684037,
+   "mean_tree_distance_of_errors": 5.36081597960051,
+   "if_errors_were_random": 5.776526420172829
+  },
+  "new_corpora_flat": {
+   "accuracy": 0.5265764278639815,
+   "branch_accuracy": 0.6952789699570815,
+   "mean_tree_distance_of_errors": 4.749651324965132,
+   "if_errors_were_random": 5.548465829846583
+  },
+  "new_corpora_hier": {
+   "accuracy": 0.527236711786068,
+   "branch_accuracy": 0.6764608781776164,
+   "mean_tree_distance_of_errors": 4.926675977653631,
+   "if_errors_were_random": 5.546671322160149
+  },
+  "branch_threshold": 0.97,
+  "decision_bloom_heldout": {
+   "useful_answer": 0.6499172870140613,
+   "share_lang": 0.5602770885028949,
+   "share_mayan": 0.19747725392886684,
+   "share_branch": 0.12375930521091812,
+   "share_unsure": 0.1184863523573201
+  },
+  "decision_new_corpora_bloom_only": {
+   "coerll": {
+    "useful_answer": 0.18072289156626506,
+    "share_mayan": 0.41927710843373495,
+    "share_unsure": 0.3228915662650602,
+    "share_branch": 0.2,
+    "share_lang": 0.05783132530120482
+   },
+   "tachiwin": {
+    "useful_answer": 0.1902097902097902,
+    "share_unsure": 0.31608391608391606,
+    "share_mayan": 0.2783216783216783,
+    "share_lang": 0.23216783216783216,
+    "share_branch": 0.17342657342657342
+   },
+   "tzijonel": {
+    "useful_answer": 0.505332239540607,
+    "share_branch": 0.3822805578342904,
+    "share_lang": 0.2666119770303528,
+    "share_unsure": 0.22887612797374898,
+    "share_mayan": 0.12223133716160788
+   }
+  },
+  "openset_shipped_model": {
+   "Tz'utujil": {
+    "nearest_covered_relatives": [
+     "cak",
+     "quc"
+    ],
+    "nearest branch": 0.61,
+    "said Mayan": 0.268,
+    "declined": 0.122
+   },
+   "Itza'": {
+    "nearest_covered_relatives": null,
+    "said Mayan": 0.563,
+    "named unrelated language": 0.219,
+    "declined": 0.115,
+    "other branch": 0.104
+   },
+   "Poqomam": {
+    "nearest_covered_relatives": [
+     "cak",
+     "kek",
+     "quc"
+    ],
+    "nearest branch": 0.386,
+    "said Mayan": 0.25,
+    "named nearest relative": 0.205,
+    "declined": 0.125,
+    "said Spanish/English": 0.019,
+    "other branch": 0.011,
+    "named unrelated language": 0.004
+   },
+   "Sipakapense": {
+    "nearest_covered_relatives": [
+     "cak",
+     "quc"
+    ],
+    "said Mayan": 0.365,
+    "nearest branch": 0.335,
+    "named nearest relative": 0.27,
+    "declined": 0.015,
+    "other branch": 0.01,
+    "named unrelated language": 0.005
+   },
+   "Sakapulteko": {
+    "nearest_covered_relatives": [
+     "cak",
+     "quc"
+    ],
+    "nearest branch": 0.548,
+    "said Mayan": 0.231,
+    "named nearest relative": 0.163,
+    "declined": 0.043,
+    "named unrelated language": 0.01,
+    "said Spanish/English": 0.005
+   },
+   "Popti' (Jakalteko)": {
+    "nearest_covered_relatives": [
+     "kjb"
+    ],
+    "named nearest relative": 0.376,
+    "said Mayan": 0.319,
+    "nearest branch": 0.206,
+    "declined": 0.071,
+    "named unrelated language": 0.014,
+    "other branch": 0.014
+   },
+   "Yucatec Maya": {
+    "nearest_covered_relatives": null,
+    "declined": 0.466,
+    "said Mayan": 0.358,
+    "other branch": 0.108,
+    "named unrelated language": 0.034,
+    "said Spanish/English": 0.034
+   },
+   "Tseltal": {
+    "nearest_covered_relatives": null,
+    "declined": 0.567,
+    "named unrelated language": 0.22,
+    "said Mayan": 0.121,
+    "other branch": 0.092
+   },
+   "Tsotsil": {
+    "nearest_covered_relatives": null,
+    "declined": 0.52,
+    "said Mayan": 0.236,
+    "named unrelated language": 0.128,
+    "other branch": 0.108,
+    "said Spanish/English": 0.007
+   },
+   "Ch'ol": {
+    "nearest_covered_relatives": null,
+    "declined": 0.396,
+    "said Mayan": 0.289,
+    "named unrelated language": 0.188,
+    "other branch": 0.128
+   },
+   "Tojolabal": {
+    "nearest_covered_relatives": [
+     "kjb"
+    ],
+    "said Mayan": 0.384,
+    "declined": 0.342,
+    "named unrelated language": 0.11,
+    "named nearest relative": 0.055,
+    "other branch": 0.055,
+    "nearest branch": 0.055
+   },
+   "Huastec": {
+    "nearest_covered_relatives": null,
+    "said Mayan": 0.447,
+    "named unrelated language": 0.267,
+    "other branch": 0.147,
+    "declined": 0.113,
+    "said Spanish/English": 0.027
+   },
+   "Chuj": {
+    "nearest_covered_relatives": [
+     "kjb"
+    ],
+    "said Mayan": 0.373,
+    "declined": 0.22,
+    "named nearest relative": 0.153,
+    "named unrelated language": 0.102,
+    "nearest branch": 0.068,
+    "other branch": 0.068,
+    "said Spanish/English": 0.017
+   }
+  },
+  "conformal_90": {
+   "threshold_q": 0.9998965355485055,
+   "bloom_other_half_books": {
+    "coverage": 0.9878592285231289,
+    "mean_set_size": 3.305209774089442
+   },
+   "new_corpora_bloom_only_model": {
+    "coerll": {
+     "coverage": 0.9132530120481928,
+     "mean_set_size": 6.016867469879518
+    },
+    "tachiwin": {
+     "coverage": 0.9342657342657342,
+     "mean_set_size": 4.857342657342658
+    },
+    "tzijonel": {
+     "coverage": 0.8465955701394585,
+     "mean_set_size": 4.366694011484824
+    }
+   },
+   "new_corpora_heldout_adapted_model": {
+    "coerll": {
+     "coverage": 1.0,
+     "mean_set_size": 4.475285171102661
+    },
+    "tachiwin": {
+     "coverage": 0.9864864864864865,
+     "mean_set_size": 2.4162162162162164
+    },
+    "tzijonel": {
+     "coverage": 1.0,
+     "mean_set_size": 2.7060755336617404
+    }
+   }
+  }
+ },
+ "A1_several_utterances": {
+  "Bloom held-out books": {
+   "1": {
+    "sets": 9672,
+    "accuracy": 0.7793631100082713,
+    "useful_answer": 0.7672330432380163,
+    "mayan_routed_to_spanish": 0.005801906340654786
+   },
+   "2": {
+    "sets": 4781,
+    "accuracy": 0.8186571846893955,
+    "useful_answer": 0.8072757567342405,
+    "mayan_routed_to_spanish": 0.0008331019161344071
+   },
+   "4": {
+    "sets": 2324,
+    "accuracy": 0.8356282271944923,
+    "useful_answer": 0.8320224719101124,
+    "mayan_routed_to_spanish": 0.0
+   },
+   "8": {
+    "sets": 1100,
+    "accuracy": 0.8454545454545455,
+    "useful_answer": 0.8473988439306358,
+    "mayan_routed_to_spanish": 0.0
+   }
+  },
+  "coerll, Bloom-only model": {
+   "1": {
+    "sets": 415,
+    "accuracy": 0.23373493975903614,
+    "useful_answer": 0.3301204819277108,
+    "mayan_routed_to_spanish": 0.0
+   },
+   "2": {
+    "sets": 201,
+    "accuracy": 0.21393034825870647,
+    "useful_answer": 0.3482587064676617,
+    "mayan_routed_to_spanish": 0.0
+   },
+   "4": {
+    "sets": 97,
+    "accuracy": 0.1958762886597938,
+    "useful_answer": 0.35051546391752575,
+    "mayan_routed_to_spanish": 0.0
+   },
+   "8": {
+    "sets": 45,
+    "accuracy": 0.26666666666666666,
+    "useful_answer": 0.4222222222222222,
+    "mayan_routed_to_spanish": 0.0
+   }
+  },
+  "coerll, adapted model, held-out recordings": {
+   "1": {
+    "sets": 263,
+    "accuracy": 0.8326996197718631,
+    "useful_answer": 0.7946768060836502,
+    "mayan_routed_to_spanish": 0.0
+   },
+   "2": {
+    "sets": 127,
+    "accuracy": 0.952755905511811,
+    "useful_answer": 0.8740157480314961,
+    "mayan_routed_to_spanish": 0.0
+   },
+   "4": {
+    "sets": 62,
+    "accuracy": 1.0,
+    "useful_answer": 0.9354838709677419,
+    "mayan_routed_to_spanish": 0.0
+   },
+   "8": {
+    "sets": 29,
+    "accuracy": 1.0,
+    "useful_answer": 1.0,
+    "mayan_routed_to_spanish": 0.0
+   }
+  },
+  "tachiwin, Bloom-only model": {
+   "1": {
+    "sets": 715,
+    "accuracy": 0.42097902097902096,
+    "useful_answer": 0.4111888111888112,
+    "mayan_routed_to_spanish": 0.0013986013986013986
+   },
+   "2": {
+    "sets": 343,
+    "accuracy": 0.5306122448979592,
+    "useful_answer": 0.40816326530612246,
+    "mayan_routed_to_spanish": 0.0
+   },
+   "4": {
+    "sets": 156,
+    "accuracy": 0.5833333333333334,
+    "useful_answer": 0.32051282051282054,
+    "mayan_routed_to_spanish": 0.0
+   },
+   "8": {
+    "sets": 67,
+    "accuracy": 0.6567164179104478,
+    "useful_answer": 0.23880597014925373,
+    "mayan_routed_to_spanish": 0.0
+   }
+  },
+  "tachiwin, adapted model, held-out recordings": {
+   "1": {
+    "sets": 370,
+    "accuracy": 0.9162162162162162,
+    "useful_answer": 0.9513513513513514,
+    "mayan_routed_to_spanish": 0.0
+   },
+   "2": {
+    "sets": 178,
+    "accuracy": 0.9606741573033708,
+    "useful_answer": 0.9887640449438202,
+    "mayan_routed_to_spanish": 0.0
+   },
+   "4": {
+    "sets": 82,
+    "accuracy": 0.9878048780487805,
+    "useful_answer": 0.9878048780487805,
+    "mayan_routed_to_spanish": 0.0
+   },
+   "8": {
+    "sets": 35,
+    "accuracy": 1.0,
+    "useful_answer": 1.0,
+    "mayan_routed_to_spanish": 0.0
+   }
+  },
+  "tzijonel, Bloom-only model": {
+   "1": {
+    "sets": 1219,
+    "accuracy": 0.4249384741591468,
+    "useful_answer": 0.5471698113207547,
+    "mayan_routed_to_spanish": 0.04840032813781788
+   },
+   "2": {
+    "sets": 597,
+    "accuracy": 0.4137353433835846,
+    "useful_answer": 0.542713567839196,
+    "mayan_routed_to_spanish": 0.021775544388609715
+   },
+   "4": {
+    "sets": 264,
+    "accuracy": 0.4015151515151515,
+    "useful_answer": 0.5151515151515151,
+    "mayan_routed_to_spanish": 0.003787878787878788
+   },
+   "8": {
+    "sets": 88,
+    "accuracy": 0.38636363636363635,
+    "useful_answer": 0.5227272727272727,
+    "mayan_routed_to_spanish": 0.0
+   }
+  },
+  "tzijonel, adapted model, held-out recordings": {
+   "1": {
+    "sets": 609,
+    "accuracy": 0.9178981937602627,
+    "useful_answer": 0.9113300492610837,
+    "mayan_routed_to_spanish": 0.0
+   },
+   "2": {
+    "sets": 297,
+    "accuracy": 0.9865319865319865,
+    "useful_answer": 0.9764309764309764,
+    "mayan_routed_to_spanish": 0.0
+   },
+   "4": {
+    "sets": 132,
+    "accuracy": 1.0,
+    "useful_answer": 1.0,
+    "mayan_routed_to_spanish": 0.0
+   },
+   "8": {
+    "sets": 44,
+    "accuracy": 1.0,
+    "useful_answer": 1.0,
+    "mayan_routed_to_spanish": 0.0
+   }
+  }
+ },
+ "A2_concept_erasure": {
+  "coerll": {
+   "train_corpora": [
+    "bloom",
+    "fleurs",
+    "google_es",
+    "librispeech",
+    "tachiwin",
+    "tzijonel"
+   ],
+   "erased_rank": 5,
+   "n_test": 415,
+   "none": {
+    "heldout_corpus_accuracy": 0.0891566265060241,
+    "heldout_spanish_vs_mayan": 0.944578313253012,
+    "bloom_heldout_books_macro_f1": 0.7398713813776696,
+    "corpus_probe_auroc_train": 0.9915834194814237
+   },
+   "leace_within_language": {
+    "heldout_corpus_accuracy": 0.0891566265060241,
+    "heldout_spanish_vs_mayan": 0.9373493975903614,
+    "bloom_heldout_books_macro_f1": 0.7402938631410013,
+    "corpus_probe_auroc_train": 0.563242367982447
+   },
+   "leace_naive": {
+    "heldout_corpus_accuracy": 0.0819277108433735,
+    "heldout_spanish_vs_mayan": 0.8024096385542169,
+    "bloom_heldout_books_macro_f1": 0.7004268056095333
+   },
+   "random_same_rank": {
+    "heldout_corpus_accuracy": 0.08433734939759036,
+    "heldout_spanish_vs_mayan": 0.9421686746987952,
+    "bloom_heldout_books_macro_f1": 0.7393280502903086
+   }
+  },
+  "tachiwin": {
+   "train_corpora": [
+    "bloom",
+    "coerll",
+    "fleurs",
+    "google_es",
+    "librispeech",
+    "tzijonel"
+   ],
+   "erased_rank": 5,
+   "n_test": 715,
+   "none": {
+    "heldout_corpus_accuracy": 0.38461538461538464,
+    "heldout_spanish_vs_mayan": 0.9944055944055944,
+    "bloom_heldout_books_macro_f1": 0.743442850078536,
+    "corpus_probe_auroc_train": 0.9967129744480278
+   },
+   "leace_within_language": {
+    "heldout_corpus_accuracy": 0.42377622377622376,
+    "heldout_spanish_vs_mayan": 0.9944055944055944,
+    "bloom_heldout_books_macro_f1": 0.7474695366747356,
+    "corpus_probe_auroc_train": 0.7257920152905889
+   },
+   "leace_naive": {
+    "heldout_corpus_accuracy": 0.23076923076923078,
+    "heldout_spanish_vs_mayan": 0.9174825174825175,
+    "bloom_heldout_books_macro_f1": 0.732475404192301
+   },
+   "random_same_rank": {
+    "heldout_corpus_accuracy": 0.386013986013986,
+    "heldout_spanish_vs_mayan": 0.9944055944055944,
+    "bloom_heldout_books_macro_f1": 0.7480087718388828
+   }
+  },
+  "tzijonel": {
+   "train_corpora": [
+    "bloom",
+    "coerll",
+    "fleurs",
+    "google_es",
+    "librispeech",
+    "tachiwin"
+   ],
+   "erased_rank": 5,
+   "n_test": 1219,
+   "none": {
+    "heldout_corpus_accuracy": 0.28219852337981954,
+    "heldout_spanish_vs_mayan": 0.8679245283018868,
+    "bloom_heldout_books_macro_f1": 0.7546287699147897,
+    "corpus_probe_auroc_train": 0.9951108135054423
+   },
+   "leace_within_language": {
+    "heldout_corpus_accuracy": 0.2756357670221493,
+    "heldout_spanish_vs_mayan": 0.8712059064807219,
+    "bloom_heldout_books_macro_f1": 0.755607104116541,
+    "corpus_probe_auroc_train": 0.71050200688945
+   },
+   "leace_naive": {
+    "heldout_corpus_accuracy": 0.15258408531583265,
+    "heldout_spanish_vs_mayan": 0.748974569319114,
+    "bloom_heldout_books_macro_f1": 0.7277380819228932
+   },
+   "random_same_rank": {
+    "heldout_corpus_accuracy": 0.2871205906480722,
+    "heldout_spanish_vs_mayan": 0.8728465955701394,
+    "bloom_heldout_books_macro_f1": 0.756794478427406
+   }
+  },
+  "fleurs": {
+   "train_corpora": [
+    "bloom",
+    "coerll",
+    "google_es",
+    "librispeech",
+    "tachiwin",
+    "tzijonel"
+   ],
+   "erased_rank": 5,
+   "n_test": 1616,
+   "none": {
+    "heldout_corpus_accuracy": 0.9925742574257426,
+    "heldout_spanish_vs_mayan": 0.9925742574257426,
+    "bloom_heldout_books_macro_f1": 0.7509020923512855,
+    "corpus_probe_auroc_train": 0.9704047039048601
+   },
+   "leace_within_language": {
+    "heldout_corpus_accuracy": 0.9888613861386139,
+    "heldout_spanish_vs_mayan": 0.9888613861386139,
+    "bloom_heldout_books_macro_f1": 0.7526814322830384,
+    "corpus_probe_auroc_train": 0.2737793954559672
+   },
+   "leace_naive": {
+    "heldout_corpus_accuracy": 0.8236386138613861,
+    "heldout_spanish_vs_mayan": 0.8446782178217822,
+    "bloom_heldout_books_macro_f1": 0.7403797564756182
+   },
+   "random_same_rank": {
+    "heldout_corpus_accuracy": 0.9938118811881188,
+    "heldout_spanish_vs_mayan": 0.9938118811881188,
+    "bloom_heldout_books_macro_f1": 0.7510425549070749
+   }
+  },
+  "google_es": {
+   "train_corpora": [
+    "bloom",
+    "coerll",
+    "fleurs",
+    "librispeech",
+    "tachiwin",
+    "tzijonel"
+   ],
+   "erased_rank": 5,
+   "n_test": 280,
+   "none": {
+    "heldout_corpus_accuracy": 0.9857142857142858,
+    "heldout_spanish_vs_mayan": 0.9857142857142858,
+    "bloom_heldout_books_macro_f1": 0.7492802297670254,
+    "corpus_probe_auroc_train": 0.9868500203028969
+   },
+   "leace_within_language": {
+    "heldout_corpus_accuracy": 0.9785714285714285,
+    "heldout_spanish_vs_mayan": 0.9785714285714285,
+    "bloom_heldout_books_macro_f1": 0.7486516988474563,
+    "corpus_probe_auroc_train": 0.5149969201259763
+   },
+   "leace_naive": {
+    "heldout_corpus_accuracy": 0.9071428571428571,
+    "heldout_spanish_vs_mayan": 0.925,
+    "bloom_heldout_books_macro_f1": 0.7409021544919641
+   },
+   "random_same_rank": {
+    "heldout_corpus_accuracy": 0.9857142857142858,
+    "heldout_spanish_vs_mayan": 0.9857142857142858,
+    "bloom_heldout_books_macro_f1": 0.7519581552243946
+   }
+  },
+  "librispeech": {
+   "train_corpora": [
+    "bloom",
+    "coerll",
+    "fleurs",
+    "google_es",
+    "tachiwin",
+    "tzijonel"
+   ],
+   "erased_rank": 5,
+   "n_test": 400,
+   "none": {
+    "heldout_corpus_accuracy": 1.0,
+    "heldout_spanish_vs_mayan": 1.0,
+    "bloom_heldout_books_macro_f1": 0.7506613923264442,
+    "corpus_probe_auroc_train": 0.9912412439089083
+   },
+   "leace_within_language": {
+    "heldout_corpus_accuracy": 1.0,
+    "heldout_spanish_vs_mayan": 1.0,
+    "bloom_heldout_books_macro_f1": 0.7522515663797924,
+    "corpus_probe_auroc_train": 0.5401364605169348
+   },
+   "leace_naive": {
+    "heldout_corpus_accuracy": 1.0,
+    "heldout_spanish_vs_mayan": 1.0,
+    "bloom_heldout_books_macro_f1": 0.752191571814529
+   },
+   "random_same_rank": {
+    "heldout_corpus_accuracy": 1.0,
+    "heldout_spanish_vs_mayan": 1.0,
+    "bloom_heldout_books_macro_f1": 0.7511349178560155
+   }
+  }
+ },
+ "A2b_nuisance_projection": {
+  "coerll": {
+   "0": {
+    "heldout_corpus_accuracy": 0.0891566265060241,
+    "bloom_heldout_books_macro_f1": 0.7398713813776696
+   },
+   "10": {
+    "heldout_corpus_accuracy": 0.09156626506024096,
+    "bloom_heldout_books_macro_f1": 0.7488864015759459
+   },
+   "25": {
+    "heldout_corpus_accuracy": 0.12289156626506025,
+    "bloom_heldout_books_macro_f1": 0.7344750666887714
+   },
+   "50": {
+    "heldout_corpus_accuracy": 0.15903614457831325,
+    "bloom_heldout_books_macro_f1": 0.7302475532572756
+   },
+   "100": {
+    "heldout_corpus_accuracy": 0.2,
+    "bloom_heldout_books_macro_f1": 0.7076412248751563
+   },
+   "200": {
+    "heldout_corpus_accuracy": 0.24096385542168675,
+    "bloom_heldout_books_macro_f1": 0.699240565970842
+   },
+   "random50": {
+    "heldout_corpus_accuracy": 0.07951807228915662,
+    "bloom_heldout_books_macro_f1": 0.7421749896666779
+   }
+  },
+  "tachiwin": {
+   "0": {
+    "heldout_corpus_accuracy": 0.38461538461538464,
+    "bloom_heldout_books_macro_f1": 0.743442850078536
+   },
+   "10": {
+    "heldout_corpus_accuracy": 0.4307692307692308,
+    "bloom_heldout_books_macro_f1": 0.7319340492034677
+   },
+   "25": {
+    "heldout_corpus_accuracy": 0.40559440559440557,
+    "bloom_heldout_books_macro_f1": 0.723949509168137
+   },
+   "50": {
+    "heldout_corpus_accuracy": 0.45734265734265733,
+    "bloom_heldout_books_macro_f1": 0.7183586010253143
+   },
+   "100": {
+    "heldout_corpus_accuracy": 0.44475524475524475,
+    "bloom_heldout_books_macro_f1": 0.6912838048781774
+   },
+   "200": {
+    "heldout_corpus_accuracy": 0.4251748251748252,
+    "bloom_heldout_books_macro_f1": 0.6828313716422276
+   },
+   "random50": {
+    "heldout_corpus_accuracy": 0.386013986013986,
+    "bloom_heldout_books_macro_f1": 0.7482259768899666
+   }
+  },
+  "tzijonel": {
+   "0": {
+    "heldout_corpus_accuracy": 0.28219852337981954,
+    "bloom_heldout_books_macro_f1": 0.7546287699147897
+   },
+   "10": {
+    "heldout_corpus_accuracy": 0.2977850697292863,
+    "bloom_heldout_books_macro_f1": 0.7529711851271943
+   },
+   "25": {
+    "heldout_corpus_accuracy": 0.30434782608695654,
+    "bloom_heldout_books_macro_f1": 0.7424180214782804
+   },
+   "50": {
+    "heldout_corpus_accuracy": 0.27727645611156687,
+    "bloom_heldout_books_macro_f1": 0.7358457185033375
+   },
+   "100": {
+    "heldout_corpus_accuracy": 0.32075471698113206,
+    "bloom_heldout_books_macro_f1": 0.7140613900193339
+   },
+   "200": {
+    "heldout_corpus_accuracy": 0.36587366694011486,
+    "bloom_heldout_books_macro_f1": 0.6983849334200218
+   },
+   "random50": {
+    "heldout_corpus_accuracy": 0.28465955701394585,
+    "bloom_heldout_books_macro_f1": 0.7538997435885587
+   }
+  },
+  "fleurs": {
+   "0": {
+    "heldout_corpus_accuracy": 0.9925742574257426,
+    "bloom_heldout_books_macro_f1": 0.7509020923512855
+   },
+   "10": {
+    "heldout_corpus_accuracy": 0.9956683168316832,
+    "bloom_heldout_books_macro_f1": 0.736014464288632
+   },
+   "25": {
+    "heldout_corpus_accuracy": 0.9962871287128713,
+    "bloom_heldout_books_macro_f1": 0.7212838208824094
+   },
+   "50": {
+    "heldout_corpus_accuracy": 0.9585396039603961,
+    "bloom_heldout_books_macro_f1": 0.7099335728234142
+   },
+   "100": {
+    "heldout_corpus_accuracy": 0.995049504950495,
+    "bloom_heldout_books_macro_f1": 0.698431470006223
+   },
+   "200": {
+    "heldout_corpus_accuracy": 0.9931930693069307,
+    "bloom_heldout_books_macro_f1": 0.6724404663267409
+   },
+   "random50": {
+    "heldout_corpus_accuracy": 0.9925742574257426,
+    "bloom_heldout_books_macro_f1": 0.7551617300479261
+   }
+  },
+  "google_es": {
+   "0": {
+    "heldout_corpus_accuracy": 0.9857142857142858,
+    "bloom_heldout_books_macro_f1": 0.7492802297670254
+   },
+   "10": {
+    "heldout_corpus_accuracy": 0.9535714285714286,
+    "bloom_heldout_books_macro_f1": 0.7590277940740958
+   },
+   "25": {
+    "heldout_corpus_accuracy": 0.9785714285714285,
+    "bloom_heldout_books_macro_f1": 0.7256195872748256
+   },
+   "50": {
+    "heldout_corpus_accuracy": 0.9714285714285714,
+    "bloom_heldout_books_macro_f1": 0.7289514209143795
+   },
+   "100": {
+    "heldout_corpus_accuracy": 0.9642857142857143,
+    "bloom_heldout_books_macro_f1": 0.6965438352344765
+   },
+   "200": {
+    "heldout_corpus_accuracy": 0.9321428571428572,
+    "bloom_heldout_books_macro_f1": 0.6948264751668388
+   },
+   "random50": {
+    "heldout_corpus_accuracy": 0.9857142857142858,
+    "bloom_heldout_books_macro_f1": 0.751520809775064
+   }
+  },
+  "librispeech": {
+   "0": {
+    "heldout_corpus_accuracy": 1.0,
+    "bloom_heldout_books_macro_f1": 0.7506613923264442
+   },
+   "10": {
+    "heldout_corpus_accuracy": 1.0,
+    "bloom_heldout_books_macro_f1": 0.7621078173371943
+   },
+   "25": {
+    "heldout_corpus_accuracy": 1.0,
+    "bloom_heldout_books_macro_f1": 0.7273892208559951
+   },
+   "50": {
+    "heldout_corpus_accuracy": 1.0,
+    "bloom_heldout_books_macro_f1": 0.7247482120158086
+   },
+   "100": {
+    "heldout_corpus_accuracy": 1.0,
+    "bloom_heldout_books_macro_f1": 0.697764294464987
+   },
+   "200": {
+    "heldout_corpus_accuracy": 1.0,
+    "bloom_heldout_books_macro_f1": 0.6932608238003551
+   },
+   "random50": {
+    "heldout_corpus_accuracy": 1.0,
+    "bloom_heldout_books_macro_f1": 0.7525157908752276
+   }
+  }
+ },
+ "A4_phonotactics": {
+  "fusion_weight_on_embedding": 0.5,
+  "bloom_heldout_books_macro_f1": {
+   "embedding": 0.7881084221205281,
+   "phones": 0.6554681113317186,
+   "fusion": 0.8019890670414472
+  },
+  "new_corpora_accuracy": {
+   "coerll": {
+    "embedding": 0.23373493975903614,
+    "phones": 0.4457831325301205,
+    "fusion": 0.3156626506024096
+   },
+   "tachiwin": {
+    "embedding": 0.42097902097902096,
+    "phones": 0.5454545454545454,
+    "fusion": 0.4993006993006993
+   },
+   "tzijonel": {
+    "embedding": 0.4249384741591468,
+    "phones": 0.4643150123051682,
+    "fusion": 0.4602132895816243
+   }
+  },
+  "corpus_probe_auroc_phones_spanish_bloom_vs_fleurs": 0.988446032329573,
+  "top_phone_ngrams": {
+   "Spanish": [
+    "ɾ",
+    "o s",
+    "e n",
+    "ð",
+    "β",
+    "e",
+    "s e",
+    "e s",
+    "l a",
+    "a s"
+   ],
+   "Mam": [
+    "ŋ",
+    "b a x",
+    "i l",
+    "n t",
+    "b i l",
+    "l",
+    "t k",
+    "u n t",
+    "ʃ t",
+    "ʃ n"
+   ],
+   "K'iche'": [
+    "a r e",
+    "ʒ",
+    "p a l",
+    "l e",
+    "i k",
+    "k i",
+    "r i",
+    "w a tʃ",
+    "dʒ",
+    "k e"
+   ],
+   "Q'eqchi'": [
+    "l i",
+    "n a k",
+    "r a ʃ",
+    "k w",
+    "aː",
+    "s a l",
+    "l i k",
+    "i ŋ k",
+    "k",
+    "ʃ u l"
+   ],
+   "Kaqchikel": [
+    "r u",
+    "x",
+    "ɬ",
+    "r i",
+    "i k",
+    "v i",
+    "n u",
+    "ç",
+    "iː",
+    "r u b"
+   ],
+   "Q'anjob'al": [
+    "j",
+    "aɪ",
+    "tʃ i",
+    "tʃ a m",
+    "j e t",
+    "m i m",
+    "b a l",
+    "b aɪ",
+    "a ʃ",
+    "j e"
+   ],
+   "English": [
+    "ə",
+    "z",
+    "æ",
+    "ɹ",
+    "ɪ",
+    "aɪ",
+    "ɚ",
+    "ð ə",
+    "ɐ",
+    "ʌ"
+   ]
+  },
+  "mayan_marked_phones_share_of_clips": {
+   "Spanish": {
+    "q": 0.0,
+    "ʔ": 0.0,
+    "χ": 0.0
+   },
+   "Mam": {
+    "q": 0.12727272727272726,
+    "ʔ": 0.0,
+    "χ": 0.0
+   },
+   "K'iche'": {
+    "q": 0.23232323232323232,
+    "ʔ": 0.0005941770647653001,
+    "χ": 0.0
+   },
+   "Q'eqchi'": {
+    "q": 0.3276699029126214,
+    "ʔ": 0.0,
+    "χ": 0.0
+   },
+   "Kaqchikel": {
+    "q": 0.2606473594548552,
+    "ʔ": 0.0,
+    "χ": 0.0
+   },
+   "Q'anjob'al": {
+    "q": 0.10257680872150644,
+    "ʔ": 0.0004955401387512388,
+    "χ": 0.0
+   },
+   "English": {
+    "q": 0.0,
+    "ʔ": 0.0,
+    "χ": 0.0
+   }
+  }
+ }
+}

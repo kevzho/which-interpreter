@@ -1,0 +1,57 @@
+ZERO-SHOT lid-4017 restricted-6 on all clean in-set n=1380: acc 0.641 macroF1 0.630 recall {'spa': np.float64(0.996), 'mam': np.float64(0.644), 'quc': np.float64(0.581), 'kek': np.float64(0.551), 'cak': np.float64(0.368), 'kjb': np.float64(0.668)}
+   misroute(Mayan->spa) 0.218 false-Mayan 0.004 binary acc 0.820
+   spa  [245   0   0   0   0   1]
+   mam  [ 35 161  17  17   7  13]
+   quc  [ 48   9 143  11  23  12]
+   kek  [29 13 18 76  2  0]
+   cak  [86 14 43  9 92  6]
+   kjb  [ 49  10   9  11   4 167]
+  unrestricted spa: top1==true 0.911  top-dist [('spa', 224), ('pln', 3), ('epo', 3), ('nno', 2), ('oci', 1)]
+  unrestricted mam: top1==true 0.464  top-dist [('mam', 116), ('heb', 17), ('ixl', 13), ('mon', 8), ('yid', 6)]
+  unrestricted quc: top1==true 0.431  top-dist [('quc', 106), ('cak', 18), ('heb', 18), ('poc', 14), ('spa', 5)]
+  unrestricted kek: top1==true 0.428  top-dist [('kek', 59), ('ixl', 10), ('quc', 8), ('heb', 6), ('poh', 5)]
+  unrestricted cak: top1==true 0.312  top-dist [('cak', 78), ('quc', 22), ('spa', 17), ('heb', 15), ('pus', 8)]
+  unrestricted kjb: top1==true 0.260  top-dist [('kjb', 65), ('knj', 38), ('cac', 28), ('jac', 20), ('ixl', 13)]
+  unrestricted tzj: top1==true 0.585  top-dist [('tzj', 24), ('quc', 4), ('cak', 3), ('slr', 2), ('heb', 2)]
+  tzj restricted-6 dist {'mam': 8, 'cak': 16, 'quc': 15, 'kek': 1, 'spa': 1}
+  zero-shot per-book mam|Pujb il Yol Mam 28 restricted acc 0.64
+  zero-shot per-book mam|Tipumal xnaq'tzb'il1 si 30 restricted acc 0.8
+  zero-shot per-book quc|Ixim, aj, jal 35 restricted acc 0.4
+  zero-shot per-book quc|Kik'aslemal ri ak'alab' pa tijob'al 35 restricted acc 0.91
+  zero-shot NOISY kek|Stxolil q anej Q anjob al 35 restricted {'quc': 7, 'kjb': 15, 'spa': 9, 'mam': 3, 'kek': 1} top1 [('kjb', 8), ('jac', 5), ('swh', 2)]
+  zero-shot NOISY kek|Stxolil q'anej Q'anjob al 14 restricted {'kjb': 14} top1 [('kjb', 10), ('jac', 2), ('knj', 1)]
+  zero-shot NOISY spa|Tipumal xnaq'tzb'il1 si 4 restricted {'mam': 4} top1 [('mam', 3), ('mon', 1)]
+
+LR on lid-4017 hidden (rnd) layers chosen ['L12', 'L12', 'L12', 'L12', 'L12']
+### lidLR rnd: n=1380 {"macroF1": 0.978, "acc": 0.977, "recall": {"spa": 0.972, "mam": 0.98, "quc": 0.984, "kek": 0.986, "cak": 0.976, "kjb": 0.968}, "binary": {"spa_misroute(Mayan->spa)": 0.01, "spa_false_mayan": 0.028, "binary_acc": 0.987, "binary_bal_acc": 0.981}}
+   CM rows=true cols=pred ['spa', 'mam', 'quc', 'kek', 'cak', 'kjb']
+   spa  [239   0   0   1   3   3]
+   mam  [  2 245   2   0   1   0]
+   quc  [  0   2 242   0   1   1]
+   kek  [  1   0   0 136   0   1]
+   cak  [  5   0   1   0 244   0]
+   kjb  [  3   3   1   0   1 242]
+
+LR on lid-4017 hidden (grp) layers chosen ['L24', 'L24', 'L24', 'L24', 'L24']
+### lidLR grp: n=1380 {"macroF1": 0.863, "acc": 0.859, "recall": {"spa": 0.967, "mam": 0.872, "quc": 0.675, "kek": 0.971, "cak": 0.812, "kjb": 0.908}, "binary": {"spa_misroute(Mayan->spa)": 0.019, "spa_false_mayan": 0.033, "binary_acc": 0.978, "binary_bal_acc": 0.974}}
+   CM rows=true cols=pred ['spa', 'mam', 'quc', 'kek', 'cak', 'kjb']
+   spa  [238   0   1   0   5   2]
+   mam  [  4 218   0  12   9   7]
+   quc  [  5  10 166   0  50  15]
+   kek  [  1   1   1 134   1   0]
+   cak  [  8  10  18   4 203   7]
+   kjb  [  4   6   5   1   7 227]
+  lidLR per-book mam|Pujb il Yol Mam 28 acc 0.43
+  lidLR per-book mam|Tipumal xnaq'tzb'il1 si 30 acc 0.73
+  lidLR per-book quc|Ixim, aj, jal 35 acc 0.63
+  lidLR per-book quc|Kik'aslemal ri ak'alab' pa tijob'al 35 acc 0.4
+  lidLR per-book quc|Choltzij K iche (1) (2) 35 acc 0.6
+per-layer lidLR grouped macroF1 {'L12': 0.814, 'L24': 0.863, 'L36': 0.84, 'L48': 0.801, 'proj': 0.786}
+LR on 6 restricted log-probs grouped macroF1 0.653
+lidLR open-set layer L24 tzj pred dist {'mam': 7, 'cak': 31, 'quc': 3}
+   AUROC maxprob (grouped OOF in-set vs tzj) 0.722
+   zero-shot AUROC using P(any of 6 langs) under 4017-way softmax: 0.765
+   zero-shot AUROC using max restricted-6 prob (renormalised): 0.706
+   zero-shot reject if P(6)<0.5: in-set kept 0.47 (restricted acc kept 0.893); tzj rejected 0.85
+   zero-shot reject if P(6)<0.3: in-set kept 0.53 (restricted acc kept 0.877); tzj rejected 0.80
+   zero-shot reject if P(6)<0.1: in-set kept 0.61 (restricted acc kept 0.841); tzj rejected 0.73

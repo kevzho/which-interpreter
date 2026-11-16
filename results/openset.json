@@ -1,0 +1,530 @@
+{
+ "tune_auroc": {
+  "maxprob": 0.7592117873915954,
+  "oe": 0.9944071882727129,
+  "mahalanobis": 0.9915580503563983,
+  "knn": 0.936083529178503,
+  "oe+maha": 0.996360182619636,
+  "oe+knn": 0.9882849467366092
+ },
+ "test_auroc": {
+  "maxprob": 0.8954053193183628,
+  "oe": 0.9271326780174101,
+  "mahalanobis": 0.8996906292785971,
+  "knn": 0.8786013517434144,
+  "oe+maha": 0.9348008187745296,
+  "oe+knn": 0.9259814306578713
+ },
+ "chosen_on_tune": "oe+maha",
+ "test_auroc_guatemalan_mayan_only": {
+  "maxprob": 0.8872417722238638,
+  "oe": 0.8333145160063387,
+  "mahalanobis": 0.7796915399700044,
+  "knn": 0.7432659993321851,
+  "oe+maha": 0.8487825589803091,
+  "oe+knn": 0.8303758100458902
+ },
+ "test_auroc_distant_only": {
+  "maxprob": 0.9005255849109669,
+  "oe": 0.9859764503808167,
+  "mahalanobis": 0.9749553642054829,
+  "knn": 0.9634851578135868,
+  "oe+maha": 0.9881059105074292,
+  "oe+knn": 0.9854951873698907
+ },
+ "declined_by_method": {
+  "maxprob": {
+   "Tz'utujil": 0.24390243902439024,
+   "Poqomam": 0.18181818181818182,
+   "Sipakapense": 0.24,
+   "Sakapulteko": 0.1875,
+   "Popti' (Jakalteko)": 0.03333333333333333,
+   "Chuj": 0.13559322033898305,
+   "boz": 0.4642857142857143,
+   "bzi": 0.45,
+   "French": 0.1357142857142857,
+   "guj": 0.041666666666666664,
+   "mal": 0.31666666666666665,
+   "mle": 0.0,
+   "myk": 0.13333333333333333,
+   "Portuguese": 0.2826086956521739,
+   "snk": 0.3,
+   "tuz": 0.3888888888888889,
+   "mfy": 0.13333333333333333,
+   "ote": 0.3,
+   "pbs": 0.43478260869565216,
+   "tar": 0.26666666666666666,
+   "yaq": 0.5,
+   "dih": 0.10344827586206896,
+   "ntp": 0.3,
+   "otm": 0.2,
+   "ott": 0.26666666666666666,
+   "pmq": 0.43333333333333335,
+   "tac": 0.5454545454545454,
+   "top": 0.1111111111111111,
+   "tos": 0.1,
+   "toc": 0.5,
+   "glg": 0.0,
+   "ast": 0.0,
+   "pol": 0.725,
+   "ukr": 0.0375,
+   "ces": 0.7625,
+   "vie": 0.1125,
+   "zul": 0.125
+  },
+  "oe": {
+   "Tz'utujil": 0.21951219512195122,
+   "Poqomam": 0.4318181818181818,
+   "Sipakapense": 0.285,
+   "Sakapulteko": 0.3317307692307692,
+   "Popti' (Jakalteko)": 0.94,
+   "Chuj": 0.9491525423728814,
+   "boz": 1.0,
+   "bzi": 1.0,
+   "French": 1.0,
+   "guj": 1.0,
+   "mal": 1.0,
+   "mle": 1.0,
+   "myk": 0.9166666666666666,
+   "Portuguese": 0.9891304347826086,
+   "snk": 0.95,
+   "tuz": 0.9722222222222222,
+   "mfy": 1.0,
+   "ote": 1.0,
+   "pbs": 1.0,
+   "tar": 1.0,
+   "yaq": 1.0,
+   "dih": 1.0,
+   "ntp": 1.0,
+   "otm": 1.0,
+   "ott": 1.0,
+   "pmq": 1.0,
+   "tac": 1.0,
+   "top": 1.0,
+   "tos": 1.0,
+   "toc": 1.0,
+   "glg": 0.975,
+   "ast": 0.825,
+   "pol": 1.0,
+   "ukr": 1.0,
+   "ces": 1.0,
+   "vie": 0.9875,
+   "zul": 1.0
+  },
+  "mahalanobis": {
+   "Tz'utujil": 0.6097560975609756,
+   "Poqomam": 0.17803030303030304,
+   "Sipakapense": 0.245,
+   "Sakapulteko": 0.07692307692307693,
+   "Popti' (Jakalteko)": 0.13333333333333333,
+   "Chuj": 0.3389830508474576,
+   "boz": 1.0,
+   "bzi": 1.0,
+   "French": 1.0,
+   "guj": 1.0,
+   "mal": 1.0,
+   "mle": 1.0,
+   "myk": 0.9666666666666667,
+   "Portuguese": 1.0,
+   "snk": 1.0,
+   "tuz": 1.0,
+   "mfy": 0.9666666666666667,
+   "ote": 0.9,
+   "pbs": 0.9565217391304348,
+   "tar": 0.9666666666666667,
+   "yaq": 0.9333333333333333,
+   "dih": 1.0,
+   "ntp": 1.0,
+   "otm": 1.0,
+   "ott": 1.0,
+   "pmq": 1.0,
+   "tac": 1.0,
+   "top": 1.0,
+   "tos": 1.0,
+   "toc": 1.0,
+   "glg": 0.9125,
+   "ast": 0.025,
+   "pol": 1.0,
+   "ukr": 1.0,
+   "ces": 1.0,
+   "vie": 1.0,
+   "zul": 1.0
+  },
+  "knn": {
+   "Tz'utujil": 0.0975609756097561,
+   "Poqomam": 0.13636363636363635,
+   "Sipakapense": 0.18,
+   "Sakapulteko": 0.09134615384615384,
+   "Popti' (Jakalteko)": 0.10666666666666667,
+   "Chuj": 0.3559322033898305,
+   "boz": 0.9285714285714286,
+   "bzi": 1.0,
+   "French": 0.9357142857142857,
+   "guj": 0.6666666666666666,
+   "mal": 0.8,
+   "mle": 1.0,
+   "myk": 0.9333333333333333,
+   "Portuguese": 0.42391304347826086,
+   "snk": 0.9333333333333333,
+   "tuz": 0.9722222222222222,
+   "mfy": 0.8333333333333334,
+   "ote": 0.9,
+   "pbs": 0.8695652173913043,
+   "tar": 0.9333333333333333,
+   "yaq": 0.8666666666666667,
+   "dih": 0.9655172413793104,
+   "ntp": 1.0,
+   "otm": 0.9666666666666667,
+   "ott": 0.9,
+   "pmq": 0.9666666666666667,
+   "tac": 1.0,
+   "top": 1.0,
+   "tos": 0.9333333333333333,
+   "toc": 1.0,
+   "glg": 0.0,
+   "ast": 0.0,
+   "pol": 1.0,
+   "ukr": 1.0,
+   "ces": 1.0,
+   "vie": 1.0,
+   "zul": 1.0
+  }
+ },
+ "test_known_answered_by_method": {
+  "maxprob": 0.9634551495016611,
+  "oe": 0.8851974898486527,
+  "mahalanobis": 0.9069767441860465,
+  "knn": 0.9534883720930233
+ },
+ "n": {
+  "tune_known": 3533,
+  "tune_unknown": 1409,
+  "test_known": 2709,
+  "test_unknown": 2392,
+  "train_other_languages": 131,
+  "tune_languages": [
+   "arb",
+   "chd",
+   "cmn",
+   "coc",
+   "fli",
+   "hin",
+   "ita",
+   "itz",
+   "jpn",
+   "kic",
+   "klb",
+   "kqr",
+   "maj",
+   "mau",
+   "mya",
+   "mzi",
+   "pes",
+   "rus",
+   "sdk",
+   "stk",
+   "swh",
+   "tam",
+   "tpi",
+   "trc",
+   "trs",
+   "tsz"
+  ],
+  "test_languages": [
+   "ast",
+   "boz",
+   "bzi",
+   "cac",
+   "ces",
+   "dih",
+   "fra",
+   "glg",
+   "guj",
+   "jac",
+   "mal",
+   "mfy",
+   "mle",
+   "myk",
+   "ntp",
+   "ote",
+   "otm",
+   "ott",
+   "pbs",
+   "pmq",
+   "poc",
+   "pol",
+   "por",
+   "qum",
+   "quv",
+   "snk",
+   "tac",
+   "tar",
+   "toc",
+   "top",
+   "tos",
+   "tuz",
+   "tzj",
+   "ukr",
+   "vie",
+   "yaq",
+   "zul"
+  ]
+ },
+ "shipped_method": "oe",
+ "threshold": 0.9578918085162257,
+ "test_known_answered": 0.8851974898486527,
+ "test_known_answered_by_language": {
+  "Spanish": {
+   "n": 808,
+   "answered": 0.9603960396039604,
+   "answered_correct": 1.0
+  },
+  "Mam": {
+   "n": 370,
+   "answered": 0.8891891891891892,
+   "answered_correct": 0.9787234042553191
+  },
+  "K'iche'": {
+   "n": 263,
+   "answered": 0.8631178707224335,
+   "answered_correct": 0.6035242290748899
+  },
+  "Kaqchikel": {
+   "n": 609,
+   "answered": 0.722495894909688,
+   "answered_correct": 0.9659090909090909
+  },
+  "English": {
+   "n": 659,
+   "answered": 0.9499241274658573,
+   "answered_correct": 0.9968051118210862
+  }
+ },
+ "test_known_accuracy_7class_without_other": 0.9239571797711332,
+ "test_known_accuracy_8class_with_other": 0.9114064230343301,
+ "test_known_accuracy_when_answered": 0.9524603836530442,
+ "test_per_language": {
+  "Tz'utujil": {
+   "n": 41,
+   "declined": 0.21951219512195122,
+   "of_declined_flagged_mayan": 1.0,
+   "mayan": true
+  },
+  "Poqomam": {
+   "n": 264,
+   "declined": 0.4318181818181818,
+   "of_declined_flagged_mayan": 0.9473684210526315,
+   "mayan": true
+  },
+  "Sipakapense": {
+   "n": 200,
+   "declined": 0.285,
+   "of_declined_flagged_mayan": 0.9824561403508771,
+   "mayan": true
+  },
+  "Sakapulteko": {
+   "n": 208,
+   "declined": 0.3317307692307692,
+   "of_declined_flagged_mayan": 0.9420289855072463,
+   "mayan": true
+  },
+  "Popti' (Jakalteko)": {
+   "n": 150,
+   "declined": 0.94,
+   "of_declined_flagged_mayan": 0.9716312056737588,
+   "mayan": true
+  },
+  "Chuj": {
+   "n": 59,
+   "declined": 0.9491525423728814,
+   "of_declined_flagged_mayan": 0.8214285714285714,
+   "mayan": true
+  },
+  "boz": {
+   "n": 28,
+   "declined": 1.0,
+   "of_declined_flagged_mayan": 0.7857142857142857,
+   "mayan": false
+  },
+  "bzi": {
+   "n": 60,
+   "declined": 1.0,
+   "of_declined_flagged_mayan": 0.9833333333333333,
+   "mayan": false
+  },
+  "French": {
+   "n": 140,
+   "declined": 1.0,
+   "of_declined_flagged_mayan": 0.11428571428571428,
+   "mayan": false
+  },
+  "guj": {
+   "n": 24,
+   "declined": 1.0,
+   "of_declined_flagged_mayan": 0.125,
+   "mayan": false
+  },
+  "mal": {
+   "n": 60,
+   "declined": 1.0,
+   "of_declined_flagged_mayan": 0.36666666666666664,
+   "mayan": false
+  },
+  "mle": {
+   "n": 6,
+   "declined": 1.0,
+   "of_declined_flagged_mayan": 0.8333333333333334,
+   "mayan": false
+  },
+  "myk": {
+   "n": 60,
+   "declined": 0.9166666666666666,
+   "of_declined_flagged_mayan": 0.9090909090909091,
+   "mayan": false
+  },
+  "Portuguese": {
+   "n": 92,
+   "declined": 0.9891304347826086,
+   "of_declined_flagged_mayan": 0.0,
+   "mayan": false
+  },
+  "snk": {
+   "n": 60,
+   "declined": 0.95,
+   "of_declined_flagged_mayan": 0.7368421052631579,
+   "mayan": false
+  },
+  "tuz": {
+   "n": 36,
+   "declined": 0.9722222222222222,
+   "of_declined_flagged_mayan": 0.6,
+   "mayan": false
+  },
+  "mfy": {
+   "n": 30,
+   "declined": 1.0,
+   "of_declined_flagged_mayan": 0.6333333333333333,
+   "mayan": false
+  },
+  "ote": {
+   "n": 30,
+   "declined": 1.0,
+   "of_declined_flagged_mayan": 0.7,
+   "mayan": false
+  },
+  "pbs": {
+   "n": 23,
+   "declined": 1.0,
+   "of_declined_flagged_mayan": 0.8260869565217391,
+   "mayan": false
+  },
+  "tar": {
+   "n": 30,
+   "declined": 1.0,
+   "of_declined_flagged_mayan": 0.9666666666666667,
+   "mayan": false
+  },
+  "yaq": {
+   "n": 30,
+   "declined": 1.0,
+   "of_declined_flagged_mayan": 0.8666666666666667,
+   "mayan": false
+  },
+  "dih": {
+   "n": 29,
+   "declined": 1.0,
+   "of_declined_flagged_mayan": 0.7931034482758621,
+   "mayan": false
+  },
+  "ntp": {
+   "n": 30,
+   "declined": 1.0,
+   "of_declined_flagged_mayan": 0.8333333333333334,
+   "mayan": false
+  },
+  "otm": {
+   "n": 30,
+   "declined": 1.0,
+   "of_declined_flagged_mayan": 0.43333333333333335,
+   "mayan": false
+  },
+  "ott": {
+   "n": 30,
+   "declined": 1.0,
+   "of_declined_flagged_mayan": 0.4666666666666667,
+   "mayan": false
+  },
+  "pmq": {
+   "n": 30,
+   "declined": 1.0,
+   "of_declined_flagged_mayan": 0.9333333333333333,
+   "mayan": false
+  },
+  "tac": {
+   "n": 11,
+   "declined": 1.0,
+   "of_declined_flagged_mayan": 0.9090909090909091,
+   "mayan": false
+  },
+  "top": {
+   "n": 9,
+   "declined": 1.0,
+   "of_declined_flagged_mayan": 1.0,
+   "mayan": false
+  },
+  "tos": {
+   "n": 30,
+   "declined": 1.0,
+   "of_declined_flagged_mayan": 0.9333333333333333,
+   "mayan": false
+  },
+  "toc": {
+   "n": 2,
+   "declined": 1.0,
+   "of_declined_flagged_mayan": 1.0,
+   "mayan": false
+  },
+  "glg": {
+   "n": 80,
+   "declined": 0.975,
+   "of_declined_flagged_mayan": 0.0,
+   "mayan": false
+  },
+  "ast": {
+   "n": 80,
+   "declined": 0.825,
+   "of_declined_flagged_mayan": 0.0,
+   "mayan": false
+  },
+  "pol": {
+   "n": 80,
+   "declined": 1.0,
+   "of_declined_flagged_mayan": 0.575,
+   "mayan": false
+  },
+  "ukr": {
+   "n": 80,
+   "declined": 1.0,
+   "of_declined_flagged_mayan": 0.0125,
+   "mayan": false
+  },
+  "ces": {
+   "n": 80,
+   "declined": 1.0,
+   "of_declined_flagged_mayan": 0.1375,
+   "mayan": false
+  },
+  "vie": {
+   "n": 80,
+   "declined": 0.9875,
+   "of_declined_flagged_mayan": 0.0,
+   "mayan": false
+  },
+  "zul": {
+   "n": 80,
+   "declined": 1.0,
+   "of_declined_flagged_mayan": 0.8125,
+   "mayan": false
+  }
+ }
+}

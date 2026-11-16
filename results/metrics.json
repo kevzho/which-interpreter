@@ -1,0 +1,2502 @@
+{
+ "layer": 24,
+ "target_accuracy_for_threshold": 0.95,
+ "E1_bloom_heldout_books": {
+  "bloom": {
+   "n": 9672,
+   "accuracy": 0.7900124069478908,
+   "macro_f1": 0.795783802403822,
+   "recall": {
+    "spa": 0.9724104549854792,
+    "mam": 0.5675324675324676,
+    "quc": 0.5573380867498514,
+    "kek": 0.9466019417475728,
+    "cak": 0.7367972742759795,
+    "kjb": 0.8999008919722498,
+    "eng": 0.9782016348773842
+   },
+   "mayan_sent_to_spanish": 0.03909379748584058,
+   "spanish_sent_to_mayan": 0.02420135527589545,
+   "spanish_vs_mayan_accuracy": 0.9623655913978495,
+   "macro_f1_95ci_by_book": [
+    0.6641926787537776,
+    0.8626600872867807
+   ]
+  },
+  "bloom+aug": {
+   "n": 9672,
+   "accuracy": 0.7805004135649297,
+   "macro_f1": 0.7888937184607784,
+   "recall": {
+    "spa": 0.968054211035818,
+    "mam": 0.4616883116883117,
+    "quc": 0.5662507427213309,
+    "kek": 0.9453883495145631,
+    "cak": 0.7964224872231687,
+    "kjb": 0.8979187314172448,
+    "eng": 0.9782016348773842
+   },
+   "mayan_sent_to_spanish": 0.04171846940185108,
+   "spanish_sent_to_mayan": 0.02952565343659245,
+   "spanish_vs_mayan_accuracy": 0.9607113316790736,
+   "macro_f1_95ci_by_book": [
+    0.6414736147084529,
+    0.8706609432877398
+   ]
+  },
+  "bloom+aug+fleurs": {
+   "n": 9672,
+   "accuracy": 0.7793631100082713,
+   "macro_f1": 0.7881084221205281,
+   "recall": {
+    "spa": 0.9666021297192643,
+    "mam": 0.4603896103896104,
+    "quc": 0.5620915032679739,
+    "kek": 0.9478155339805825,
+    "cak": 0.7981260647359455,
+    "kjb": 0.8969276511397423,
+    "eng": 0.9754768392370572
+   },
+   "mayan_sent_to_spanish": 0.039508219367315925,
+   "spanish_sent_to_mayan": 0.030977734753146177,
+   "spanish_vs_mayan_accuracy": 0.9623655913978495,
+   "macro_f1_95ci_by_book": [
+    0.6427435529361705,
+    0.8615443905588134
+   ]
+  },
+  "baseline_mfcc": {
+   "n": 9672,
+   "accuracy": 0.5172663358147229,
+   "macro_f1": 0.48863263176769084,
+   "recall": {
+    "spa": 0.8097773475314618,
+    "mam": 0.21298701298701297,
+    "quc": 0.1319073083778966,
+    "kek": 0.741504854368932,
+    "cak": 0.5851788756388415,
+    "kjb": 0.595639246778989,
+    "eng": 0.7629427792915532
+   },
+   "mayan_sent_to_spanish": 0.09393562646774416,
+   "spanish_sent_to_mayan": 0.11713455953533398,
+   "spanish_vs_mayan_accuracy": 0.7961124896608768
+  },
+  "baseline_mms_lid_zero_shot": {
+   "n": 9672,
+   "accuracy": 0.6326509511993383,
+   "macro_f1": 0.547838396658616,
+   "recall": {
+    "spa": 0.989835430784124,
+    "mam": 0.5967532467532467,
+    "quc": 0.5014854426619133,
+    "kek": 0.6553398058252428,
+    "cak": 0.469335604770017,
+    "kjb": 0.6045589692765114,
+    "eng": 0.0
+   },
+   "mayan_sent_to_spanish": 0.23677303494957866,
+   "spanish_sent_to_mayan": 0.01016456921587609,
+   "spanish_vs_mayan_accuracy": 0.8021091811414393
+  },
+  "baseline_always_spanish": {
+   "n": 9672,
+   "accuracy": 0.21360628618693134,
+   "macro_f1": 0.05028844047416207,
+   "recall": {
+    "spa": 1.0,
+    "mam": 0.0,
+    "quc": 0.0,
+    "kek": 0.0,
+    "cak": 0.0,
+    "kjb": 0.0,
+    "eng": 0.0
+   },
+   "mayan_sent_to_spanish": 1.0,
+   "spanish_sent_to_mayan": 0.0,
+   "spanish_vs_mayan_accuracy": 0.25155086848635233
+  },
+  "leaky_random_split": {
+   "n": 9672,
+   "accuracy": 0.9769437551695617,
+   "macro_f1": 0.977383058673724,
+   "recall": {
+    "spa": 0.978702807357212,
+    "mam": 0.9798701298701299,
+    "quc": 0.9768270944741533,
+    "kek": 0.9866504854368932,
+    "cak": 0.9667802385008518,
+    "kjb": 0.9742319127849356,
+    "eng": 0.9809264305177112
+   },
+   "mayan_sent_to_spanish": 0.006078187594971681,
+   "spanish_sent_to_mayan": 0.01887705711519845,
+   "spanish_vs_mayan_accuracy": 0.9905913978494624
+  },
+  "leakage_gap_macro_f1": 0.18159925626990203
+ },
+ "abstain_threshold": 0.99,
+ "family_threshold": 0.98,
+ "E1_abstention_at_threshold": {
+  "coverage": 0.5602770885028949,
+  "accuracy_on_answered": 0.9647536445838716,
+  "mayan_sent_to_spanish_answered": 0.012593703148425787
+ },
+ "E1_routing": {
+  "named_language": 0.5602770885028949,
+  "said_mayan_try_two": 0.320409429280397,
+  "said_not_sure": 0.11931348221670803,
+  "named_language_correct": 0.9647536445838716,
+  "try_two_family_correct": 0.9958050984188448,
+  "try_two_contains_true": 0.7757341077767022,
+  "mayan_routed_to_spanish": 0.005801906340654786,
+  "useful_answer": 0.7672330432380163
+ },
+ "E2_cross_corpus": {
+  "clean|coerll|quc": {
+   "bloom": {
+    "n": 415,
+    "accuracy": 0.12048192771084337,
+    "macro_f1": 0.21505376344086022,
+    "recall": {
+     "quc": 0.12048192771084337
+    },
+    "mayan_sent_to_spanish": 0.033734939759036145,
+    "spanish_vs_mayan_accuracy": 0.908433734939759,
+    "coverage": 0.024096385542168676,
+    "accuracy_on_answered": 0.1,
+    "mayan_sent_to_spanish_answered": 0.0,
+    "routing": {
+     "named_language": 0.024096385542168676,
+     "said_mayan_try_two": 0.4795180722891566,
+     "said_not_sure": 0.4963855421686747,
+     "named_language_correct": 0.1,
+     "try_two_family_correct": 1.0,
+     "try_two_contains_true": 0.36683417085427134,
+     "mayan_routed_to_spanish": 0.0,
+     "useful_answer": 0.1783132530120482
+    }
+   },
+   "bloom+aug": {
+    "n": 415,
+    "accuracy": 0.2216867469879518,
+    "macro_f1": 0.3629191321499014,
+    "recall": {
+     "quc": 0.2216867469879518
+    },
+    "mayan_sent_to_spanish": 0.024096385542168676,
+    "spanish_vs_mayan_accuracy": 0.9253012048192771,
+    "coverage": 0.043373493975903614,
+    "accuracy_on_answered": 0.2222222222222222,
+    "mayan_sent_to_spanish_answered": 0.0,
+    "routing": {
+     "named_language": 0.043373493975903614,
+     "said_mayan_try_two": 0.6,
+     "said_not_sure": 0.3566265060240964,
+     "named_language_correct": 0.2222222222222222,
+     "try_two_family_correct": 1.0,
+     "try_two_contains_true": 0.4939759036144578,
+     "mayan_routed_to_spanish": 0.0,
+     "useful_answer": 0.3060240963855422
+    }
+   },
+   "bloom+aug+fleurs": {
+    "n": 415,
+    "accuracy": 0.23373493975903614,
+    "macro_f1": 0.37890625,
+    "recall": {
+     "quc": 0.23373493975903614
+    },
+    "mayan_sent_to_spanish": 0.024096385542168676,
+    "spanish_vs_mayan_accuracy": 0.9349397590361446,
+    "coverage": 0.05783132530120482,
+    "accuracy_on_answered": 0.16666666666666666,
+    "mayan_sent_to_spanish_answered": 0.0,
+    "routing": {
+     "named_language": 0.05783132530120482,
+     "said_mayan_try_two": 0.6168674698795181,
+     "said_not_sure": 0.3253012048192771,
+     "named_language_correct": 0.16666666666666666,
+     "try_two_family_correct": 1.0,
+     "try_two_contains_true": 0.51953125,
+     "mayan_routed_to_spanish": 0.0,
+     "useful_answer": 0.3301204819277108
+    }
+   },
+   "baseline_mfcc": {
+    "n": 415,
+    "accuracy": 0.02891566265060241,
+    "macro_f1": 0.05620608899297424,
+    "recall": {
+     "quc": 0.02891566265060241
+    },
+    "mayan_sent_to_spanish": 0.007228915662650603,
+    "spanish_vs_mayan_accuracy": 0.41686746987951806
+   },
+   "baseline_mms_lid_zero_shot": {
+    "n": 415,
+    "accuracy": 0.2433734939759036,
+    "macro_f1": 0.39147286821705424,
+    "recall": {
+     "quc": 0.2433734939759036
+    },
+    "mayan_sent_to_spanish": 0.5469879518072289,
+    "spanish_vs_mayan_accuracy": 0.4530120481927711
+   },
+   "baseline_always_spanish": {
+    "n": 415,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "recall": {
+     "quc": 0.0
+    },
+    "mayan_sent_to_spanish": 1.0,
+    "spanish_vs_mayan_accuracy": 0.0
+   },
+   "note": ""
+  },
+  "clean|fleurs|eng": {
+   "bloom": {
+    "n": 300,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "recall": {
+     "eng": 1.0
+    },
+    "spanish_vs_mayan_accuracy": 1.0,
+    "coverage": 1.0,
+    "accuracy_on_answered": 1.0,
+    "routing": {
+     "named_language": 1.0,
+     "said_mayan_try_two": 0.0,
+     "said_not_sure": 0.0,
+     "named_language_correct": 1.0
+    }
+   },
+   "bloom+aug": {
+    "n": 300,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "recall": {
+     "eng": 1.0
+    },
+    "spanish_vs_mayan_accuracy": 1.0,
+    "coverage": 1.0,
+    "accuracy_on_answered": 1.0,
+    "routing": {
+     "named_language": 1.0,
+     "said_mayan_try_two": 0.0,
+     "said_not_sure": 0.0,
+     "named_language_correct": 1.0
+    }
+   },
+   "bloom+aug+fleurs": {
+    "n": 300,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "recall": {
+     "eng": 1.0
+    },
+    "spanish_vs_mayan_accuracy": 1.0,
+    "coverage": 1.0,
+    "accuracy_on_answered": 1.0,
+    "routing": {
+     "named_language": 1.0,
+     "said_mayan_try_two": 0.0,
+     "said_not_sure": 0.0,
+     "named_language_correct": 1.0
+    }
+   },
+   "baseline_mfcc": {
+    "n": 300,
+    "accuracy": 0.09,
+    "macro_f1": 0.1651376146788991,
+    "recall": {
+     "eng": 0.09
+    },
+    "spanish_vs_mayan_accuracy": 0.09
+   },
+   "baseline_mms_lid_zero_shot": {
+    "n": 300,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "recall": {
+     "eng": 0.0
+    },
+    "spanish_vs_mayan_accuracy": 0.8533333333333334
+   },
+   "baseline_always_spanish": {
+    "n": 300,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "recall": {
+     "eng": 0.0
+    },
+    "spanish_vs_mayan_accuracy": 1.0
+   },
+   "note": "in-corpus for bloom+aug+fleurs (FLEURS-train used)"
+  },
+  "clean|fleurs|spa": {
+   "bloom": {
+    "n": 1316,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "recall": {
+     "spa": 1.0
+    },
+    "spanish_sent_to_mayan": 0.0,
+    "spanish_vs_mayan_accuracy": 1.0,
+    "coverage": 0.6382978723404256,
+    "accuracy_on_answered": 1.0,
+    "routing": {
+     "named_language": 0.6382978723404256,
+     "said_mayan_try_two": 0.0,
+     "said_not_sure": 0.3617021276595745,
+     "named_language_correct": 1.0
+    }
+   },
+   "bloom+aug": {
+    "n": 1316,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "recall": {
+     "spa": 1.0
+    },
+    "spanish_sent_to_mayan": 0.0,
+    "spanish_vs_mayan_accuracy": 1.0,
+    "coverage": 0.9521276595744681,
+    "accuracy_on_answered": 1.0,
+    "routing": {
+     "named_language": 0.9521276595744681,
+     "said_mayan_try_two": 0.0,
+     "said_not_sure": 0.047872340425531915,
+     "named_language_correct": 1.0
+    }
+   },
+   "bloom+aug+fleurs": {
+    "n": 1316,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "recall": {
+     "spa": 1.0
+    },
+    "spanish_sent_to_mayan": 0.0,
+    "spanish_vs_mayan_accuracy": 1.0,
+    "coverage": 0.9962006079027356,
+    "accuracy_on_answered": 1.0,
+    "routing": {
+     "named_language": 0.9962006079027356,
+     "said_mayan_try_two": 0.0,
+     "said_not_sure": 0.003799392097264438,
+     "named_language_correct": 1.0
+    }
+   },
+   "baseline_mfcc": {
+    "n": 1316,
+    "accuracy": 0.14817629179331307,
+    "macro_f1": 0.25810721376571805,
+    "recall": {
+     "spa": 0.14817629179331307
+    },
+    "spanish_sent_to_mayan": 0.6208206686930091,
+    "spanish_vs_mayan_accuracy": 0.3791793313069909
+   },
+   "baseline_mms_lid_zero_shot": {
+    "n": 1316,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "recall": {
+     "spa": 1.0
+    },
+    "spanish_sent_to_mayan": 0.0,
+    "spanish_vs_mayan_accuracy": 1.0
+   },
+   "baseline_always_spanish": {
+    "n": 1316,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "recall": {
+     "spa": 1.0
+    },
+    "spanish_sent_to_mayan": 0.0,
+    "spanish_vs_mayan_accuracy": 1.0
+   },
+   "note": "in-corpus for bloom+aug+fleurs (FLEURS-train used)"
+  },
+  "clean|google_es|spa": {
+   "bloom": {
+    "n": 280,
+    "accuracy": 0.9964285714285714,
+    "macro_f1": 0.998211091234347,
+    "recall": {
+     "spa": 0.9964285714285714
+    },
+    "spanish_sent_to_mayan": 0.0035714285714285713,
+    "spanish_vs_mayan_accuracy": 0.9964285714285714,
+    "coverage": 0.8357142857142857,
+    "accuracy_on_answered": 1.0,
+    "routing": {
+     "named_language": 0.8357142857142857,
+     "said_mayan_try_two": 0.0,
+     "said_not_sure": 0.16428571428571428,
+     "named_language_correct": 1.0
+    }
+   },
+   "bloom+aug": {
+    "n": 280,
+    "accuracy": 0.9964285714285714,
+    "macro_f1": 0.998211091234347,
+    "recall": {
+     "spa": 0.9964285714285714
+    },
+    "spanish_sent_to_mayan": 0.0035714285714285713,
+    "spanish_vs_mayan_accuracy": 0.9964285714285714,
+    "coverage": 0.8178571428571428,
+    "accuracy_on_answered": 1.0,
+    "routing": {
+     "named_language": 0.8178571428571428,
+     "said_mayan_try_two": 0.0,
+     "said_not_sure": 0.18214285714285713,
+     "named_language_correct": 1.0
+    }
+   },
+   "bloom+aug+fleurs": {
+    "n": 280,
+    "accuracy": 0.9964285714285714,
+    "macro_f1": 0.998211091234347,
+    "recall": {
+     "spa": 0.9964285714285714
+    },
+    "spanish_sent_to_mayan": 0.0035714285714285713,
+    "spanish_vs_mayan_accuracy": 0.9964285714285714,
+    "coverage": 0.9,
+    "accuracy_on_answered": 1.0,
+    "routing": {
+     "named_language": 0.9,
+     "said_mayan_try_two": 0.0,
+     "said_not_sure": 0.1,
+     "named_language_correct": 1.0
+    }
+   },
+   "baseline_mfcc": {
+    "n": 280,
+    "accuracy": 0.29642857142857143,
+    "macro_f1": 0.4573002754820937,
+    "recall": {
+     "spa": 0.29642857142857143
+    },
+    "spanish_sent_to_mayan": 0.6178571428571429,
+    "spanish_vs_mayan_accuracy": 0.3821428571428571
+   },
+   "baseline_mms_lid_zero_shot": {
+    "n": 280,
+    "accuracy": 0.9964285714285714,
+    "macro_f1": 0.998211091234347,
+    "recall": {
+     "spa": 0.9964285714285714
+    },
+    "spanish_sent_to_mayan": 0.0035714285714285713,
+    "spanish_vs_mayan_accuracy": 0.9964285714285714
+   },
+   "baseline_always_spanish": {
+    "n": 280,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "recall": {
+     "spa": 1.0
+    },
+    "spanish_sent_to_mayan": 0.0,
+    "spanish_vs_mayan_accuracy": 1.0
+   },
+   "note": ""
+  },
+  "clean|librispeech|eng": {
+   "bloom": {
+    "n": 400,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "recall": {
+     "eng": 1.0
+    },
+    "spanish_vs_mayan_accuracy": 1.0,
+    "coverage": 1.0,
+    "accuracy_on_answered": 1.0,
+    "routing": {
+     "named_language": 1.0,
+     "said_mayan_try_two": 0.0,
+     "said_not_sure": 0.0,
+     "named_language_correct": 1.0
+    }
+   },
+   "bloom+aug": {
+    "n": 400,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "recall": {
+     "eng": 1.0
+    },
+    "spanish_vs_mayan_accuracy": 1.0,
+    "coverage": 1.0,
+    "accuracy_on_answered": 1.0,
+    "routing": {
+     "named_language": 1.0,
+     "said_mayan_try_two": 0.0,
+     "said_not_sure": 0.0,
+     "named_language_correct": 1.0
+    }
+   },
+   "bloom+aug+fleurs": {
+    "n": 400,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "recall": {
+     "eng": 1.0
+    },
+    "spanish_vs_mayan_accuracy": 1.0,
+    "coverage": 1.0,
+    "accuracy_on_answered": 1.0,
+    "routing": {
+     "named_language": 1.0,
+     "said_mayan_try_two": 0.0,
+     "said_not_sure": 0.0,
+     "named_language_correct": 1.0
+    }
+   },
+   "baseline_mfcc": {
+    "n": 400,
+    "accuracy": 0.41,
+    "macro_f1": 0.5815602836879432,
+    "recall": {
+     "eng": 0.41
+    },
+    "spanish_vs_mayan_accuracy": 0.53
+   },
+   "baseline_mms_lid_zero_shot": {
+    "n": 400,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "recall": {
+     "eng": 0.0
+    },
+    "spanish_vs_mayan_accuracy": 0.8575
+   },
+   "baseline_always_spanish": {
+    "n": 400,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "recall": {
+     "eng": 0.0
+    },
+    "spanish_vs_mayan_accuracy": 1.0
+   },
+   "note": ""
+  },
+  "clean|tachiwin|mam": {
+   "bloom": {
+    "n": 715,
+    "accuracy": 0.42097902097902096,
+    "macro_f1": 0.59251968503937,
+    "recall": {
+     "mam": 0.42097902097902096
+    },
+    "mayan_sent_to_spanish": 0.012587412587412588,
+    "spanish_vs_mayan_accuracy": 0.986013986013986,
+    "coverage": 0.17622377622377622,
+    "accuracy_on_answered": 0.5476190476190477,
+    "mayan_sent_to_spanish_answered": 0.015873015873015872,
+    "routing": {
+     "named_language": 0.17622377622377622,
+     "said_mayan_try_two": 0.5146853146853146,
+     "said_not_sure": 0.3090909090909091,
+     "named_language_correct": 0.5476190476190477,
+     "try_two_family_correct": 1.0,
+     "try_two_contains_true": 0.5652173913043478,
+     "mayan_routed_to_spanish": 0.002797202797202797,
+     "useful_answer": 0.38741258741258744
+    }
+   },
+   "bloom+aug": {
+    "n": 715,
+    "accuracy": 0.3972027972027972,
+    "macro_f1": 0.5685685685685685,
+    "recall": {
+     "mam": 0.3972027972027972
+    },
+    "mayan_sent_to_spanish": 0.023776223776223775,
+    "spanish_vs_mayan_accuracy": 0.9412587412587412,
+    "coverage": 0.17342657342657342,
+    "accuracy_on_answered": 0.5887096774193549,
+    "mayan_sent_to_spanish_answered": 0.008064516129032258,
+    "routing": {
+     "named_language": 0.17342657342657342,
+     "said_mayan_try_two": 0.3300699300699301,
+     "said_not_sure": 0.4965034965034965,
+     "named_language_correct": 0.5887096774193549,
+     "try_two_family_correct": 1.0,
+     "try_two_contains_true": 0.5635593220338984,
+     "mayan_routed_to_spanish": 0.0013986013986013986,
+     "useful_answer": 0.2881118881118881
+    }
+   },
+   "bloom+aug+fleurs": {
+    "n": 715,
+    "accuracy": 0.42097902097902096,
+    "macro_f1": 0.59251968503937,
+    "recall": {
+     "mam": 0.42097902097902096
+    },
+    "mayan_sent_to_spanish": 0.013986013986013986,
+    "spanish_vs_mayan_accuracy": 0.9692307692307692,
+    "coverage": 0.23216783216783216,
+    "accuracy_on_answered": 0.5963855421686747,
+    "mayan_sent_to_spanish_answered": 0.006024096385542169,
+    "routing": {
+     "named_language": 0.23216783216783216,
+     "said_mayan_try_two": 0.4461538461538462,
+     "said_not_sure": 0.32167832167832167,
+     "named_language_correct": 0.5963855421686747,
+     "try_two_family_correct": 1.0,
+     "try_two_contains_true": 0.6112852664576802,
+     "mayan_routed_to_spanish": 0.0013986013986013986,
+     "useful_answer": 0.4111888111888112
+    }
+   },
+   "baseline_mfcc": {
+    "n": 715,
+    "accuracy": 0.044755244755244755,
+    "macro_f1": 0.0856760374832664,
+    "recall": {
+     "mam": 0.044755244755244755
+    },
+    "mayan_sent_to_spanish": 0.025174825174825177,
+    "spanish_vs_mayan_accuracy": 0.15664335664335666
+   },
+   "baseline_mms_lid_zero_shot": {
+    "n": 715,
+    "accuracy": 0.3902097902097902,
+    "macro_f1": 0.5613682092555332,
+    "recall": {
+     "mam": 0.3902097902097902
+    },
+    "mayan_sent_to_spanish": 0.046153846153846156,
+    "spanish_vs_mayan_accuracy": 0.9538461538461539
+   },
+   "baseline_always_spanish": {
+    "n": 715,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "recall": {
+     "mam": 0.0
+    },
+    "mayan_sent_to_spanish": 1.0,
+    "spanish_vs_mayan_accuracy": 0.0
+   },
+   "note": ""
+  },
+  "clean|tzijonel|cak": {
+   "bloom": {
+    "n": 1219,
+    "accuracy": 0.3970467596390484,
+    "macro_f1": 0.5684086905460951,
+    "recall": {
+     "cak": 0.3970467596390484
+    },
+    "mayan_sent_to_spanish": 0.08203445447087777,
+    "spanish_vs_mayan_accuracy": 0.7768662838392125,
+    "coverage": 0.13945857260049221,
+    "accuracy_on_answered": 0.36470588235294116,
+    "mayan_sent_to_spanish_answered": 0.3235294117647059,
+    "routing": {
+     "named_language": 0.13945857260049221,
+     "said_mayan_try_two": 0.579163248564397,
+     "said_not_sure": 0.28137817883511074,
+     "named_language_correct": 0.36470588235294116,
+     "try_two_family_correct": 1.0,
+     "try_two_contains_true": 0.9050991501416431,
+     "mayan_routed_to_spanish": 0.045118949958982774,
+     "useful_answer": 0.5750615258408531
+    }
+   },
+   "bloom+aug": {
+    "n": 1219,
+    "accuracy": 0.42329778506972926,
+    "macro_f1": 0.5948126801152738,
+    "recall": {
+     "cak": 0.42329778506972926
+    },
+    "mayan_sent_to_spanish": 0.07465135356849877,
+    "spanish_vs_mayan_accuracy": 0.8105004101722724,
+    "coverage": 0.22969647251845776,
+    "accuracy_on_answered": 0.44642857142857145,
+    "mayan_sent_to_spanish_answered": 0.20357142857142857,
+    "routing": {
+     "named_language": 0.22969647251845776,
+     "said_mayan_try_two": 0.4938474159146842,
+     "said_not_sure": 0.27645611156685806,
+     "named_language_correct": 0.44642857142857145,
+     "try_two_family_correct": 1.0,
+     "try_two_contains_true": 0.8621262458471761,
+     "mayan_routed_to_spanish": 0.04675963904840033,
+     "useful_answer": 0.5283018867924528
+    }
+   },
+   "bloom+aug+fleurs": {
+    "n": 1219,
+    "accuracy": 0.4249384741591468,
+    "macro_f1": 0.5964306275187105,
+    "recall": {
+     "cak": 0.4249384741591468
+    },
+    "mayan_sent_to_spanish": 0.07465135356849877,
+    "spanish_vs_mayan_accuracy": 0.8129614438063987,
+    "coverage": 0.2666119770303528,
+    "accuracy_on_answered": 0.48923076923076925,
+    "mayan_sent_to_spanish_answered": 0.18153846153846154,
+    "routing": {
+     "named_language": 0.2666119770303528,
+     "said_mayan_try_two": 0.4995898277276456,
+     "said_not_sure": 0.23379819524200163,
+     "named_language_correct": 0.48923076923076925,
+     "try_two_family_correct": 1.0,
+     "try_two_contains_true": 0.8341543513957307,
+     "mayan_routed_to_spanish": 0.04840032813781788,
+     "useful_answer": 0.5471698113207547
+    }
+   },
+   "baseline_mfcc": {
+    "n": 1219,
+    "accuracy": 0.033634126333059886,
+    "macro_f1": 0.06507936507936508,
+    "recall": {
+     "cak": 0.033634126333059886
+    },
+    "mayan_sent_to_spanish": 0.22723543888433143,
+    "spanish_vs_mayan_accuracy": 0.39950779327317476
+   },
+   "baseline_mms_lid_zero_shot": {
+    "n": 1219,
+    "accuracy": 0.49794913863822804,
+    "macro_f1": 0.664841182913472,
+    "recall": {
+     "cak": 0.49794913863822804
+    },
+    "mayan_sent_to_spanish": 0.29204265791632483,
+    "spanish_vs_mayan_accuracy": 0.7079573420836751
+   },
+   "baseline_always_spanish": {
+    "n": 1219,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "recall": {
+     "cak": 0.0
+    },
+    "mayan_sent_to_spanish": 1.0,
+    "spanish_vs_mayan_accuracy": 0.0
+   },
+   "note": ""
+  },
+  "test_noise|coerll|quc": {
+   "bloom": {
+    "n": 359,
+    "accuracy": 0.30362116991643456,
+    "macro_f1": 0.4658119658119658,
+    "recall": {
+     "quc": 0.30362116991643456
+    },
+    "mayan_sent_to_spanish": 0.036211699164345405,
+    "spanish_vs_mayan_accuracy": 0.9052924791086351,
+    "coverage": 0.027855153203342618,
+    "accuracy_on_answered": 0.7,
+    "mayan_sent_to_spanish_answered": 0.0,
+    "routing": {
+     "named_language": 0.027855153203342618,
+     "said_mayan_try_two": 0.4986072423398329,
+     "said_not_sure": 0.4735376044568245,
+     "named_language_correct": 0.7,
+     "try_two_family_correct": 1.0,
+     "try_two_contains_true": 0.5195530726256983,
+     "mayan_routed_to_spanish": 0.0,
+     "useful_answer": 0.2785515320334262
+    }
+   },
+   "bloom+aug": {
+    "n": 359,
+    "accuracy": 0.3147632311977716,
+    "macro_f1": 0.4788135593220339,
+    "recall": {
+     "quc": 0.3147632311977716
+    },
+    "mayan_sent_to_spanish": 0.025069637883008356,
+    "spanish_vs_mayan_accuracy": 0.9554317548746518,
+    "coverage": 0.0584958217270195,
+    "accuracy_on_answered": 0.5714285714285714,
+    "mayan_sent_to_spanish_answered": 0.0,
+    "routing": {
+     "named_language": 0.0584958217270195,
+     "said_mayan_try_two": 0.6601671309192201,
+     "said_not_sure": 0.28133704735376047,
+     "named_language_correct": 0.5714285714285714,
+     "try_two_family_correct": 1.0,
+     "try_two_contains_true": 0.5316455696202531,
+     "mayan_routed_to_spanish": 0.0,
+     "useful_answer": 0.38440111420612816
+    }
+   },
+   "bloom+aug+fleurs": {
+    "n": 359,
+    "accuracy": 0.3286908077994429,
+    "macro_f1": 0.4947589098532495,
+    "recall": {
+     "quc": 0.3286908077994429
+    },
+    "mayan_sent_to_spanish": 0.03064066852367688,
+    "spanish_vs_mayan_accuracy": 0.9526462395543176,
+    "coverage": 0.07520891364902507,
+    "accuracy_on_answered": 0.5185185185185185,
+    "mayan_sent_to_spanish_answered": 0.0,
+    "routing": {
+     "named_language": 0.07520891364902507,
+     "said_mayan_try_two": 0.6629526462395543,
+     "said_not_sure": 0.2618384401114206,
+     "named_language_correct": 0.5185185185185185,
+     "try_two_family_correct": 1.0,
+     "try_two_contains_true": 0.5588235294117647,
+     "mayan_routed_to_spanish": 0.0,
+     "useful_answer": 0.40947075208913647
+    }
+   }
+  },
+  "test_noise|fleurs|eng": {
+   "bloom": {
+    "n": 300,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "recall": {
+     "eng": 1.0
+    },
+    "spanish_vs_mayan_accuracy": 1.0,
+    "coverage": 1.0,
+    "accuracy_on_answered": 1.0,
+    "routing": {
+     "named_language": 1.0,
+     "said_mayan_try_two": 0.0,
+     "said_not_sure": 0.0,
+     "named_language_correct": 1.0
+    }
+   },
+   "bloom+aug": {
+    "n": 300,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "recall": {
+     "eng": 1.0
+    },
+    "spanish_vs_mayan_accuracy": 1.0,
+    "coverage": 1.0,
+    "accuracy_on_answered": 1.0,
+    "routing": {
+     "named_language": 1.0,
+     "said_mayan_try_two": 0.0,
+     "said_not_sure": 0.0,
+     "named_language_correct": 1.0
+    }
+   },
+   "bloom+aug+fleurs": {
+    "n": 300,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "recall": {
+     "eng": 1.0
+    },
+    "spanish_vs_mayan_accuracy": 1.0,
+    "coverage": 1.0,
+    "accuracy_on_answered": 1.0,
+    "routing": {
+     "named_language": 1.0,
+     "said_mayan_try_two": 0.0,
+     "said_not_sure": 0.0,
+     "named_language_correct": 1.0
+    }
+   }
+  },
+  "test_noise|fleurs|spa": {
+   "bloom": {
+    "n": 300,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "recall": {
+     "spa": 1.0
+    },
+    "spanish_sent_to_mayan": 0.0,
+    "spanish_vs_mayan_accuracy": 1.0,
+    "coverage": 0.5333333333333333,
+    "accuracy_on_answered": 1.0,
+    "routing": {
+     "named_language": 0.5333333333333333,
+     "said_mayan_try_two": 0.0,
+     "said_not_sure": 0.4666666666666667,
+     "named_language_correct": 1.0
+    }
+   },
+   "bloom+aug": {
+    "n": 300,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "recall": {
+     "spa": 1.0
+    },
+    "spanish_sent_to_mayan": 0.0,
+    "spanish_vs_mayan_accuracy": 1.0,
+    "coverage": 0.9566666666666667,
+    "accuracy_on_answered": 1.0,
+    "routing": {
+     "named_language": 0.9566666666666667,
+     "said_mayan_try_two": 0.0,
+     "said_not_sure": 0.043333333333333335,
+     "named_language_correct": 1.0
+    }
+   },
+   "bloom+aug+fleurs": {
+    "n": 300,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "recall": {
+     "spa": 1.0
+    },
+    "spanish_sent_to_mayan": 0.0,
+    "spanish_vs_mayan_accuracy": 1.0,
+    "coverage": 0.9966666666666667,
+    "accuracy_on_answered": 1.0,
+    "routing": {
+     "named_language": 0.9966666666666667,
+     "said_mayan_try_two": 0.0,
+     "said_not_sure": 0.0033333333333333335,
+     "named_language_correct": 1.0
+    }
+   }
+  },
+  "test_noise|google_es|spa": {
+   "bloom": {
+    "n": 280,
+    "accuracy": 0.9964285714285714,
+    "macro_f1": 0.998211091234347,
+    "recall": {
+     "spa": 0.9964285714285714
+    },
+    "spanish_sent_to_mayan": 0.0,
+    "spanish_vs_mayan_accuracy": 1.0,
+    "coverage": 0.8535714285714285,
+    "accuracy_on_answered": 1.0,
+    "routing": {
+     "named_language": 0.8535714285714285,
+     "said_mayan_try_two": 0.0,
+     "said_not_sure": 0.14642857142857144,
+     "named_language_correct": 1.0
+    }
+   },
+   "bloom+aug": {
+    "n": 280,
+    "accuracy": 0.9928571428571429,
+    "macro_f1": 0.996415770609319,
+    "recall": {
+     "spa": 0.9928571428571429
+    },
+    "spanish_sent_to_mayan": 0.007142857142857143,
+    "spanish_vs_mayan_accuracy": 0.9928571428571429,
+    "coverage": 0.8428571428571429,
+    "accuracy_on_answered": 1.0,
+    "routing": {
+     "named_language": 0.8428571428571429,
+     "said_mayan_try_two": 0.0,
+     "said_not_sure": 0.15714285714285714,
+     "named_language_correct": 1.0
+    }
+   },
+   "bloom+aug+fleurs": {
+    "n": 280,
+    "accuracy": 0.9964285714285714,
+    "macro_f1": 0.998211091234347,
+    "recall": {
+     "spa": 0.9964285714285714
+    },
+    "spanish_sent_to_mayan": 0.0035714285714285713,
+    "spanish_vs_mayan_accuracy": 0.9964285714285714,
+    "coverage": 0.9107142857142857,
+    "accuracy_on_answered": 1.0,
+    "routing": {
+     "named_language": 0.9107142857142857,
+     "said_mayan_try_two": 0.0,
+     "said_not_sure": 0.08928571428571429,
+     "named_language_correct": 1.0
+    }
+   }
+  },
+  "test_noise|librispeech|eng": {
+   "bloom": {
+    "n": 300,
+    "accuracy": 0.9933333333333333,
+    "macro_f1": 0.9966555183946488,
+    "recall": {
+     "eng": 0.9933333333333333
+    },
+    "spanish_vs_mayan_accuracy": 0.9966666666666667,
+    "coverage": 0.99,
+    "accuracy_on_answered": 1.0,
+    "routing": {
+     "named_language": 0.99,
+     "said_mayan_try_two": 0.0,
+     "said_not_sure": 0.01,
+     "named_language_correct": 1.0
+    }
+   },
+   "bloom+aug": {
+    "n": 300,
+    "accuracy": 0.9966666666666667,
+    "macro_f1": 0.998330550918197,
+    "recall": {
+     "eng": 0.9966666666666667
+    },
+    "spanish_vs_mayan_accuracy": 1.0,
+    "coverage": 0.9933333333333333,
+    "accuracy_on_answered": 1.0,
+    "routing": {
+     "named_language": 0.9933333333333333,
+     "said_mayan_try_two": 0.0,
+     "said_not_sure": 0.006666666666666667,
+     "named_language_correct": 1.0
+    }
+   },
+   "bloom+aug+fleurs": {
+    "n": 300,
+    "accuracy": 0.9966666666666667,
+    "macro_f1": 0.998330550918197,
+    "recall": {
+     "eng": 0.9966666666666667
+    },
+    "spanish_vs_mayan_accuracy": 1.0,
+    "coverage": 0.9933333333333333,
+    "accuracy_on_answered": 1.0,
+    "routing": {
+     "named_language": 0.9933333333333333,
+     "said_mayan_try_two": 0.0,
+     "said_not_sure": 0.006666666666666667,
+     "named_language_correct": 1.0
+    }
+   }
+  },
+  "test_noise|tachiwin|mam": {
+   "bloom": {
+    "n": 457,
+    "accuracy": 0.5317286652078774,
+    "macro_f1": 0.6942857142857143,
+    "recall": {
+     "mam": 0.5317286652078774
+    },
+    "mayan_sent_to_spanish": 0.0087527352297593,
+    "spanish_vs_mayan_accuracy": 0.986870897155361,
+    "coverage": 0.16411378555798686,
+    "accuracy_on_answered": 0.6666666666666666,
+    "mayan_sent_to_spanish_answered": 0.0,
+    "routing": {
+     "named_language": 0.16411378555798686,
+     "said_mayan_try_two": 0.6083150984682714,
+     "said_not_sure": 0.2275711159737418,
+     "named_language_correct": 0.6666666666666666,
+     "try_two_family_correct": 1.0,
+     "try_two_contains_true": 0.737410071942446,
+     "mayan_routed_to_spanish": 0.0,
+     "useful_answer": 0.5579868708971554
+    }
+   },
+   "bloom+aug": {
+    "n": 457,
+    "accuracy": 0.43544857768052514,
+    "macro_f1": 0.6067073170731707,
+    "recall": {
+     "mam": 0.43544857768052514
+    },
+    "mayan_sent_to_spanish": 0.010940919037199124,
+    "spanish_vs_mayan_accuracy": 0.975929978118162,
+    "coverage": 0.19037199124726478,
+    "accuracy_on_answered": 0.5862068965517241,
+    "mayan_sent_to_spanish_answered": 0.0,
+    "routing": {
+     "named_language": 0.19037199124726478,
+     "said_mayan_try_two": 0.4442013129102845,
+     "said_not_sure": 0.36542669584245074,
+     "named_language_correct": 0.5862068965517241,
+     "try_two_family_correct": 1.0,
+     "try_two_contains_true": 0.6600985221674877,
+     "mayan_routed_to_spanish": 0.0,
+     "useful_answer": 0.4048140043763676
+    }
+   },
+   "bloom+aug+fleurs": {
+    "n": 457,
+    "accuracy": 0.43982494529540483,
+    "macro_f1": 0.6109422492401215,
+    "recall": {
+     "mam": 0.43982494529540483
+    },
+    "mayan_sent_to_spanish": 0.0087527352297593,
+    "spanish_vs_mayan_accuracy": 0.9890590809628009,
+    "coverage": 0.24288840262582057,
+    "accuracy_on_answered": 0.5855855855855856,
+    "mayan_sent_to_spanish_answered": 0.0,
+    "routing": {
+     "named_language": 0.24288840262582057,
+     "said_mayan_try_two": 0.5054704595185996,
+     "said_not_sure": 0.25164113785557984,
+     "named_language_correct": 0.5855855855855856,
+     "try_two_family_correct": 1.0,
+     "try_two_contains_true": 0.6796536796536796,
+     "mayan_routed_to_spanish": 0.0,
+     "useful_answer": 0.48577680525164113
+    }
+   }
+  },
+  "test_noise|tzijonel|cak": {
+   "bloom": {
+    "n": 504,
+    "accuracy": 0.3630952380952381,
+    "macro_f1": 0.5327510917030568,
+    "recall": {
+     "cak": 0.3630952380952381
+    },
+    "mayan_sent_to_spanish": 0.09523809523809523,
+    "spanish_vs_mayan_accuracy": 0.7757936507936508,
+    "coverage": 0.1111111111111111,
+    "accuracy_on_answered": 0.125,
+    "mayan_sent_to_spanish_answered": 0.35714285714285715,
+    "routing": {
+     "named_language": 0.1111111111111111,
+     "said_mayan_try_two": 0.621031746031746,
+     "said_not_sure": 0.26785714285714285,
+     "named_language_correct": 0.125,
+     "try_two_family_correct": 1.0,
+     "try_two_contains_true": 0.8945686900958466,
+     "mayan_routed_to_spanish": 0.03968253968253968,
+     "useful_answer": 0.5694444444444444
+    }
+   },
+   "bloom+aug": {
+    "n": 504,
+    "accuracy": 0.38492063492063494,
+    "macro_f1": 0.5558739255014327,
+    "recall": {
+     "cak": 0.38492063492063494
+    },
+    "mayan_sent_to_spanish": 0.08333333333333333,
+    "spanish_vs_mayan_accuracy": 0.8313492063492064,
+    "coverage": 0.20436507936507936,
+    "accuracy_on_answered": 0.3592233009708738,
+    "mayan_sent_to_spanish_answered": 0.23300970873786409,
+    "routing": {
+     "named_language": 0.20436507936507936,
+     "said_mayan_try_two": 0.5376984126984127,
+     "said_not_sure": 0.25793650793650796,
+     "named_language_correct": 0.3592233009708738,
+     "try_two_family_correct": 1.0,
+     "try_two_contains_true": 0.8560885608856088,
+     "mayan_routed_to_spanish": 0.047619047619047616,
+     "useful_answer": 0.5337301587301587
+    }
+   },
+   "bloom+aug+fleurs": {
+    "n": 504,
+    "accuracy": 0.3869047619047619,
+    "macro_f1": 0.5579399141630901,
+    "recall": {
+     "cak": 0.3869047619047619
+    },
+    "mayan_sent_to_spanish": 0.0873015873015873,
+    "spanish_vs_mayan_accuracy": 0.8353174603174603,
+    "coverage": 0.24603174603174602,
+    "accuracy_on_answered": 0.3951612903225806,
+    "mayan_sent_to_spanish_answered": 0.20161290322580644,
+    "routing": {
+     "named_language": 0.24603174603174602,
+     "said_mayan_try_two": 0.5297619047619048,
+     "said_not_sure": 0.22420634920634921,
+     "named_language_correct": 0.3951612903225806,
+     "try_two_family_correct": 1.0,
+     "try_two_contains_true": 0.846441947565543,
+     "mayan_routed_to_spanish": 0.0496031746031746,
+     "useful_answer": 0.5456349206349206
+    }
+   }
+  },
+  "test_reverb|coerll|quc": {
+   "bloom": {
+    "n": 359,
+    "accuracy": 0.20055710306406685,
+    "macro_f1": 0.33410672853828305,
+    "recall": {
+     "quc": 0.20055710306406685
+    },
+    "mayan_sent_to_spanish": 0.027855153203342618,
+    "spanish_vs_mayan_accuracy": 0.8885793871866295,
+    "coverage": 0.002785515320334262,
+    "accuracy_on_answered": 0.0,
+    "mayan_sent_to_spanish_answered": 0.0,
+    "routing": {
+     "named_language": 0.002785515320334262,
+     "said_mayan_try_two": 0.42896935933147634,
+     "said_not_sure": 0.5682451253481894,
+     "named_language_correct": 0.0,
+     "try_two_family_correct": 1.0,
+     "try_two_contains_true": 0.5714285714285714,
+     "mayan_routed_to_spanish": 0.0,
+     "useful_answer": 0.24512534818941503
+    }
+   },
+   "bloom+aug": {
+    "n": 359,
+    "accuracy": 0.21727019498607242,
+    "macro_f1": 0.35697940503432496,
+    "recall": {
+     "quc": 0.21727019498607242
+    },
+    "mayan_sent_to_spanish": 0.022284122562674095,
+    "spanish_vs_mayan_accuracy": 0.9303621169916435,
+    "coverage": 0.033426183844011144,
+    "accuracy_on_answered": 0.3333333333333333,
+    "mayan_sent_to_spanish_answered": 0.0,
+    "routing": {
+     "named_language": 0.033426183844011144,
+     "said_mayan_try_two": 0.6072423398328691,
+     "said_not_sure": 0.3593314763231198,
+     "named_language_correct": 0.3333333333333333,
+     "try_two_family_correct": 1.0,
+     "try_two_contains_true": 0.42660550458715596,
+     "mayan_routed_to_spanish": 0.0,
+     "useful_answer": 0.27019498607242337
+    }
+   },
+   "bloom+aug+fleurs": {
+    "n": 359,
+    "accuracy": 0.23119777158774374,
+    "macro_f1": 0.3755656108597285,
+    "recall": {
+     "quc": 0.23119777158774374
+    },
+    "mayan_sent_to_spanish": 0.022284122562674095,
+    "spanish_vs_mayan_accuracy": 0.947075208913649,
+    "coverage": 0.04735376044568245,
+    "accuracy_on_answered": 0.35294117647058826,
+    "mayan_sent_to_spanish_answered": 0.0,
+    "routing": {
+     "named_language": 0.04735376044568245,
+     "said_mayan_try_two": 0.6267409470752089,
+     "said_not_sure": 0.32590529247910865,
+     "named_language_correct": 0.35294117647058826,
+     "try_two_family_correct": 1.0,
+     "try_two_contains_true": 0.4533333333333333,
+     "mayan_routed_to_spanish": 0.0,
+     "useful_answer": 0.3008356545961003
+    }
+   }
+  },
+  "test_reverb|fleurs|eng": {
+   "bloom": {
+    "n": 300,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "recall": {
+     "eng": 1.0
+    },
+    "spanish_vs_mayan_accuracy": 1.0,
+    "coverage": 0.9966666666666667,
+    "accuracy_on_answered": 1.0,
+    "routing": {
+     "named_language": 0.9966666666666667,
+     "said_mayan_try_two": 0.0,
+     "said_not_sure": 0.0033333333333333335,
+     "named_language_correct": 1.0
+    }
+   },
+   "bloom+aug": {
+    "n": 300,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "recall": {
+     "eng": 1.0
+    },
+    "spanish_vs_mayan_accuracy": 1.0,
+    "coverage": 0.9966666666666667,
+    "accuracy_on_answered": 1.0,
+    "routing": {
+     "named_language": 0.9966666666666667,
+     "said_mayan_try_two": 0.0,
+     "said_not_sure": 0.0033333333333333335,
+     "named_language_correct": 1.0
+    }
+   },
+   "bloom+aug+fleurs": {
+    "n": 300,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "recall": {
+     "eng": 1.0
+    },
+    "spanish_vs_mayan_accuracy": 1.0,
+    "coverage": 0.9966666666666667,
+    "accuracy_on_answered": 1.0,
+    "routing": {
+     "named_language": 0.9966666666666667,
+     "said_mayan_try_two": 0.0,
+     "said_not_sure": 0.0033333333333333335,
+     "named_language_correct": 1.0
+    }
+   }
+  },
+  "test_reverb|fleurs|spa": {
+   "bloom": {
+    "n": 300,
+    "accuracy": 0.9966666666666667,
+    "macro_f1": 0.998330550918197,
+    "recall": {
+     "spa": 0.9966666666666667
+    },
+    "spanish_sent_to_mayan": 0.0033333333333333335,
+    "spanish_vs_mayan_accuracy": 0.9966666666666667,
+    "coverage": 0.37,
+    "accuracy_on_answered": 1.0,
+    "routing": {
+     "named_language": 0.37,
+     "said_mayan_try_two": 0.0,
+     "said_not_sure": 0.63,
+     "named_language_correct": 1.0
+    }
+   },
+   "bloom+aug": {
+    "n": 300,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "recall": {
+     "spa": 1.0
+    },
+    "spanish_sent_to_mayan": 0.0,
+    "spanish_vs_mayan_accuracy": 1.0,
+    "coverage": 0.8933333333333333,
+    "accuracy_on_answered": 1.0,
+    "routing": {
+     "named_language": 0.8933333333333333,
+     "said_mayan_try_two": 0.0,
+     "said_not_sure": 0.10666666666666667,
+     "named_language_correct": 1.0
+    }
+   },
+   "bloom+aug+fleurs": {
+    "n": 300,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "recall": {
+     "spa": 1.0
+    },
+    "spanish_sent_to_mayan": 0.0,
+    "spanish_vs_mayan_accuracy": 1.0,
+    "coverage": 0.9833333333333333,
+    "accuracy_on_answered": 1.0,
+    "routing": {
+     "named_language": 0.9833333333333333,
+     "said_mayan_try_two": 0.0,
+     "said_not_sure": 0.016666666666666666,
+     "named_language_correct": 1.0
+    }
+   }
+  },
+  "test_reverb|google_es|spa": {
+   "bloom": {
+    "n": 280,
+    "accuracy": 0.9785714285714285,
+    "macro_f1": 0.9891696750902527,
+    "recall": {
+     "spa": 0.9785714285714285
+    },
+    "spanish_sent_to_mayan": 0.017857142857142856,
+    "spanish_vs_mayan_accuracy": 0.9821428571428571,
+    "coverage": 0.4607142857142857,
+    "accuracy_on_answered": 1.0,
+    "routing": {
+     "named_language": 0.4607142857142857,
+     "said_mayan_try_two": 0.0,
+     "said_not_sure": 0.5392857142857143,
+     "named_language_correct": 1.0
+    }
+   },
+   "bloom+aug": {
+    "n": 280,
+    "accuracy": 0.9642857142857143,
+    "macro_f1": 0.9818181818181818,
+    "recall": {
+     "spa": 0.9642857142857143
+    },
+    "spanish_sent_to_mayan": 0.03214285714285714,
+    "spanish_vs_mayan_accuracy": 0.9678571428571429,
+    "coverage": 0.5678571428571428,
+    "accuracy_on_answered": 1.0,
+    "routing": {
+     "named_language": 0.5678571428571428,
+     "said_mayan_try_two": 0.0,
+     "said_not_sure": 0.43214285714285716,
+     "named_language_correct": 1.0
+    }
+   },
+   "bloom+aug+fleurs": {
+    "n": 280,
+    "accuracy": 0.9714285714285714,
+    "macro_f1": 0.9855072463768116,
+    "recall": {
+     "spa": 0.9714285714285714
+    },
+    "spanish_sent_to_mayan": 0.025,
+    "spanish_vs_mayan_accuracy": 0.975,
+    "coverage": 0.6714285714285714,
+    "accuracy_on_answered": 1.0,
+    "routing": {
+     "named_language": 0.6714285714285714,
+     "said_mayan_try_two": 0.0,
+     "said_not_sure": 0.32857142857142857,
+     "named_language_correct": 1.0
+    }
+   }
+  },
+  "test_reverb|librispeech|eng": {
+   "bloom": {
+    "n": 300,
+    "accuracy": 0.9966666666666667,
+    "macro_f1": 0.998330550918197,
+    "recall": {
+     "eng": 0.9966666666666667
+    },
+    "spanish_vs_mayan_accuracy": 1.0,
+    "coverage": 0.9933333333333333,
+    "accuracy_on_answered": 1.0,
+    "routing": {
+     "named_language": 0.9933333333333333,
+     "said_mayan_try_two": 0.0,
+     "said_not_sure": 0.006666666666666667,
+     "named_language_correct": 1.0
+    }
+   },
+   "bloom+aug": {
+    "n": 300,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "recall": {
+     "eng": 1.0
+    },
+    "spanish_vs_mayan_accuracy": 1.0,
+    "coverage": 0.9933333333333333,
+    "accuracy_on_answered": 1.0,
+    "routing": {
+     "named_language": 0.9933333333333333,
+     "said_mayan_try_two": 0.0,
+     "said_not_sure": 0.006666666666666667,
+     "named_language_correct": 1.0
+    }
+   },
+   "bloom+aug+fleurs": {
+    "n": 300,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "recall": {
+     "eng": 1.0
+    },
+    "spanish_vs_mayan_accuracy": 1.0,
+    "coverage": 0.9933333333333333,
+    "accuracy_on_answered": 1.0,
+    "routing": {
+     "named_language": 0.9933333333333333,
+     "said_mayan_try_two": 0.0,
+     "said_not_sure": 0.006666666666666667,
+     "named_language_correct": 1.0
+    }
+   }
+  },
+  "test_reverb|tachiwin|mam": {
+   "bloom": {
+    "n": 457,
+    "accuracy": 0.7242888402625821,
+    "macro_f1": 0.8401015228426396,
+    "recall": {
+     "mam": 0.7242888402625821
+    },
+    "mayan_sent_to_spanish": 0.010940919037199124,
+    "spanish_vs_mayan_accuracy": 0.9846827133479212,
+    "coverage": 0.25601750547045954,
+    "accuracy_on_answered": 0.9487179487179487,
+    "mayan_sent_to_spanish_answered": 0.0,
+    "routing": {
+     "named_language": 0.25601750547045954,
+     "said_mayan_try_two": 0.6083150984682714,
+     "said_not_sure": 0.13566739606126915,
+     "named_language_correct": 0.9487179487179487,
+     "try_two_family_correct": 1.0,
+     "try_two_contains_true": 0.9028776978417267,
+     "mayan_routed_to_spanish": 0.0,
+     "useful_answer": 0.7921225382932167
+    }
+   },
+   "bloom+aug": {
+    "n": 457,
+    "accuracy": 0.474835886214442,
+    "macro_f1": 0.6439169139465876,
+    "recall": {
+     "mam": 0.474835886214442
+    },
+    "mayan_sent_to_spanish": 0.0087527352297593,
+    "spanish_vs_mayan_accuracy": 0.9890590809628009,
+    "coverage": 0.1772428884026258,
+    "accuracy_on_answered": 0.6296296296296297,
+    "mayan_sent_to_spanish_answered": 0.0,
+    "routing": {
+     "named_language": 0.1772428884026258,
+     "said_mayan_try_two": 0.6520787746170679,
+     "said_not_sure": 0.17067833698030635,
+     "named_language_correct": 0.6296296296296297,
+     "try_two_family_correct": 1.0,
+     "try_two_contains_true": 0.7516778523489933,
+     "mayan_routed_to_spanish": 0.0,
+     "useful_answer": 0.6017505470459519
+    }
+   },
+   "bloom+aug+fleurs": {
+    "n": 457,
+    "accuracy": 0.4814004376367615,
+    "macro_f1": 0.6499261447562777,
+    "recall": {
+     "mam": 0.4814004376367615
+    },
+    "mayan_sent_to_spanish": 0.0087527352297593,
+    "spanish_vs_mayan_accuracy": 0.9912472647702407,
+    "coverage": 0.22319474835886213,
+    "accuracy_on_answered": 0.6176470588235294,
+    "mayan_sent_to_spanish_answered": 0.0,
+    "routing": {
+     "named_language": 0.22319474835886213,
+     "said_mayan_try_two": 0.6739606126914661,
+     "said_not_sure": 0.10284463894967177,
+     "named_language_correct": 0.6176470588235294,
+     "try_two_family_correct": 1.0,
+     "try_two_contains_true": 0.737012987012987,
+     "mayan_routed_to_spanish": 0.0,
+     "useful_answer": 0.6345733041575492
+    }
+   }
+  },
+  "test_reverb|tzijonel|cak": {
+   "bloom": {
+    "n": 504,
+    "accuracy": 0.26587301587301587,
+    "macro_f1": 0.4200626959247649,
+    "recall": {
+     "cak": 0.26587301587301587
+    },
+    "mayan_sent_to_spanish": 0.10317460317460317,
+    "spanish_vs_mayan_accuracy": 0.7638888888888888,
+    "coverage": 0.09325396825396826,
+    "accuracy_on_answered": 0.14893617021276595,
+    "mayan_sent_to_spanish_answered": 0.3829787234042553,
+    "routing": {
+     "named_language": 0.09325396825396826,
+     "said_mayan_try_two": 0.5575396825396826,
+     "said_not_sure": 0.3492063492063492,
+     "named_language_correct": 0.14893617021276595,
+     "try_two_family_correct": 1.0,
+     "try_two_contains_true": 0.797153024911032,
+     "mayan_routed_to_spanish": 0.03571428571428571,
+     "useful_answer": 0.4583333333333333
+    }
+   },
+   "bloom+aug": {
+    "n": 504,
+    "accuracy": 0.31746031746031744,
+    "macro_f1": 0.4819277108433735,
+    "recall": {
+     "cak": 0.31746031746031744
+    },
+    "mayan_sent_to_spanish": 0.09325396825396826,
+    "spanish_vs_mayan_accuracy": 0.7876984126984127,
+    "coverage": 0.1865079365079365,
+    "accuracy_on_answered": 0.3191489361702128,
+    "mayan_sent_to_spanish_answered": 0.23404255319148937,
+    "routing": {
+     "named_language": 0.1865079365079365,
+     "said_mayan_try_two": 0.5059523809523809,
+     "said_not_sure": 0.30753968253968256,
+     "named_language_correct": 0.3191489361702128,
+     "try_two_family_correct": 1.0,
+     "try_two_contains_true": 0.8117647058823529,
+     "mayan_routed_to_spanish": 0.04365079365079365,
+     "useful_answer": 0.47023809523809523
+    }
+   },
+   "bloom+aug+fleurs": {
+    "n": 504,
+    "accuracy": 0.3194444444444444,
+    "macro_f1": 0.4842105263157895,
+    "recall": {
+     "cak": 0.3194444444444444
+    },
+    "mayan_sent_to_spanish": 0.08928571428571429,
+    "spanish_vs_mayan_accuracy": 0.7976190476190477,
+    "coverage": 0.19246031746031747,
+    "accuracy_on_answered": 0.3402061855670103,
+    "mayan_sent_to_spanish_answered": 0.23711340206185566,
+    "routing": {
+     "named_language": 0.19246031746031747,
+     "said_mayan_try_two": 0.5357142857142857,
+     "said_not_sure": 0.2718253968253968,
+     "named_language_correct": 0.3402061855670103,
+     "try_two_family_correct": 1.0,
+     "try_two_contains_true": 0.7851851851851852,
+     "mayan_routed_to_spanish": 0.04563492063492063,
+     "useful_answer": 0.4861111111111111
+    }
+   }
+  },
+  "test_phone|coerll|quc": {
+   "bloom": {
+    "n": 359,
+    "accuracy": 0.06128133704735376,
+    "macro_f1": 0.11548556430446194,
+    "recall": {
+     "quc": 0.06128133704735376
+    },
+    "mayan_sent_to_spanish": 0.09749303621169916,
+    "spanish_vs_mayan_accuracy": 0.871866295264624,
+    "coverage": 0.025069637883008356,
+    "accuracy_on_answered": 0.0,
+    "mayan_sent_to_spanish_answered": 0.0,
+    "routing": {
+     "named_language": 0.025069637883008356,
+     "said_mayan_try_two": 0.4958217270194986,
+     "said_not_sure": 0.479108635097493,
+     "named_language_correct": 0.0,
+     "try_two_family_correct": 1.0,
+     "try_two_contains_true": 0.2303370786516854,
+     "mayan_routed_to_spanish": 0.0,
+     "useful_answer": 0.11420612813370473
+    }
+   },
+   "bloom+aug": {
+    "n": 359,
+    "accuracy": 0.12813370473537605,
+    "macro_f1": 0.2271604938271605,
+    "recall": {
+     "quc": 0.12813370473537605
+    },
+    "mayan_sent_to_spanish": 0.033426183844011144,
+    "spanish_vs_mayan_accuracy": 0.958217270194986,
+    "coverage": 0.07799442896935933,
+    "accuracy_on_answered": 0.07142857142857142,
+    "mayan_sent_to_spanish_answered": 0.0,
+    "routing": {
+     "named_language": 0.07799442896935933,
+     "said_mayan_try_two": 0.6824512534818942,
+     "said_not_sure": 0.2395543175487465,
+     "named_language_correct": 0.07142857142857142,
+     "try_two_family_correct": 1.0,
+     "try_two_contains_true": 0.3224489795918367,
+     "mayan_routed_to_spanish": 0.0,
+     "useful_answer": 0.22562674094707522
+    }
+   },
+   "bloom+aug+fleurs": {
+    "n": 359,
+    "accuracy": 0.1309192200557103,
+    "macro_f1": 0.2315270935960591,
+    "recall": {
+     "quc": 0.1309192200557103
+    },
+    "mayan_sent_to_spanish": 0.033426183844011144,
+    "spanish_vs_mayan_accuracy": 0.958217270194986,
+    "coverage": 0.09749303621169916,
+    "accuracy_on_answered": 0.11428571428571428,
+    "mayan_sent_to_spanish_answered": 0.0,
+    "routing": {
+     "named_language": 0.09749303621169916,
+     "said_mayan_try_two": 0.6880222841225627,
+     "said_not_sure": 0.21448467966573817,
+     "named_language_correct": 0.11428571428571428,
+     "try_two_family_correct": 1.0,
+     "try_two_contains_true": 0.32388663967611336,
+     "mayan_routed_to_spanish": 0.0,
+     "useful_answer": 0.233983286908078
+    }
+   }
+  },
+  "test_phone|fleurs|eng": {
+   "bloom": {
+    "n": 300,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "recall": {
+     "eng": 1.0
+    },
+    "spanish_vs_mayan_accuracy": 1.0,
+    "coverage": 1.0,
+    "accuracy_on_answered": 1.0,
+    "routing": {
+     "named_language": 1.0,
+     "said_mayan_try_two": 0.0,
+     "said_not_sure": 0.0,
+     "named_language_correct": 1.0
+    }
+   },
+   "bloom+aug": {
+    "n": 300,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "recall": {
+     "eng": 1.0
+    },
+    "spanish_vs_mayan_accuracy": 1.0,
+    "coverage": 1.0,
+    "accuracy_on_answered": 1.0,
+    "routing": {
+     "named_language": 1.0,
+     "said_mayan_try_two": 0.0,
+     "said_not_sure": 0.0,
+     "named_language_correct": 1.0
+    }
+   },
+   "bloom+aug+fleurs": {
+    "n": 300,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "recall": {
+     "eng": 1.0
+    },
+    "spanish_vs_mayan_accuracy": 1.0,
+    "coverage": 1.0,
+    "accuracy_on_answered": 1.0,
+    "routing": {
+     "named_language": 1.0,
+     "said_mayan_try_two": 0.0,
+     "said_not_sure": 0.0,
+     "named_language_correct": 1.0
+    }
+   }
+  },
+  "test_phone|fleurs|spa": {
+   "bloom": {
+    "n": 300,
+    "accuracy": 0.9966666666666667,
+    "macro_f1": 0.998330550918197,
+    "recall": {
+     "spa": 0.9966666666666667
+    },
+    "spanish_sent_to_mayan": 0.0033333333333333335,
+    "spanish_vs_mayan_accuracy": 0.9966666666666667,
+    "coverage": 0.75,
+    "accuracy_on_answered": 1.0,
+    "routing": {
+     "named_language": 0.75,
+     "said_mayan_try_two": 0.0,
+     "said_not_sure": 0.25,
+     "named_language_correct": 1.0
+    }
+   },
+   "bloom+aug": {
+    "n": 300,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "recall": {
+     "spa": 1.0
+    },
+    "spanish_sent_to_mayan": 0.0,
+    "spanish_vs_mayan_accuracy": 1.0,
+    "coverage": 0.9166666666666666,
+    "accuracy_on_answered": 1.0,
+    "routing": {
+     "named_language": 0.9166666666666666,
+     "said_mayan_try_two": 0.0,
+     "said_not_sure": 0.08333333333333333,
+     "named_language_correct": 1.0
+    }
+   },
+   "bloom+aug+fleurs": {
+    "n": 300,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "recall": {
+     "spa": 1.0
+    },
+    "spanish_sent_to_mayan": 0.0,
+    "spanish_vs_mayan_accuracy": 1.0,
+    "coverage": 0.9933333333333333,
+    "accuracy_on_answered": 1.0,
+    "routing": {
+     "named_language": 0.9933333333333333,
+     "said_mayan_try_two": 0.0,
+     "said_not_sure": 0.006666666666666667,
+     "named_language_correct": 1.0
+    }
+   }
+  },
+  "test_phone|google_es|spa": {
+   "bloom": {
+    "n": 280,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "recall": {
+     "spa": 1.0
+    },
+    "spanish_sent_to_mayan": 0.0,
+    "spanish_vs_mayan_accuracy": 1.0,
+    "coverage": 0.9035714285714286,
+    "accuracy_on_answered": 1.0,
+    "routing": {
+     "named_language": 0.9035714285714286,
+     "said_mayan_try_two": 0.0,
+     "said_not_sure": 0.09642857142857143,
+     "named_language_correct": 1.0
+    }
+   },
+   "bloom+aug": {
+    "n": 280,
+    "accuracy": 0.9964285714285714,
+    "macro_f1": 0.998211091234347,
+    "recall": {
+     "spa": 0.9964285714285714
+    },
+    "spanish_sent_to_mayan": 0.0035714285714285713,
+    "spanish_vs_mayan_accuracy": 0.9964285714285714,
+    "coverage": 0.8357142857142857,
+    "accuracy_on_answered": 1.0,
+    "routing": {
+     "named_language": 0.8357142857142857,
+     "said_mayan_try_two": 0.0,
+     "said_not_sure": 0.16428571428571428,
+     "named_language_correct": 1.0
+    }
+   },
+   "bloom+aug+fleurs": {
+    "n": 280,
+    "accuracy": 0.9964285714285714,
+    "macro_f1": 0.998211091234347,
+    "recall": {
+     "spa": 0.9964285714285714
+    },
+    "spanish_sent_to_mayan": 0.0035714285714285713,
+    "spanish_vs_mayan_accuracy": 0.9964285714285714,
+    "coverage": 0.9214285714285714,
+    "accuracy_on_answered": 1.0,
+    "routing": {
+     "named_language": 0.9214285714285714,
+     "said_mayan_try_two": 0.0,
+     "said_not_sure": 0.07857142857142857,
+     "named_language_correct": 1.0
+    }
+   }
+  },
+  "test_phone|librispeech|eng": {
+   "bloom": {
+    "n": 300,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "recall": {
+     "eng": 1.0
+    },
+    "spanish_vs_mayan_accuracy": 1.0,
+    "coverage": 0.9966666666666667,
+    "accuracy_on_answered": 1.0,
+    "routing": {
+     "named_language": 0.9966666666666667,
+     "said_mayan_try_two": 0.0,
+     "said_not_sure": 0.0033333333333333335,
+     "named_language_correct": 1.0
+    }
+   },
+   "bloom+aug": {
+    "n": 300,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "recall": {
+     "eng": 1.0
+    },
+    "spanish_vs_mayan_accuracy": 1.0,
+    "coverage": 0.9966666666666667,
+    "accuracy_on_answered": 1.0,
+    "routing": {
+     "named_language": 0.9966666666666667,
+     "said_mayan_try_two": 0.0,
+     "said_not_sure": 0.0033333333333333335,
+     "named_language_correct": 1.0
+    }
+   },
+   "bloom+aug+fleurs": {
+    "n": 300,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "recall": {
+     "eng": 1.0
+    },
+    "spanish_vs_mayan_accuracy": 1.0,
+    "coverage": 0.9966666666666667,
+    "accuracy_on_answered": 1.0,
+    "routing": {
+     "named_language": 0.9966666666666667,
+     "said_mayan_try_two": 0.0,
+     "said_not_sure": 0.0033333333333333335,
+     "named_language_correct": 1.0
+    }
+   }
+  },
+  "test_phone|tachiwin|mam": {
+   "bloom": {
+    "n": 457,
+    "accuracy": 0.5711159737417943,
+    "macro_f1": 0.7270194986072424,
+    "recall": {
+     "mam": 0.5711159737417943
+    },
+    "mayan_sent_to_spanish": 0.015317286652078774,
+    "spanish_vs_mayan_accuracy": 0.9824945295404814,
+    "coverage": 0.17286652078774617,
+    "accuracy_on_answered": 0.6455696202531646,
+    "mayan_sent_to_spanish_answered": 0.012658227848101266,
+    "routing": {
+     "named_language": 0.17286652078774617,
+     "said_mayan_try_two": 0.5951859956236324,
+     "said_not_sure": 0.23194748358862144,
+     "named_language_correct": 0.6455696202531646,
+     "try_two_family_correct": 1.0,
+     "try_two_contains_true": 0.8235294117647058,
+     "mayan_routed_to_spanish": 0.002188183807439825,
+     "useful_answer": 0.6017505470459519
+    }
+   },
+   "bloom+aug": {
+    "n": 457,
+    "accuracy": 0.49452954048140046,
+    "macro_f1": 0.6617862371888726,
+    "recall": {
+     "mam": 0.49452954048140046
+    },
+    "mayan_sent_to_spanish": 0.006564551422319475,
+    "spanish_vs_mayan_accuracy": 0.9824945295404814,
+    "coverage": 0.1487964989059081,
+    "accuracy_on_answered": 0.6029411764705882,
+    "mayan_sent_to_spanish_answered": 0.0,
+    "routing": {
+     "named_language": 0.1487964989059081,
+     "said_mayan_try_two": 0.40919037199124725,
+     "said_not_sure": 0.4420131291028446,
+     "named_language_correct": 0.6029411764705882,
+     "try_two_family_correct": 1.0,
+     "try_two_contains_true": 0.6737967914438503,
+     "mayan_routed_to_spanish": 0.0,
+     "useful_answer": 0.36542669584245074
+    }
+   },
+   "bloom+aug+fleurs": {
+    "n": 457,
+    "accuracy": 0.49452954048140046,
+    "macro_f1": 0.6617862371888726,
+    "recall": {
+     "mam": 0.49452954048140046
+    },
+    "mayan_sent_to_spanish": 0.006564551422319475,
+    "spanish_vs_mayan_accuracy": 0.9846827133479212,
+    "coverage": 0.1925601750547046,
+    "accuracy_on_answered": 0.625,
+    "mayan_sent_to_spanish_answered": 0.0,
+    "routing": {
+     "named_language": 0.1925601750547046,
+     "said_mayan_try_two": 0.4682713347921225,
+     "said_not_sure": 0.33916849015317285,
+     "named_language_correct": 0.625,
+     "try_two_family_correct": 1.0,
+     "try_two_contains_true": 0.6915887850467289,
+     "mayan_routed_to_spanish": 0.0,
+     "useful_answer": 0.4442013129102845
+    }
+   }
+  },
+  "test_phone|tzijonel|cak": {
+   "bloom": {
+    "n": 504,
+    "accuracy": 0.46825396825396826,
+    "macro_f1": 0.6378378378378379,
+    "recall": {
+     "cak": 0.46825396825396826
+    },
+    "mayan_sent_to_spanish": 0.10912698412698413,
+    "spanish_vs_mayan_accuracy": 0.7698412698412699,
+    "coverage": 0.1626984126984127,
+    "accuracy_on_answered": 0.43902439024390244,
+    "mayan_sent_to_spanish_answered": 0.35365853658536583,
+    "routing": {
+     "named_language": 0.1626984126984127,
+     "said_mayan_try_two": 0.5674603174603174,
+     "said_not_sure": 0.2698412698412698,
+     "named_language_correct": 0.43902439024390244,
+     "try_two_family_correct": 1.0,
+     "try_two_contains_true": 0.8636363636363636,
+     "mayan_routed_to_spanish": 0.057539682539682536,
+     "useful_answer": 0.5615079365079365
+    }
+   },
+   "bloom+aug": {
+    "n": 504,
+    "accuracy": 0.43452380952380953,
+    "macro_f1": 0.6058091286307054,
+    "recall": {
+     "cak": 0.43452380952380953
+    },
+    "mayan_sent_to_spanish": 0.0873015873015873,
+    "spanish_vs_mayan_accuracy": 0.8234126984126984,
+    "coverage": 0.24206349206349206,
+    "accuracy_on_answered": 0.5245901639344263,
+    "mayan_sent_to_spanish_answered": 0.22950819672131148,
+    "routing": {
+     "named_language": 0.24206349206349206,
+     "said_mayan_try_two": 0.5396825396825397,
+     "said_not_sure": 0.21825396825396826,
+     "named_language_correct": 0.5245901639344263,
+     "try_two_family_correct": 1.0,
+     "try_two_contains_true": 0.8455882352941176,
+     "mayan_routed_to_spanish": 0.05555555555555555,
+     "useful_answer": 0.5833333333333334
+    }
+   },
+   "bloom+aug+fleurs": {
+    "n": 504,
+    "accuracy": 0.4365079365079365,
+    "macro_f1": 0.6077348066298343,
+    "recall": {
+     "cak": 0.4365079365079365
+    },
+    "mayan_sent_to_spanish": 0.09126984126984126,
+    "spanish_vs_mayan_accuracy": 0.8214285714285714,
+    "coverage": 0.27380952380952384,
+    "accuracy_on_answered": 0.5579710144927537,
+    "mayan_sent_to_spanish_answered": 0.1956521739130435,
+    "routing": {
+     "named_language": 0.27380952380952384,
+     "said_mayan_try_two": 0.5277777777777778,
+     "said_not_sure": 0.1984126984126984,
+     "named_language_correct": 0.5579710144927537,
+     "try_two_family_correct": 1.0,
+     "try_two_contains_true": 0.8308270676691729,
+     "mayan_routed_to_spanish": 0.05357142857142857,
+     "useful_answer": 0.5912698412698413
+    }
+   }
+  }
+ },
+ "E5_adaptation": {
+  "0": {
+   "coerll": {
+    "accuracy": 0.19771863117870722,
+    "named_language_correct": 0.23076923076923078,
+    "mayan_routed_to_spanish": 0.0,
+    "useful_answer": 0.26996197718631176
+   },
+   "tachiwin": {
+    "accuracy": 0.4135135135135135,
+    "named_language_correct": 0.6419753086419753,
+    "mayan_routed_to_spanish": 0.002702702702702703,
+    "useful_answer": 0.4297297297297297
+   },
+   "tzijonel": {
+    "accuracy": 0.4220032840722496,
+    "named_language_correct": 0.4588235294117647,
+    "mayan_routed_to_spanish": 0.05090311986863711,
+    "useful_answer": 0.5566502463054187
+   },
+   "fleurs": {
+    "accuracy": 1.0,
+    "named_language_correct": 1.0
+   },
+   "google_es": {
+    "accuracy": 1.0,
+    "named_language_correct": 1.0
+   },
+   "librispeech": {
+    "accuracy": 1.0,
+    "named_language_correct": 1.0
+   },
+   "adapt_clips": 0.0
+  },
+  "1": {
+   "coerll": {
+    "accuracy": 0.4423320659062104,
+    "named_language_correct": 0.7956812393887945,
+    "mayan_routed_to_spanish": 0.0,
+    "useful_answer": 0.49429657794676807
+   },
+   "tachiwin": {
+    "accuracy": 0.7351351351351351,
+    "named_language_correct": 0.9132171387073349,
+    "mayan_routed_to_spanish": 0.002702702702702703,
+    "useful_answer": 0.7837837837837838
+   },
+   "tzijonel": {
+    "accuracy": 0.5145046524356869,
+    "named_language_correct": 0.6086744639376218,
+    "mayan_routed_to_spanish": 0.03776683087027915,
+    "useful_answer": 0.638752052545156
+   },
+   "fleurs": {
+    "accuracy": 1.0,
+    "named_language_correct": 1.0
+   },
+   "google_es": {
+    "accuracy": 1.0,
+    "named_language_correct": 1.0
+   },
+   "librispeech": {
+    "accuracy": 1.0,
+    "named_language_correct": 1.0
+   },
+   "adapt_clips": 59.666666666666664
+  },
+  "2": {
+   "coerll": {
+    "accuracy": 0.5449936628643853,
+    "named_language_correct": 0.9114664082687338,
+    "mayan_routed_to_spanish": 0.0,
+    "useful_answer": 0.5564005069708492
+   },
+   "tachiwin": {
+    "accuracy": 0.7072072072072072,
+    "named_language_correct": 0.9018309656408846,
+    "mayan_routed_to_spanish": 0.002702702702702703,
+    "useful_answer": 0.7612612612612613
+   },
+   "tzijonel": {
+    "accuracy": 0.5856595511767925,
+    "named_language_correct": 0.7660406771404213,
+    "mayan_routed_to_spanish": 0.02079912424740011,
+    "useful_answer": 0.6885604816639299
+   },
+   "fleurs": {
+    "accuracy": 1.0,
+    "named_language_correct": 1.0
+   },
+   "google_es": {
+    "accuracy": 1.0,
+    "named_language_correct": 1.0
+   },
+   "librispeech": {
+    "accuracy": 1.0,
+    "named_language_correct": 1.0
+   },
+   "adapt_clips": 124.0
+  },
+  "5": {
+   "coerll": {
+    "accuracy": 0.697084917617237,
+    "named_language_correct": 0.9773076104663533,
+    "mayan_routed_to_spanish": 0.0,
+    "useful_answer": 0.7186311787072244
+   },
+   "tachiwin": {
+    "accuracy": 0.8306306306306306,
+    "named_language_correct": 0.9561174635949286,
+    "mayan_routed_to_spanish": 0.002702702702702703,
+    "useful_answer": 0.8747747747747748
+   },
+   "tzijonel": {
+    "accuracy": 0.7142857142857143,
+    "named_language_correct": 0.8938929155040235,
+    "mayan_routed_to_spanish": 0.011494252873563218,
+    "useful_answer": 0.7794198139025724
+   },
+   "fleurs": {
+    "accuracy": 1.0,
+    "named_language_correct": 1.0
+   },
+   "google_es": {
+    "accuracy": 1.0,
+    "named_language_correct": 1.0
+   },
+   "librispeech": {
+    "accuracy": 1.0,
+    "named_language_correct": 1.0
+   },
+   "adapt_clips": 317.0
+  },
+  "10": {
+   "coerll": {
+    "accuracy": 0.8479087452471482,
+    "named_language_correct": 0.9972222222222222,
+    "mayan_routed_to_spanish": 0.0,
+    "useful_answer": 0.7972116603295311
+   },
+   "tachiwin": {
+    "accuracy": 0.8756756756756756,
+    "named_language_correct": 0.9733490952071658,
+    "mayan_routed_to_spanish": 0.002702702702702703,
+    "useful_answer": 0.9198198198198199
+   },
+   "tzijonel": {
+    "accuracy": 0.8045977011494253,
+    "named_language_correct": 0.9563523739892803,
+    "mayan_routed_to_spanish": 0.011494252873563218,
+    "useful_answer": 0.8533114395183361
+   },
+   "fleurs": {
+    "accuracy": 1.0,
+    "named_language_correct": 1.0
+   },
+   "google_es": {
+    "accuracy": 1.0,
+    "named_language_correct": 1.0
+   },
+   "librispeech": {
+    "accuracy": 1.0,
+    "named_language_correct": 1.0
+   },
+   "adapt_clips": 594.3333333333334
+  },
+  "all": {
+   "coerll": {
+    "accuracy": 0.8326996197718631,
+    "named_language_correct": 1.0,
+    "mayan_routed_to_spanish": 0.0,
+    "useful_answer": 0.7946768060836502
+   },
+   "tachiwin": {
+    "accuracy": 0.9162162162162162,
+    "named_language_correct": 0.9896907216494846,
+    "mayan_routed_to_spanish": 0.0,
+    "useful_answer": 0.9513513513513514
+   },
+   "tzijonel": {
+    "accuracy": 0.9178981937602627,
+    "named_language_correct": 0.9974811083123426,
+    "mayan_routed_to_spanish": 0.0,
+    "useful_answer": 0.9113300492610837
+   },
+   "fleurs": {
+    "accuracy": 1.0,
+    "named_language_correct": 1.0
+   },
+   "google_es": {
+    "accuracy": 1.0,
+    "named_language_correct": 1.0
+   },
+   "librispeech": {
+    "accuracy": 1.0,
+    "named_language_correct": 1.0
+   },
+   "adapt_clips": 2242.0
+  },
+  "test_clips": 2403
+ },
+ "E3_open_set": {
+  "bloom|tzj": {
+   "n": 41,
+   "abstained": 1.0,
+   "routing": {
+    "lang": 0.0,
+    "mayan": 0.8780487804878049,
+    "unsure": 0.12195121951219512
+   },
+   "when_answering_predicted": {}
+  },
+  "chuj|cac": {
+   "n": 59,
+   "abstained": 0.7288135593220338,
+   "routing": {
+    "lang": 0.2711864406779661,
+    "mayan": 0.5084745762711864,
+    "unsure": 0.22033898305084745
+   },
+   "when_answering_predicted": {
+    "kjb": 9,
+    "mam": 6,
+    "spa": 1
+   }
+  },
+  "omnilingual|itz": {
+   "n": 183,
+   "abstained": 0.7814207650273224,
+   "routing": {
+    "lang": 0.2185792349726776,
+    "mayan": 0.6666666666666666,
+    "unsure": 0.11475409836065574
+   },
+   "when_answering_predicted": {
+    "kjb": 21,
+    "quc": 11,
+    "cak": 6,
+    "mam": 2
+   }
+  },
+  "omnilingual|poc": {
+   "n": 264,
+   "abstained": 0.7727272727272727,
+   "routing": {
+    "lang": 0.22727272727272727,
+    "mayan": 0.6477272727272727,
+    "unsure": 0.125
+   },
+   "when_answering_predicted": {
+    "cak": 33,
+    "quc": 20,
+    "spa": 5,
+    "kek": 1,
+    "mam": 1
+   }
+  },
+  "omnilingual|qum": {
+   "n": 200,
+   "abstained": 0.725,
+   "routing": {
+    "lang": 0.275,
+    "mayan": 0.71,
+    "unsure": 0.015
+   },
+   "when_answering_predicted": {
+    "quc": 51,
+    "cak": 3,
+    "mam": 1
+   }
+  },
+  "omnilingual|quv": {
+   "n": 208,
+   "abstained": 0.8221153846153846,
+   "routing": {
+    "lang": 0.1778846153846154,
+    "mayan": 0.7788461538461539,
+    "unsure": 0.04326923076923077
+   },
+   "when_answering_predicted": {
+    "cak": 26,
+    "quc": 8,
+    "mam": 2,
+    "spa": 1
+   }
+  },
+  "tachiwin|ctu": {
+   "n": 149,
+   "abstained": 0.8120805369127517,
+   "routing": {
+    "lang": 0.18791946308724833,
+    "mayan": 0.4161073825503356,
+    "unsure": 0.3959731543624161
+   },
+   "when_answering_predicted": {
+    "cak": 22,
+    "kjb": 3,
+    "mam": 2,
+    "quc": 1
+   }
+  },
+  "tachiwin|hus": {
+   "n": 150,
+   "abstained": 0.7066666666666667,
+   "routing": {
+    "lang": 0.29333333333333333,
+    "mayan": 0.5866666666666667,
+    "unsure": 0.12
+   },
+   "when_answering_predicted": {
+    "mam": 34,
+    "quc": 4,
+    "spa": 4,
+    "kjb": 2
+   }
+  },
+  "tachiwin|jac": {
+   "n": 141,
+   "abstained": 0.6099290780141844,
+   "routing": {
+    "lang": 0.3900709219858156,
+    "mayan": 0.5319148936170213,
+    "unsure": 0.07801418439716312
+   },
+   "when_answering_predicted": {
+    "kjb": 53,
+    "cak": 1,
+    "mam": 1
+   }
+  },
+  "tachiwin|toj": {
+   "n": 146,
+   "abstained": 0.8356164383561644,
+   "routing": {
+    "lang": 0.1643835616438356,
+    "mayan": 0.4863013698630137,
+    "unsure": 0.3493150684931507
+   },
+   "when_answering_predicted": {
+    "cak": 15,
+    "kjb": 8,
+    "mam": 1
+   }
+  },
+  "tachiwin|tzh": {
+   "n": 141,
+   "abstained": 0.7801418439716312,
+   "routing": {
+    "lang": 0.2198581560283688,
+    "mayan": 0.20567375886524822,
+    "unsure": 0.574468085106383
+   },
+   "when_answering_predicted": {
+    "kjb": 29,
+    "mam": 1,
+    "cak": 1
+   }
+  },
+  "tachiwin|tzo": {
+   "n": 148,
+   "abstained": 0.8648648648648649,
+   "routing": {
+    "lang": 0.13513513513513514,
+    "mayan": 0.33783783783783783,
+    "unsure": 0.527027027027027
+   },
+   "when_answering_predicted": {
+    "cak": 13,
+    "kjb": 5,
+    "mam": 1,
+    "spa": 1
+   }
+  },
+  "tachiwin|yua": {
+   "n": 148,
+   "abstained": 0.9324324324324325,
+   "routing": {
+    "lang": 0.06756756756756757,
+    "mayan": 0.46621621621621623,
+    "unsure": 0.46621621621621623
+   },
+   "when_answering_predicted": {
+    "cak": 4,
+    "spa": 4,
+    "mam": 1,
+    "eng": 1
+   }
+  },
+  "auroc_maxprob_inset_vs_openset": 0.7267130207015131,
+  "overall_abstain_rate_openset": 0.7876643073811931
+ },
+ "E4_corpus_id_auroc_spanish_bloom_vs_fleurs": 0.9999375850489443,
+ "E3_english_heldout_books": {
+  "n": 306,
+  "accuracy": 0.9640522875816994,
+  "macro_f1": 0.9816971713810316,
+  "recall": {
+   "eng": 0.9640522875816994
+  },
+  "spanish_vs_mayan_accuracy": 0.9705882352941176,
+  "routing": {
+   "named_language": 0.8888888888888888,
+   "said_mayan_try_two": 0.0032679738562091504,
+   "said_not_sure": 0.10784313725490197,
+   "named_language_correct": 1.0,
+   "try_two_family_correct": 0.0,
+   "try_two_contains_true": 0.0
+  },
+  "sent_to_spanish": 0.006535947712418301
+ }
+}

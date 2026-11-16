@@ -1,0 +1,46 @@
+n clean per lang {'spa': 246, 'mam': 250, 'quc': 246, 'kek': 138, 'cak': 250, 'kjb': 250} books {'spa': 51, 'mam': 17, 'quc': 11, 'kek': 6, 'cak': 14, 'kjb': 27}
+n as-labeled per lang {'spa': 250, 'mam': 250, 'quc': 246, 'kek': 187, 'cak': 250, 'kjb': 250}
+always-spa: acc 0.178 macroF1 0.05 misroute 1.0 false-mayan 0.0 binary acc 0.178
+### MFCC LR random: n=1380 {"macroF1": 0.882, "acc": 0.877, "recall": {"spa": 0.801, "mam": 0.94, "quc": 0.866, "kek": 0.949, "cak": 0.856, "kjb": 0.88}, "binary": {"spa_misroute(Mayan->spa)": 0.04, "spa_false_mayan": 0.199, "binary_acc": 0.932, "binary_bal_acc": 0.881}}
+   CM rows=true cols=pred ['spa', 'mam', 'quc', 'kek', 'cak', 'kjb']
+   spa  [197   4  13   2  16  14]
+   mam  [  4 235   1   2   4   4]
+   quc  [  9   8 213   0   8   8]
+   kek  [  2   1   0 131   1   3]
+   cak  [ 15   1  16   1 214   3]
+   kjb  [ 15   5   7   0   3 220]
+### MFCC LR book-grouped: n=1380 {"macroF1": 0.664, "acc": 0.653, "recall": {"spa": 0.736, "mam": 0.704, "quc": 0.382, "kek": 0.826, "cak": 0.584, "kjb": 0.76}, "binary": {"spa_misroute(Mayan->spa)": 0.137, "spa_false_mayan": 0.264, "binary_acc": 0.841, "binary_bal_acc": 0.8}}
+   CM rows=true cols=pred ['spa', 'mam', 'quc', 'kek', 'cak', 'kjb']
+   spa  [181   3  14   3  29  16]
+   mam  [ 12 176  23  12  11  16]
+   quc  [62 11 94  1 32 46]
+   kek  [  5   2   5 114   4   8]
+   cak  [ 48   6  40   1 146   9]
+   kjb  [ 28  12  11   2   7 190]
+### DURATION-only LR book-grouped: n=1380 {"macroF1": 0.071, "acc": 0.101, "recall": {"spa": 0.008, "mam": 0.036, "quc": 0.004, "kek": 0.0, "cak": 0.256, "kjb": 0.252}, "binary": {"spa_misroute(Mayan->spa)": 0.03, "spa_false_mayan": 0.992, "binary_acc": 0.799, "binary_bal_acc": 0.489}}
+   CM rows=true cols=pred ['spa', 'mam', 'quc', 'kek', 'cak', 'kjb']
+   spa  [ 2 43 32  6 79 84]
+   mam  [  5   9  40  13  64 119]
+   quc  [  8  41   1  11  79 106]
+   kek  [ 0 26 34  0 74  4]
+   cak  [14 53 10 32 64 77]
+   kjb  [ 7 46 73  5 56 63]
+chosen layers per fold [3, 6, 6, 6, 6] 19.8 s
+### MMS300m LR random: n=1380 {"macroF1": 0.979, "acc": 0.978, "recall": {"spa": 0.955, "mam": 0.988, "quc": 0.996, "kek": 0.993, "cak": 0.964, "kjb": 0.976}, "binary": {"spa_misroute(Mayan->spa)": 0.004, "spa_false_mayan": 0.045, "binary_acc": 0.988, "binary_bal_acc": 0.975}}
+   CM rows=true cols=pred ['spa', 'mam', 'quc', 'kek', 'cak', 'kjb']
+   spa  [235   1   0   1   7   2]
+   mam  [  0 247   2   0   0   1]
+   quc  [  0   1 245   0   0   0]
+   kek  [  0   0   0 137   0   1]
+   cak  [  4   3   2   0 241   0]
+   kjb  [  1   2   0   0   3 244]
+chosen layers per fold [15, 15, 15, 9, 6] 38.0 s
+### MMS300m LR book-grouped: n=1380 {"macroF1": 0.794, "acc": 0.793, "recall": {"spa": 0.947, "mam": 0.732, "quc": 0.492, "kek": 0.949, "cak": 0.76, "kjb": 0.948}, "binary": {"spa_misroute(Mayan->spa)": 0.011, "spa_false_mayan": 0.053, "binary_acc": 0.981, "binary_bal_acc": 0.968}}
+   CM rows=true cols=pred ['spa', 'mam', 'quc', 'kek', 'cak', 'kjb']
+   spa  [233   2   1   1   3   6]
+   mam  [  2 183  23  20   8  14]
+   quc  [  4  18 121   5  59  39]
+   kek  [  0   1   1 131   2   3]
+   cak  [  6   5  44   1 190   4]
+   kjb  [  1   3   2   0   7 237]
+per-layer book-grouped macroF1: {0: 0.681, 3: 0.725, 6: 0.798, 9: 0.786, 12: 0.779, 15: 0.814, 18: 0.77, 21: 0.754, 24: 0.752}

@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+data/
+bloom-speech-parquet/
+probe-bloom-lid/audio/
+probe-bloom-lid/work/wav16k/
+probe-bloom-lid/work/*.npy
+probe-bloom-lid/bloom_speech.json
+logs/
+results/examples/*.wav
+.scout/
+.workflows/
+video/

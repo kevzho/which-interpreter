@@ -1,0 +1,65 @@
+MMS grouped seed1: macroF1=0.787 layers=[15, 15, 12, 15, 12] recall [0.931 0.74  0.431 0.957 0.816 0.904] misroute 0.021 falseMayan 0.069
+MFCC grouped seed1: macroF1=0.641
+MMS random seed1: macroF1=0.977
+MMS grouped seed2: macroF1=0.795 layers=[12, 12, 6, 6, 6] recall [0.915 0.772 0.504 0.949 0.728 0.916] misroute 0.016 falseMayan 0.085
+MFCC grouped seed2: macroF1=0.635
+MMS random seed2: macroF1=0.981
+C=0.01 layer15 grouped macroF1=0.809
+C=1.0 layer15 grouped macroF1=0.809
+
+per-book accuracy (MMS grouped), books with acc<0.6:
+   spa|Yajin                                               n=  1 acc=0.00  preds={'kek': 1}
+   spa|Colores                                             n=  2 acc=0.00  preds={'mam': 2}
+   mam|Pujb il Yol Mam                                     n= 28 acc=0.00  preds={'kek': 20, 'cak': 4, 'kjb': 4}
+   mam|Tipumal xnaq'tzb'il1 si                             n= 30 acc=0.00  preds={'quc': 23, 'kjb': 6, 'cak': 1}
+   quc|Ixim, aj, jal                                       n= 35 acc=0.00  preds={'cak': 20, 'mam': 15}
+   cak|Ri kotz i j                                         n=  6 acc=0.00  preds={'quc': 6}
+   quc|Kik'aslemal ri ak'alab' pa tijob'al                 n= 35 acc=0.03  preds={'kjb': 17, 'cak': 17, 'quc': 1}
+   quc|Etaꞌmanem                                           n= 11 acc=0.09  preds={'kjb': 8, 'quc': 1, 'cak': 2}
+   cak|Ri ixim                                             n=  9 acc=0.22  preds={'cak': 2, 'quc': 3, 'kjb': 2, 'spa': 2}
+   spa|El jardín                                          n=  3 acc=0.33  preds={'kjb': 2, 'spa': 1}
+   cak|Choltzij Kaqchikel ch ab äl                        n= 31 acc=0.35  preds={'quc': 19, 'cak': 11, 'kek': 1}
+   cak|Ri k um                                             n= 10 acc=0.40  preds={'cak': 4, 'quc': 6}
+   quc|Choltzij K iche (1) (2)                             n= 35 acc=0.43  preds={'quc': 15, 'kek': 5, 'cak': 12, 'spa': 3}
+   kjb|No  wakax                                           n=  9 acc=0.44  preds={'kjb': 4, 'mam': 3, 'quc': 2}
+   quc|Utz kinta le kusikꞌij le nunoꞌy                     n= 23 acc=0.48  preds={'kjb': 6, 'quc': 11, 'cak': 6}
+   spa|Los primos LSV                                      n=  2 acc=0.50  preds={'kjb': 1, 'spa': 1}
+   cak|Ri wati t Valeria chuqa  ri ch ob oj kajulew kichi  n= 32 acc=0.59  preds={'cak': 19, 'quc': 10, 'spa': 2, 'kjb': 1}
+total errors 285 errors in books with acc<0.6: 232 n such books 17 of 126
+  spa: books=51 book-level acc median=1.00 min=0.00 share books >=0.8: 0.86
+  mam: books=17 book-level acc median=1.00 min=0.00 share books >=0.8: 0.76
+  quc: books=11 book-level acc median=0.60 min=0.00 share books >=0.8: 0.45
+  kek: books=6 book-level acc median=1.00 min=0.83 share books >=0.8: 1.00
+  cak: books=14 book-level acc median=0.89 min=0.00 share books >=0.8: 0.64
+  kjb: books=27 book-level acc median=1.00 min=0.44 share books >=0.8: 0.93
+error overlap: MMS-wrong clips 285  MFCC-wrong 479  both wrong 227
+per-book acc corr MMS vs MFCC r= 0.563
+NOISY book [kek] 'Stxolil q anej Q anjob al' n=35 predicted: {'kjb': 34, 'quc': 1}
+NOISY book [kek] "Stxolil q'anej Q'anjob al" n=14 predicted: {'kjb': 14}
+NOISY book [spa] "Tipumal xnaq'tzb'il1 si" n=4 predicted: {'mam': 2, 'quc': 2}
+
+TZJ open-set predicted dist: {'quc': 16, 'mam': 25}  mean maxprob 0.667
+   tzj book 'AMUL NUBAN PERWA’ BAJLAM' 21 {'quc': 10, 'mam': 11}
+   tzj book 'JUN SAK’ CHQA’ JUN WNEN' 20 {'quc': 6, 'mam': 14}
+AUROC maxprob in-set(grouped OOF, layer-selected) vs tzj: 0.822
+AUROC (fixed layer15 OOF): 0.825
+AUROC tzj<=10s only (n=24): 0.819
+  thr 0.5: in-set kept 0.93 (acc of kept 0.825), tzj rejected 0.12
+  thr 0.7: in-set kept 0.81 (acc of kept 0.897), tzj rejected 0.61
+  thr 0.9: in-set kept 0.66 (acc of kept 0.966), tzj rejected 0.90
+MFCC tzj predicted dist {'kjb': 16, 'spa': 16, 'mam': 2, 'cak': 7} AUROC 0.765
+
+AS-LABELED MMS grouped: macroF1 0.79 recall {'spa': np.float64(0.912), 'mam': np.float64(0.756), 'quc': np.float64(0.61), 'kek': np.float64(0.85), 'cak': np.float64(0.788), 'kjb': np.float64(0.836)} layers [15, 15, 6, 6, 15]
+   on the noisy-book clips (scored vs their wrong label): acc 0.453  preds {'mam': 2, 'quc': 3, 'kjb': 24, 'kek': 24}
+spa recall: shared-title books n=3 0.667 ; other spa n=243 0.951
+  mam publisher np.str_('Copyright © 2019, Ministerio d') n=30 recall=0.00
+  mam publisher np.str_('Copyright © 2021, Ministerio d') n=28 recall=0.00
+  mam publisher np.str_('Copyright © 2021, Juárez & Ass') n=192 recall=0.95
+  kjb publisher np.str_('Copyright © 2020, Juárez y Aso') n=21 recall=0.95
+  kjb publisher np.str_('Copyright © 2021, Ministerio d') n=49 recall=1.00
+  kjb publisher np.str_('Copyright © 2021, Juárez & Ass') n=180 recall=0.93
+  spa publisher np.str_('Copyright © 2021, Juárez & Ass') n=10 recall=1.00
+  spa publisher np.str_('Copyright © 2019, Ministerio d') n=86 recall=0.99
+  spa publisher np.str_('Copyright © 2021, Ministerio d') n=134 recall=0.93
+  quc publisher np.str_('Copyright © 2019, Ministerio d') n=211 recall=0.50
+  quc publisher np.str_('Copyright © 2021, Ministerio d') n=35 recall=0.43

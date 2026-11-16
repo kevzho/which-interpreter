@@ -1,0 +1,103 @@
+clip_id,corpus,true,pred,conf,view,group,src,start,note,kind
+bloom_cak_cak-0000-i3402ddcb-0382-46d4-a8bf-289def79076e,bloom,cak,cak,0.9967856169310981,bloom-heldout-books,bloom:Retamaxik pa ruwi  ri coronavirus,/Volumes/KZ_Big/hackathons/veritas-ai/data/bloom/audio/cak-0000-i3402ddcb-0382-46d4-a8bf-289def79076e.mp3,,,correct
+bloom_cak_cak-0000-i823f1d03-5309-45bc-b355-00a5287b7dc3,bloom,cak,cak,0.9999731030178673,bloom-heldout-books,bloom:Retamaxik pa ruwi  ri coronavirus,/Volumes/KZ_Big/hackathons/veritas-ai/data/bloom/audio/cak-0000-i823f1d03-5309-45bc-b355-00a5287b7dc3.mp3,,,correct
+bloom_cak_cak-0000-i45521c72-83b9-41a7-a308-162748dbb574,bloom,cak,cak,0.9999767263300375,bloom-heldout-books,bloom:Retamaxik pa ruwi  ri coronavirus,/Volumes/KZ_Big/hackathons/veritas-ai/data/bloom/audio/cak-0000-i45521c72-83b9-41a7-a308-162748dbb574.mp3,,,correct
+bloom_cak_cak-0000-i73803ccb-db6c-454a-98e0-acde22c4f38f,bloom,cak,cak,0.9996075369452859,bloom-heldout-books,bloom:Retamaxik pa ruwi  ri coronavirus,/Volumes/KZ_Big/hackathons/veritas-ai/data/bloom/audio/cak-0000-i73803ccb-db6c-454a-98e0-acde22c4f38f.mp3,,,correct
+bloom_cak_cak-0000-fed00281-8a8e-463d-98d6-e93184d29a40,bloom,cak,mam,0.5653518057568787,bloom-heldout-books,bloom:Retamaxik pa ruwi  ri coronavirus,/Volumes/KZ_Big/hackathons/veritas-ai/data/bloom/audio/cak-0000-fed00281-8a8e-463d-98d6-e93184d29a40.mp3,,,wrong
+bloom_cak_cak-0000-i1ca5ba94-7ea2-49f9-a385-1daecab50ed9,bloom,cak,spa,0.9979330834394439,bloom-heldout-books,bloom:Ri Numama,/Volumes/KZ_Big/hackathons/veritas-ai/data/bloom/audio/cak-0000-i1ca5ba94-7ea2-49f9-a385-1daecab50ed9.mp3,,,wrong
+bloomengtr_3805,bloom,eng,eng,0.9999604286187739,bloom-heldout-books,bloom:26 - My Family,,,English train books,correct
+bloomengtr_3121,bloom,eng,eng,0.9998450014087594,bloom-heldout-books,bloom:What’s ﻿That ﻿Nut,,,English train books,correct
+bloomengtr_1755,bloom,eng,eng,0.9999464976530235,bloom-heldout-books,bloom:11 - Yellow Bird,,,English train books,correct
+bloomengtr_2381,bloom,eng,eng,0.9999968200892371,bloom-heldout-books,bloom:The Sad King,,,English train books,correct
+bloomengtr_3308,bloom,eng,kjb,0.8193254805143733,bloom-heldout-books,bloom:24 - I Want to Hide,,,English train books,wrong
+bloomengtr_2824,bloom,eng,kjb,0.9811770330196901,bloom-heldout-books,bloom:Swayich ix Anixh_240821,,,English train books,wrong
+bloom_kek_spa-0000-dbb8bca8-0580-43a2-b57e-5e8f18c5d3a2,bloom,kek,kek,0.9999790146309381,bloom-heldout-books,bloom:Li kaqi yajel,/Volumes/KZ_Big/hackathons/veritas-ai/data/bloom/audio/spa-0000-dbb8bca8-0580-43a2-b57e-5e8f18c5d3a2.mp3,,relabeled,correct
+bloom_kek_spa-0000-d5017274-5610-4ba1-ba1a-439588d36955,bloom,kek,kek,0.9999878514132057,bloom-heldout-books,bloom:Li kaqiyajel,/Volumes/KZ_Big/hackathons/veritas-ai/data/bloom/audio/spa-0000-d5017274-5610-4ba1-ba1a-439588d36955.mp3,,relabeled,correct
+bloom_kek_kek-0000-b158e177-e756-4716-9333-cc1d0a278167,bloom,kek,kek,0.9993212093719556,bloom-heldout-books,bloom:Xkomon esil chi rix li kaqi yajel,/Volumes/KZ_Big/hackathons/veritas-ai/data/bloom/audio/kek-0000-b158e177-e756-4716-9333-cc1d0a278167.mp3,,,correct
+bloom_kek_kek-0000-i8a4e2223-b833-42dc-8e5c-2ee66f9ef353,bloom,kek,kek,0.9999978389663251,bloom-heldout-books,bloom:Xkomon esil chi rix li kaqi yajel,/Volumes/KZ_Big/hackathons/veritas-ai/data/bloom/audio/kek-0000-i8a4e2223-b833-42dc-8e5c-2ee66f9ef353.mp3,,,correct
+bloom_kek_spa-0000-i5e9c8219-8b19-4d2d-9a03-20f9a1ad8537,bloom,kek,spa,0.7502228733111108,bloom-heldout-books,bloom:Na leb,/Volumes/KZ_Big/hackathons/veritas-ai/data/bloom/audio/spa-0000-i5e9c8219-8b19-4d2d-9a03-20f9a1ad8537.mp3,,relabeled,wrong
+bloom_kek_kek-0000-fd74948d-b31a-47e4-9027-bc2da3897ac0,bloom,kek,mam,0.4866593231460059,bloom-heldout-books,bloom:Sik leb aal aatin sa  Q’eqchi’,/Volumes/KZ_Big/hackathons/veritas-ai/data/bloom/audio/kek-0000-fd74948d-b31a-47e4-9027-bc2da3897ac0.mp3,,,wrong
+bloom_kjb_kek-0000-i7f70a9aa-f669-43c2-9032-dd8df35bb59c,bloom,kjb,kjb,0.9998664269405817,bloom-heldout-books,bloom:Stxolil q anej Q anjob al,/Volumes/KZ_Big/hackathons/veritas-ai/data/bloom/audio/kek-0000-i7f70a9aa-f669-43c2-9032-dd8df35bb59c.mp3,,relabeled,correct
+bloom_kjb_kek-0000-i0995df19-6878-4b7d-aba5-6bcaa031f7ec,bloom,kjb,kjb,0.9947686945737791,bloom-heldout-books,bloom:Stxolil q anej Q anjob al,/Volumes/KZ_Big/hackathons/veritas-ai/data/bloom/audio/kek-0000-i0995df19-6878-4b7d-aba5-6bcaa031f7ec.mp3,,relabeled,correct
+bloom_kjb_kek-0000-i254bba5c-c5a8-4a5d-a088-8f874097fb51,bloom,kjb,kjb,0.999999692946188,bloom-heldout-books,bloom:Stxolil q anej Q anjob al,/Volumes/KZ_Big/hackathons/veritas-ai/data/bloom/audio/kek-0000-i254bba5c-c5a8-4a5d-a088-8f874097fb51.mp3,,relabeled,correct
+bloom_kjb_kek-0000-i08ca8a6b-f038-4313-855f-3cbaf134bd21,bloom,kjb,kjb,0.9999995827962889,bloom-heldout-books,bloom:Stxolil q anej Q anjob al,/Volumes/KZ_Big/hackathons/veritas-ai/data/bloom/audio/kek-0000-i08ca8a6b-f038-4313-855f-3cbaf134bd21.mp3,,relabeled,correct
+bloom_kjb_kek-0000-f1f3bf6c-51a6-4827-9b1d-6dfc84e71a5e,bloom,kjb,quc,0.9418922585333199,bloom-heldout-books,bloom:Stxolil q anej Q anjob al,/Volumes/KZ_Big/hackathons/veritas-ai/data/bloom/audio/kek-0000-f1f3bf6c-51a6-4827-9b1d-6dfc84e71a5e.mp3,,relabeled,wrong
+bloom_kjb_kek-0000-i832d3179-1c04-4ff7-9d6b-f737c6f9c61f,bloom,kjb,mam,0.6166174924945924,bloom-heldout-books,bloom:Stxolil q anej Q anjob al,/Volumes/KZ_Big/hackathons/veritas-ai/data/bloom/audio/kek-0000-i832d3179-1c04-4ff7-9d6b-f737c6f9c61f.mp3,,relabeled,wrong
+bloom_mam_mam-0000-i4b13e8c1-a7a0-4420-aca8-b9e7c5686bf6,bloom,mam,mam,0.9999970854473953,bloom-heldout-books,bloom:Xo j ex ku k,/Volumes/KZ_Big/hackathons/veritas-ai/data/bloom/audio/mam-0000-i4b13e8c1-a7a0-4420-aca8-b9e7c5686bf6.mp3,,,correct
+bloom_mam_mam-0000-i37510e9b-6a78-4dd6-adcd-01d8fe0925ec,bloom,mam,mam,0.9999946649739436,bloom-heldout-books,bloom:Xo j ex ku k,/Volumes/KZ_Big/hackathons/veritas-ai/data/bloom/audio/mam-0000-i37510e9b-6a78-4dd6-adcd-01d8fe0925ec.mp3,,,correct
+bloom_mam_mam-0000-i15f8f69c-66a0-42b9-b105-5b2ca20dc39e,bloom,mam,mam,0.9999870369547068,bloom-heldout-books,bloom:Xo j ex ku k,/Volumes/KZ_Big/hackathons/veritas-ai/data/bloom/audio/mam-0000-i15f8f69c-66a0-42b9-b105-5b2ca20dc39e.mp3,,,correct
+bloom_mam_mam-0000-i9250f756-56d6-421d-923d-ffa43e1d018a,bloom,mam,mam,0.9999825779462168,bloom-heldout-books,bloom:Xo j ex ku k,/Volumes/KZ_Big/hackathons/veritas-ai/data/bloom/audio/mam-0000-i9250f756-56d6-421d-923d-ffa43e1d018a.mp3,,,correct
+bloom_mam_spa-0000-i5260207e-1440-4f27-874f-df551303f434,bloom,mam,kjb,0.3842684199522838,bloom-heldout-books,bloom:Tipumal xnaq'tzb'il1 si,/Volumes/KZ_Big/hackathons/veritas-ai/data/bloom/audio/spa-0000-i5260207e-1440-4f27-874f-df551303f434.mp3,,relabeled,wrong
+bloom_mam_spa-0000-f8a170f2-c1fa-4b5b-a45a-b7afec5ab182,bloom,mam,kjb,0.3496359665824643,bloom-heldout-books,bloom:Tipumal xnaq'tzb'il1 si,/Volumes/KZ_Big/hackathons/veritas-ai/data/bloom/audio/spa-0000-f8a170f2-c1fa-4b5b-a45a-b7afec5ab182.mp3,,relabeled,wrong
+bloom_quc_quc-0000-i0686d243-3a08-4222-a6bc-8d19ad247fa2,bloom,quc,quc,0.9945856793790642,bloom-heldout-books,bloom:Tat,/Volumes/KZ_Big/hackathons/veritas-ai/data/bloom/audio/quc-0000-i0686d243-3a08-4222-a6bc-8d19ad247fa2.mp3,,,correct
+bloom_quc_quc-0000-facb380c-fa23-4d92-aedf-05a84a9e128c,bloom,quc,quc,0.9989100904382442,bloom-heldout-books,bloom:Tat,/Volumes/KZ_Big/hackathons/veritas-ai/data/bloom/audio/quc-0000-facb380c-fa23-4d92-aedf-05a84a9e128c.mp3,,,correct
+bloom_quc_quc-0000-i973f75fb-af2b-47a6-8a34-67c579bdf057,bloom,quc,quc,0.999890518997046,bloom-heldout-books,bloom:Tat,/Volumes/KZ_Big/hackathons/veritas-ai/data/bloom/audio/quc-0000-i973f75fb-af2b-47a6-8a34-67c579bdf057.mp3,,,correct
+bloom_quc_quc-0000-i345ce306-e043-46e8-9a89-da1c073d87aa,bloom,quc,quc,0.993820556475554,bloom-heldout-books,bloom:Tat,/Volumes/KZ_Big/hackathons/veritas-ai/data/bloom/audio/quc-0000-i345ce306-e043-46e8-9a89-da1c073d87aa.mp3,,,correct
+bloom_quc_quc-0000-i5a10c53b-6d7e-479d-8baf-cbf35dd33eda,bloom,quc,kjb,0.9348470847815135,bloom-heldout-books,bloom:Utz kinta le kusikꞌij le nunoꞌy,/Volumes/KZ_Big/hackathons/veritas-ai/data/bloom/audio/quc-0000-i5a10c53b-6d7e-479d-8baf-cbf35dd33eda.mp3,,,wrong
+bloom_quc_quc-0000-c8ab6298-9631-48d3-8a4b-9432f470b250,bloom,quc,kjb,0.9155976423607117,bloom-heldout-books,bloom:Utz kinta le kusikꞌij le nunoꞌy,/Volumes/KZ_Big/hackathons/veritas-ai/data/bloom/audio/quc-0000-c8ab6298-9631-48d3-8a4b-9432f470b250.mp3,,,wrong
+bloom_spa_spa-0000-d078c1e2-bf00-468f-be4e-9eb2809f8b05,bloom,spa,spa,0.9999377024849435,bloom-heldout-books,bloom:¿Qué estudia Gendy,/Volumes/KZ_Big/hackathons/veritas-ai/data/bloom/audio/spa-0000-d078c1e2-bf00-468f-be4e-9eb2809f8b05.mp3,,,correct
+bloom_spa_spa-0000-i091bbb1b-ad7a-429b-8c87-0810805c64e2,bloom,spa,spa,0.9914961273343273,bloom-heldout-books,bloom:¿Qué estudia Gendy,/Volumes/KZ_Big/hackathons/veritas-ai/data/bloom/audio/spa-0000-i091bbb1b-ad7a-429b-8c87-0810805c64e2.mp3,,,correct
+bloom_spa_spa-0000-i40939fca-882e-4c13-9d1c-ed427f16c421,bloom,spa,spa,0.9990424707566489,bloom-heldout-books,bloom:¿Qué estudia Gendy,/Volumes/KZ_Big/hackathons/veritas-ai/data/bloom/audio/spa-0000-i40939fca-882e-4c13-9d1c-ed427f16c421.mp3,,,correct
+bloom_spa_spa-0000-i5fd053c0-e28e-4761-a7c8-497ff20787c4,bloom,spa,spa,0.9969690798972028,bloom-heldout-books,bloom:¿Qué estudia Gendy,/Volumes/KZ_Big/hackathons/veritas-ai/data/bloom/audio/spa-0000-i5fd053c0-e28e-4761-a7c8-497ff20787c4.mp3,,,correct
+bloom_spa_spa-0000-i450270a7-6738-4c7c-a28d-a6d587e4b5de,bloom,spa,kek,0.6714008948744288,bloom-heldout-books,bloom:Ya  hin ay,/Volumes/KZ_Big/hackathons/veritas-ai/data/bloom/audio/spa-0000-i450270a7-6738-4c7c-a28d-a6d587e4b5de.mp3,,,wrong
+bloom_spa_spa-0000-i3afbe1e4-b1a8-4aad-9014-8df888c2d44c,bloom,spa,kek,0.947830988231161,bloom-heldout-books,bloom:Yajin,/Volumes/KZ_Big/hackathons/veritas-ai/data/bloom/audio/spa-0000-i3afbe1e4-b1a8-4aad-9014-8df888c2d44c.mp3,,,wrong
+coerll_completive_13_la-xatzalij,coerll,quc,quc,0.9976787156980371,new-corpus-heldout-recordings,coerll:completive_13,/Volumes/KZ_Big/hackathons/veritas-ai/data/external/coerll_kiche/completive_13_la-xatzalij.mp3,,,correct
+coerll_completive_13_ximbe-ruk,coerll,quc,quc,0.9999297488264892,new-corpus-heldout-recordings,coerll:completive_13,/Volumes/KZ_Big/hackathons/veritas-ai/data/external/coerll_kiche/completive_13_ximbe-ruk.mp3,,,correct
+coerll_completive_13_ximbek,coerll,quc,quc,0.9999757745165831,new-corpus-heldout-recordings,coerll:completive_13,/Volumes/KZ_Big/hackathons/veritas-ai/data/external/coerll_kiche/completive_13_ximbek.mp3,,,correct
+coerll_completive_13_xixbek,coerll,quc,quc,0.9997657544786932,new-corpus-heldout-recordings,coerll:completive_13,/Volumes/KZ_Big/hackathons/veritas-ai/data/external/coerll_kiche/completive_13_xixbek.mp3,,,correct
+coerll_completive_13_katbek,coerll,quc,spa,0.8609298831787126,new-corpus-heldout-recordings,coerll:completive_13,/Volumes/KZ_Big/hackathons/veritas-ai/data/external/coerll_kiche/completive_13_katbek.mp3,,,wrong
+coerll_completive_13_xbe-alaq,coerll,quc,mam,0.701010985293277,new-corpus-heldout-recordings,coerll:completive_13,/Volumes/KZ_Big/hackathons/veritas-ai/data/external/coerll_kiche/completive_13_xbe-alaq.mp3,,,wrong
+fleurseng_xcorpus_315,fleurs,eng,eng,0.9999981774906299,new-corpus-heldout-recordings,fleurs:eng:1679,,,FLEURS en_us,correct
+fleurseng_xcorpus_562,fleurs,eng,eng,0.9999941810184654,new-corpus-heldout-recordings,fleurs:eng:1966,,,FLEURS en_us,correct
+fleurseng_xcorpus_127,fleurs,eng,eng,0.9999979154637705,new-corpus-heldout-recordings,fleurs:eng:1741,,,FLEURS en_us,correct
+fleurseng_xcorpus_157,fleurs,eng,eng,0.9999857091360191,new-corpus-heldout-recordings,fleurs:eng:1694,,,FLEURS en_us,correct
+fleurs_test_0,fleurs,spa,spa,0.9998738167739292,new-corpus-heldout-recordings,fleurs:2001,,,,correct
+fleurs_test_2,fleurs,spa,spa,0.9998060964757607,new-corpus-heldout-recordings,fleurs:1764,,,,correct
+fleurs_test_3,fleurs,spa,spa,0.9999530812558874,new-corpus-heldout-recordings,fleurs:1770,,,,correct
+fleurs_test_4,fleurs,spa,spa,0.9998936068637219,new-corpus-heldout-recordings,fleurs:1799,,,,correct
+gesp_chile_1489,google_es,spa,spa,0.9998083344429302,new-corpus-heldout-recordings,gesp:chile:2121,,,v2 data,correct
+gesp_chile_186,google_es,spa,spa,0.9999900923645263,new-corpus-heldout-recordings,gesp:chile:7508,,,v2 data,correct
+gesp_chile_530,google_es,spa,spa,0.999866537723412,new-corpus-heldout-recordings,gesp:chile:9334,,,v2 data,correct
+gesp_chile_1378,google_es,spa,spa,0.9999644468869296,new-corpus-heldout-recordings,gesp:chile:3349,,,v2 data,correct
+ls_2078-142845-0011,librispeech,eng,eng,0.999918174064632,new-corpus-heldout-recordings,ls:2078,,,v2 data,correct
+ls_6319-64726-0020,librispeech,eng,eng,0.9999568261897708,new-corpus-heldout-recordings,ls:6319,,,v2 data,correct
+ls_3576-138058-0027,librispeech,eng,eng,0.9999069979993567,new-corpus-heldout-recordings,ls:3576,,,v2 data,correct
+ls_422-122949-0002,librispeech,eng,eng,0.9999762334978984,new-corpus-heldout-recordings,ls:422,,,v2 data,correct
+tach_55.- Ritual para adornar el agua_seg40.mp3,tachiwin,mam,mam,0.9978761288223829,new-corpus-heldout-recordings,tach:https://soundcloud.com/inpimx/55-ritual-para-adornar-el-agua,,,,correct
+tach_55.- Ritual para adornar el agua_seg32.mp3,tachiwin,mam,mam,0.9988446052459113,new-corpus-heldout-recordings,tach:https://soundcloud.com/inpimx/55-ritual-para-adornar-el-agua,,,,correct
+tach_55.- Ritual para adornar el agua_seg39.mp3,tachiwin,mam,mam,0.9993429292813045,new-corpus-heldout-recordings,tach:https://soundcloud.com/inpimx/55-ritual-para-adornar-el-agua,,,,correct
+tach_60_seg34.mp3,tachiwin,mam,mam,0.997995853677474,new-corpus-heldout-recordings,tach:https://soundcloud.com/inpimx/60-tamalitos-de-elote-para-el,,,,correct
+tach_57_seg46.mp3,tachiwin,mam,kjb,0.9289241919836804,new-corpus-heldout-recordings,tach:https://soundcloud.com/inpimx/57-la-celebracion-de-santa,,,,wrong
+tach_57_seg49.mp3,tachiwin,mam,kjb,0.7479004418078555,new-corpus-heldout-recordings,tach:https://soundcloud.com/inpimx/57-la-celebracion-de-santa,,,,wrong
+tzij_01.RunimaqijuxikRiQachabl_1,tzijonel,cak,cak,0.9998051671675502,new-corpus-heldout-recordings,tzij:01.RunimaqijuxikRiQachabl,/Volumes/KZ_Big/hackathons/veritas-ai/data/external/tzijonel_kaqchikel/01.RunimaqijuxikRiQachabl/01. Runimaq'ijuxik ri qach'ab'äl.mp3,156.0,podcast window; may contain music/Spanish,correct
+tzij_01.RunimaqijuxikRiQachabl_2,tzijonel,cak,cak,0.9999842608272537,new-corpus-heldout-recordings,tzij:01.RunimaqijuxikRiQachabl,/Volumes/KZ_Big/hackathons/veritas-ai/data/external/tzijonel_kaqchikel/01.RunimaqijuxikRiQachabl/01. Runimaq'ijuxik ri qach'ab'äl.mp3,282.0,podcast window; may contain music/Spanish,correct
+tzij_01.RunimaqijuxikRiQachabl_6,tzijonel,cak,cak,0.9999783933332325,new-corpus-heldout-recordings,tzij:01.RunimaqijuxikRiQachabl,/Volumes/KZ_Big/hackathons/veritas-ai/data/external/tzijonel_kaqchikel/01.RunimaqijuxikRiQachabl/01. Runimaq'ijuxik ri qach'ab'äl.mp3,786.0,podcast window; may contain music/Spanish,correct
+tzij_01.RunimaqijuxikRiQachabl_7,tzijonel,cak,cak,0.9999161620133754,new-corpus-heldout-recordings,tzij:01.RunimaqijuxikRiQachabl,/Volumes/KZ_Big/hackathons/veritas-ai/data/external/tzijonel_kaqchikel/01.RunimaqijuxikRiQachabl/01. Runimaq'ijuxik ri qach'ab'äl.mp3,906.0,podcast window; may contain music/Spanish,correct
+tzij_01.RunimaqijuxikRiQachabl_3,tzijonel,cak,spa,0.9140482762981819,new-corpus-heldout-recordings,tzij:01.RunimaqijuxikRiQachabl,/Volumes/KZ_Big/hackathons/veritas-ai/data/external/tzijonel_kaqchikel/01.RunimaqijuxikRiQachabl/01. Runimaq'ijuxik ri qach'ab'äl.mp3,408.0,podcast window; may contain music/Spanish,wrong
+tzij_01.RunimaqijuxikRiQachabl_5,tzijonel,cak,quc,0.5904521286460703,new-corpus-heldout-recordings,tzij:01.RunimaqijuxikRiQachabl,/Volumes/KZ_Big/hackathons/veritas-ai/data/external/tzijonel_kaqchikel/01.RunimaqijuxikRiQachabl/01. Runimaq'ijuxik ri qach'ab'äl.mp3,660.0,podcast window; may contain music/Spanish,wrong
+bloom_tzj_tzj-0000-i7a76bff4-cae9-482f-8674-30dfca2a9b06,bloom,tzj,mam,0.6933525339480363,,,,,,open-set
+bloom_tzj_tzj-0000-i58b77e58-0e72-4846-b5c2-fc0958b94c29,bloom,tzj,cak,0.842407741619785,,,,,,open-set
+chuj_08142019_C_Spon_0,chuj,cac,mam,0.8353362181099306,,,,,,open-set
+chuj_08142019_C_Spon_1,chuj,cac,kjb,0.9972923112298624,,,,,,open-set
+omni_s01,omnilingual,itz,quc,0.6066430553360371,,,,,,open-set
+omni_s02,omnilingual,itz,quc,0.6776089602604856,,,,,,open-set
+omni_s01__174,omnilingual,poc,kjb,0.4763504204175269,,,,,,open-set
+omni_s01__175,omnilingual,poc,quc,0.9316371610508288,,,,,,open-set
+omni_s01__357,omnilingual,qum,quc,0.9999225996342942,,,,,,open-set
+omni_s01__358,omnilingual,qum,quc,0.9838561437340163,,,,,,open-set
+omni_s02__68,omnilingual,quv,cak,0.6581987493736321,,,,,,open-set
+omni_s01__508,omnilingual,quv,cak,0.9917644316384993,,,,,,open-set
+tach_01 - México Sin Tortura_seg16.mp3,tachiwin,ctu,cak,0.9999215383796458,,,,,,open-set
+tach_01 - México Sin Tortura_seg0.mp3,tachiwin,ctu,spa,0.979711189312981,,,,,,open-set
+tach_01_seg184.mp3,tachiwin,hus,kjb,0.7809112816345074,,,,,,open-set
+tach_01_seg103.mp3,tachiwin,hus,quc,0.9970559690862602,,,,,,open-set
+tach_06. Eulalia_seg1.mp3,tachiwin,jac,cak,0.9916998850990194,,,,,,open-set
+tach_Ayuda llama al 911 - Popti'-Chiapas_seg0.mp3,tachiwin,jac,kjb,0.9973749182682766,,,,,,open-set
+tach_04. Sin nombre_seg51.mp3,tachiwin,toj,cak,0.9997461208637592,,,,,,open-set
+tach_04. Sin nombre_seg44.mp3,tachiwin,toj,cak,0.99764179743381,,,,,,open-set
+tach_02 Lengua tseltal ¡Yo decido! ENAPEA 2023_seg5.m4a,tachiwin,tzh,kjb,0.9469771249353617,,,,,,open-set
+tach_Campaña Convenio 169 - B19 El Camino - Desarrollo - Tseltal_seg18.m4a,tachiwin,tzh,kjb,0.9157613791538564,,,,,,open-set
+tach_01 Lengua tsotsil ¡Yo decido! ENAPEA 2023_seg0.mp3,tachiwin,tzo,cak,0.9713632374377679,,,,,,open-set
+tach_01 Lengua tsotsil ¡Yo decido! ENAPEA 2023_seg4.mp3,tachiwin,tzo,kjb,0.9991836542113322,,,,,,open-set
+tach_02_seg30.mp3,tachiwin,yua,cak,0.5831707186636317,,,,,,open-set
+tach_03 fiesta maya_seg303.mp3,tachiwin,yua,cak,0.6722719462367691,,,,,,open-set

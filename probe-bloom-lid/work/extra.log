@@ -1,0 +1,9 @@
+lidLR grouped seed1 macroF1 0.819 recall {'spa': np.float64(0.96), 'mam': np.float64(0.81), 'quc': np.float64(0.5), 'kek': np.float64(0.93), 'cak': np.float64(0.85), 'kjb': np.float64(0.93)} misroute 0.019 falseMayan 0.041
+lidLR grouped seed2 macroF1 0.860 recall {'spa': np.float64(0.96), 'mam': np.float64(0.87), 'quc': np.float64(0.7), 'kek': np.float64(0.97), 'cak': np.float64(0.76), 'kjb': np.float64(0.92)} misroute 0.021 falseMayan 0.045
+concat lidL24+mmsL15 grouped macroF1 0.859 {'spa': np.float64(0.96), 'mam': np.float64(0.84), 'quc': np.float64(0.66), 'kek': np.float64(0.97), 'cak': np.float64(0.83), 'kjb': np.float64(0.94)}
+BINARY LR mmsL15 grouped: misroute(Mayan->spa) 0.009 falseMayan 0.069 acc 0.980 AUROC 0.992
+BINARY LR lidL24 grouped: misroute(Mayan->spa) 0.019 falseMayan 0.057 acc 0.975 AUROC 0.996
+BINARY LR mfcc grouped: misroute(Mayan->spa) 0.146 falseMayan 0.224 acc 0.840 AUROC 0.878
+mms grouped macroF1 book-bootstrap 95% CI [0.714, 0.864]
+lidLR grouped macroF1 book-bootstrap 95% CI [0.826, 0.900]
+mfcc grouped macroF1 book-bootstrap 95% CI [0.573, 0.749]

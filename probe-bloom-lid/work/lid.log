@@ -1,0 +1,25 @@
+Loading weights:   0%|          | 0/1098 [00:00<?, ?it/s]Loading weights:  20%|██        | 221/1098 [00:00<00:00, 2209.31it/s]Loading weights:  40%|████      | 442/1098 [00:00<00:00, 1741.89it/s]Loading weights:  66%|██████▌   | 727/1098 [00:00<00:00, 2178.56it/s]Loading weights: 100%|██████████| 1098/1098 [00:00<00:00, 2971.88it/s]
+num labels 4017 ids: {'spa': 3, 'mam': 87, 'quc': 91, 'kek': 288, 'cak': 72, 'kjb': 926, 'tzj': 132, 'eng': 2, 'por': 8, 'ixl': 100, 'acr': 124, 'tzh': 226, 'tzo': 273, 'yua': 905, 'usp': 854, 'poh': 97, 'jac': 963, 'ttc': 317, 'mop': 1030}
+device mps
+0 0.8
+50 12.4
+100 24.2
+150 37.5
+200 56.7
+spa: n=30 restricted6_acc=1.000 restricted_dist={'spa': 30}
+     unrestricted top1=[('spa', 28), ('ast', 1), ('lat', 1)]  top1==true 0.933 true-in-top5 0.967 mean P(6 langs)=0.860
+mam: n=30 restricted6_acc=0.733 restricted_dist={'mam': 22, 'spa': 6, 'cak': 2}
+     unrestricted top1=[('mam', 15), ('mon', 3), ('mlg', 2), ('heb', 2), ('nav', 2), ('sin', 1)]  top1==true 0.500 true-in-top5 0.600 mean P(6 langs)=0.440
+quc: n=30 restricted6_acc=0.633 restricted_dist={'quc': 19, 'spa': 3, 'cak': 5, 'kjb': 1, 'kek': 1, 'mam': 1}
+     unrestricted top1=[('quc', 15), ('cak', 4), ('poc', 2), ('swh', 1), ('spa', 1), ('heb', 1)]  top1==true 0.500 true-in-top5 0.733 mean P(6 langs)=0.587
+kek: n=30 restricted6_acc=0.733 restricted_dist={'quc': 4, 'kek': 22, 'spa': 4}
+     unrestricted top1=[('kek', 15), ('ixl', 5), ('poh', 3), ('quc', 2), ('acr', 1), ('nso', 1)]  top1==true 0.500 true-in-top5 0.800 mean P(6 langs)=0.552
+cak: n=30 restricted6_acc=0.333 restricted_dist={'spa': 11, 'cak': 10, 'quc': 6, 'mam': 2, 'kjb': 1}
+     unrestricted top1=[('cak', 9), ('quc', 4), ('nno', 1), ('ayr', 1), ('afr', 1), ('swh', 1)]  top1==true 0.300 true-in-top5 0.467 mean P(6 langs)=0.447
+kjb: n=30 restricted6_acc=0.667 restricted_dist={'kjb': 20, 'mam': 3, 'spa': 4, 'quc': 1, 'kek': 2}
+     unrestricted top1=[('kjb', 9), ('cac', 4), ('jac', 3), ('knj', 3), ('ixl', 2), ('wim', 2)]  top1==true 0.300 true-in-top5 0.633 mean P(6 langs)=0.282
+tzj: n=30 restricted6_acc=nan restricted_dist={'mam': 6, 'quc': 13, 'spa': 1, 'cak': 9, 'kek': 1}
+     unrestricted top1=[('tzj', 18), ('quc', 3), ('slr', 2), ('cak', 2), ('heb', 2), ('tgl', 1)]  top1==true 0.600 true-in-top5 0.733 mean P(6 langs)=0.163
+restricted6 overall acc 0.683 macroF1 0.678
+binary: misroute 0.187 false-mayan 0.0
+secs 60.7

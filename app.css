@@ -1,0 +1,135 @@
+/* Which Interpreter? - demo styling.
+   Visual language: hospital wayfinding. Each answer gets a "route colour" like the coloured lines
+   on a clinic floor: blue = Spanish, jade = Mayan languages, slate = English, caution yellow =
+   stop and check with the person. */
+
+:root, .gradio-container {
+  --wi-wall: #EEF1EC;      /* painted clinic wall: page background */
+  --wi-ink: #18222B;       /* text, primary button */
+  --wi-jade: #0B6E55;      /* Mayan route */
+  --wi-blue: #1F4FB8;      /* Spanish route */
+  --wi-slate: #56626C;     /* English / neutral route */
+  --wi-caution: #F2C230;   /* stop and check */
+  --wi-line: #D5DBD3;      /* hairlines, empty bar track */
+  --wi-muted: #56605A;     /* secondary text */
+  --wi-display: "Overpass", "Atkinson Hyperlegible", system-ui, sans-serif;
+  --wi-mono: "Noto Sans Mono", ui-monospace, Menlo, monospace;
+}
+
+.gradio-container { max-width: 1180px !important; margin: 0 auto !important; }
+.gradio-container :focus-visible { outline: 3px solid var(--wi-blue) !important; outline-offset: 2px; }
+
+/* ---------- header: a sign above the desk ---------- */
+.wi-head { display: grid; grid-template-columns: auto 1fr; gap: 6px 18px; align-items: center;
+  padding: 22px 0 14px; }
+.wi-mark { width: 56px; height: 56px; border-radius: 12px; background: var(--wi-ink);
+  display: grid; place-items: center; grid-row: span 2; }
+.wi-mark svg { width: 30px; height: 30px; }
+.wi-head h1 { font-family: var(--wi-display); font-weight: 900; font-size: clamp(30px, 4.4vw, 46px);
+  line-height: 1; letter-spacing: -0.01em; margin: 0; color: var(--wi-ink); }
+.wi-head p { margin: 0; font-size: 17px; color: var(--wi-muted); max-width: 60ch; }
+.wi-routes { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 8px 22px; list-style: none;
+  margin: 14px 0 0; padding: 12px 0 0; border-top: 1px solid var(--wi-line); font-size: 14px; }
+.wi-routes li { display: flex; align-items: center; gap: 8px; color: var(--wi-ink); margin: 0; }
+.wi-routes li::before { content: ""; width: 22px; height: 6px; border-radius: 3px; background: var(--c); }
+.wi-routes .lbl { color: var(--wi-muted); }
+
+/* ---------- step headings (a real sequence: ask, identify, call) ---------- */
+.wi-stephead { display: flex; align-items: baseline; gap: 10px; margin: 4px 0 2px; }
+.wi-stephead b { font-family: var(--wi-display); font-weight: 900; font-size: 15px; width: 26px; height: 26px;
+  border-radius: 50%; background: var(--wi-ink); color: #fff; display: inline-grid; place-items: center;
+  flex: none; transform: translateY(-1px); }
+.wi-stephead h2 { font-family: var(--wi-display); font-weight: 800; font-size: 20px; margin: 0; color: var(--wi-ink); }
+.wi-help { margin: 0 0 4px 36px; color: var(--wi-muted); font-size: 15px; }
+
+#wi-identify { font-family: var(--wi-display); font-weight: 800; font-size: 18px; letter-spacing: 0.01em;
+  min-height: 52px; }
+
+/* ---------- the result: a wayfinding sign ---------- */
+.wi-result { display: flex; flex-direction: column; gap: 14px; }
+.wi-sign { --c: var(--wi-slate); --fg: #fff; background: var(--c); color: var(--fg); border-radius: 14px;
+  padding: 18px 22px 20px; position: relative; overflow: hidden; }
+.wi-sign::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 6px;
+  background: rgba(255, 255, 255, 0.22); }
+.wi-sign--spa { --c: var(--wi-blue); }
+.wi-sign--mayan { --c: var(--wi-jade); }
+.wi-sign--eng { --c: var(--wi-slate); }
+.wi-sign--caution { --c: var(--wi-caution); --fg: var(--wi-ink); }
+.wi-sign--caution::after { background: rgba(24, 34, 43, 0.12); }
+.wi-sign--empty { --c: #fff; --fg: var(--wi-ink); border: 2px dashed var(--wi-line); }
+.wi-sign--empty::after { display: none; }
+.wi-sign__eyebrow { font-family: var(--wi-display); font-weight: 700; font-size: 13px; letter-spacing: 0.08em;
+  text-transform: uppercase; opacity: 0.85; }
+.wi-sign__main { display: flex; align-items: center; gap: 14px; margin-top: 6px; font-family: var(--wi-display);
+  font-weight: 900; font-size: clamp(30px, 4.2vw, 46px); line-height: 1.02; }
+.wi-sign__main svg { width: 0.9em; height: 0.9em; flex: none; }
+.wi-sign--empty .wi-sign__main { font-size: 24px; font-weight: 800; }
+.wi-sign__sub { margin-top: 10px; font-size: 16px; line-height: 1.4; }
+.wi-sign__sub strong { font-weight: 700; }
+
+.wi-note { font-size: 15px; line-height: 1.5; color: var(--wi-ink); background: #fff; border-left: 5px solid var(--wi-caution);
+  border-radius: 0 10px 10px 0; padding: 10px 14px; }
+.wi-meta { font-size: 14px; color: var(--wi-muted); line-height: 1.45; }
+
+/* ---------- signature: how it decided ---------- */
+.wi-trace { background: #fff; border: 1px solid var(--wi-line); border-radius: 14px; padding: 16px 18px 12px; }
+.wi-trace h3 { font-family: var(--wi-display); font-weight: 800; font-size: 16px; margin: 0 0 10px; color: var(--wi-ink); }
+.wi-check { padding: 10px 0 12px; border-top: 1px solid var(--wi-line); }
+.wi-check__q { display: flex; gap: 10px; align-items: baseline; font-weight: 700; font-size: 15px; margin-bottom: 8px; }
+.wi-check__q span { font-family: var(--wi-mono); font-size: 12px; font-weight: 600; color: var(--wi-muted);
+  letter-spacing: 0.04em; text-transform: uppercase; white-space: nowrap; }
+.wi-check__a { font-size: 14px; color: var(--wi-muted); margin: 6px 0 0; }
+.wi-check--skipped .wi-lanes { opacity: 0.4; }
+
+.wi-lanes { display: flex; flex-direction: column; gap: 5px; }
+.wi-family { background: rgba(11, 110, 85, 0.06); border-radius: 8px; padding: 6px 8px; margin: 0 -8px;
+  display: flex; flex-direction: column; gap: 5px; }
+.wi-family__label { font-size: 12px; font-weight: 700; color: var(--wi-jade); letter-spacing: 0.06em; text-transform: uppercase; }
+.wi-lane { display: grid; grid-template-columns: 112px 1fr 52px; gap: 10px; align-items: center; font-size: 14px; }
+.wi-lane__name { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.wi-lane__val { font-family: var(--wi-mono); font-size: 13px; text-align: right; font-variant-numeric: tabular-nums; }
+.wi-lane--win .wi-lane__name, .wi-lane--win .wi-lane__val { font-weight: 700; }
+.wi-lane--total { border-top: 1px dashed rgba(11, 110, 85, 0.35); padding-top: 5px; }
+.wi-bar { position: relative; height: 12px; border-radius: 6px; background: var(--wi-line); }
+.wi-bar i { position: absolute; inset: 0 auto 0 0; border-radius: 6px; background: var(--c); opacity: 0.45;
+  transform-origin: left; animation: wi-grow 700ms cubic-bezier(.2, .7, .2, 1) both; }
+.wi-lane--win .wi-bar i { opacity: 1; }
+.wi-bar b { position: absolute; top: -4px; bottom: -4px; width: 3px; margin-left: -1.5px; border-radius: 2px;
+  background: var(--wi-ink); }
+.wi-legend { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--wi-muted); margin-top: 10px; }
+.wi-legend b { width: 3px; height: 14px; border-radius: 2px; background: var(--wi-ink); display: inline-block; }
+@keyframes wi-grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@media (prefers-reduced-motion: reduce) { .wi-bar i { animation: none; } }
+
+/* ---------- sounds heard ---------- */
+.wi-sounds { background: #fff; border: 1px solid var(--wi-line); border-radius: 14px; padding: 14px 18px; }
+.wi-sounds h3 { font-family: var(--wi-display); font-weight: 800; font-size: 16px; margin: 0 0 4px; color: var(--wi-ink); }
+.wi-sounds p { margin: 0 0 8px; font-size: 14px; color: var(--wi-muted); }
+.wi-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+.wi-chips code { font-family: var(--wi-mono); font-size: 15px; background: rgba(11, 110, 85, 0.08); color: var(--wi-ink);
+  border: 1px solid rgba(11, 110, 85, 0.35); border-radius: 6px; padding: 2px 8px; }
+.wi-chips--spa code { background: rgba(31, 79, 184, 0.07); border-color: rgba(31, 79, 184, 0.35); }
+.wi-chips--eng code { background: rgba(86, 98, 108, 0.08); border-color: rgba(86, 98, 108, 0.35); }
+.wi-ipa { font-family: var(--wi-mono); font-size: 14px; line-height: 1.6; color: var(--wi-ink); word-spacing: 0.15em;
+  max-height: 4.8em; overflow: hidden; -webkit-mask-image: linear-gradient(#000 60%, transparent);
+  mask-image: linear-gradient(#000 60%, transparent); margin: 0; }
+
+/* ---------- example clips ---------- */
+.wi-section { margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--wi-line); }
+.wi-section h2 { font-family: var(--wi-display); font-weight: 800; font-size: 20px; margin: 0; color: var(--wi-ink); }
+.wi-section p { margin: 2px 0 0; font-size: 15px; color: var(--wi-muted); }
+
+.wi-foot { font-size: 14px; line-height: 1.5; color: var(--wi-muted); border-top: 1px solid var(--wi-line);
+  padding: 14px 0 6px; margin-top: 10px; }
+.wi-foot strong { color: var(--wi-ink); }
+
+@media (max-width: 640px) {
+  .wi-head { grid-template-columns: 1fr; }
+  .wi-mark { display: none; }
+  .wi-lane { grid-template-columns: 92px 1fr 46px; gap: 8px; }
+  .wi-sign { padding: 16px 16px 18px; }
+}
+
+.wi-sounds details { margin-top: 2px; }
+.wi-sounds summary { cursor: pointer; font-size: 14px; color: var(--wi-muted); padding: 4px 0; }
+.wi-sounds details[open] summary { margin-bottom: 4px; }

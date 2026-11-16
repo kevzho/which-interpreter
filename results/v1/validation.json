@@ -1,0 +1,2758 @@
+{
+ "frozen": {
+  "router.joblib": "78f0918ea84e0b7e3636ce20b1d611aedb4eda02ca85c2c036ea96002148daa8",
+  "openset.joblib": "f54c3a4aa73944269f955fe1d472080f6171b3b71669f5fd7d15b2b2cf3e27a2",
+  "frozen_at": "2026-11-15 08:47 EST",
+  "backbones": [
+   "facebook/mms-lid-4017 (frozen, layer 24)",
+   "facebook/wav2vec2-xlsr-53-espeak-cv-ft (frozen)"
+  ]
+ },
+ "protocol_all": {
+  "maxprob": {
+   "auroc": 0.8844281855656984,
+   "ci95": [
+    0.7740249207115597,
+    0.9512792710644543
+   ]
+  },
+  "oe": {
+   "auroc": 0.9244346906884824,
+   "ci95": [
+    0.8629517475178231,
+    0.976535270187833
+   ],
+   "diff_vs_maxprob": 0.04000650512278403,
+   "diff_ci95": [
+    -0.029299747598456407,
+    0.14531108834438
+   ],
+   "p_not_better": 0.1645
+  },
+  "mahalanobis": {
+   "auroc": 0.8885676002460632,
+   "ci95": [
+    0.7786516487884841,
+    0.9627537209508411
+   ],
+   "diff_vs_maxprob": 0.004139414680364828,
+   "diff_ci95": [
+    -0.06800389459461603,
+    0.08951255172136742
+   ],
+   "p_not_better": 0.4845
+  },
+  "knn": {
+   "auroc": 0.8718724147440021,
+   "ci95": [
+    0.752637722224682,
+    0.9530160623405894
+   ],
+   "diff_vs_maxprob": -0.012555770821696233,
+   "diff_ci95": [
+    -0.08081849787103502,
+    0.06279790171126799
+   ],
+   "p_not_better": 0.6665
+  },
+  "oe+maha": {
+   "auroc": 0.9280749962878376,
+   "ci95": [
+    0.8562001409624496,
+    0.9784159988997051
+   ],
+   "diff_vs_maxprob": 0.04364681072213927,
+   "diff_ci95": [
+    -0.01592662446700059,
+    0.13587309436436887
+   ],
+   "p_not_better": 0.098
+  }
+ },
+ "protocol_guatemalan_mayan": {
+  "maxprob": {
+   "auroc": 0.8750698224743525,
+   "ci95": [
+    0.7516288518733913,
+    0.942403910505506
+   ]
+  },
+  "oe": {
+   "auroc": 0.8265779420599579,
+   "ci95": [
+    0.7404384603988975,
+    0.906923898113771
+   ],
+   "diff_vs_maxprob": -0.04849188041439456,
+   "diff_ci95": [
+    -0.13486562318625625,
+    0.08315030759125257
+   ],
+   "p_not_better": 0.8115
+  },
+  "mahalanobis": {
+   "auroc": 0.7545307792142277,
+   "ci95": [
+    0.5954759972555757,
+    0.8670317140067741
+   ],
+   "diff_vs_maxprob": -0.12053904326012477,
+   "diff_ci95": [
+    -0.23303785853992853,
+    -0.04775621443333238
+   ],
+   "p_not_better": 1.0
+  },
+  "knn": {
+   "auroc": 0.7322623398898433,
+   "ci95": [
+    0.5410996814975038,
+    0.8594584820494245
+   ],
+   "diff_vs_maxprob": -0.14280748258450915,
+   "diff_ci95": [
+    -0.25000084562556746,
+    -0.07283514907228836
+   ],
+   "p_not_better": 1.0
+  },
+  "oe+maha": {
+   "auroc": 0.8339479392624729,
+   "ci95": [
+    0.7274637137246679,
+    0.9106417410019756
+   ],
+   "diff_vs_maxprob": -0.041121883211879595,
+   "diff_ci95": [
+    -0.12466577473813685,
+    0.04940174420502059
+   ],
+   "p_not_better": 0.842
+  }
+ },
+ "protocol_other_languages": {
+  "maxprob": {
+   "auroc": 0.8902978527563246,
+   "ci95": [
+    0.7704719306492916,
+    0.9541124263952591
+   ]
+  },
+  "oe": {
+   "auroc": 0.985811508535761,
+   "ci95": [
+    0.9696174375493364,
+    0.9944983342338075
+   ],
+   "diff_vs_maxprob": 0.09551365577943649,
+   "diff_ci95": [
+    0.03674110527575892,
+    0.2110040885033416
+   ],
+   "p_not_better": 0.0
+  },
+  "mahalanobis": {
+   "auroc": 0.9726369533014051,
+   "ci95": [
+    0.916188200665826,
+    0.9951744596176149
+   ],
+   "diff_vs_maxprob": 0.08233910054508053,
+   "diff_ci95": [
+    0.027370151670003364,
+    0.18465820187145057
+   ],
+   "p_not_better": 0.0
+  },
+  "knn": {
+   "auroc": 0.9594373732579713,
+   "ci95": [
+    0.901112616593541,
+    0.9882162300798587
+   ],
+   "diff_vs_maxprob": 0.06913952050164673,
+   "diff_ci95": [
+    0.025617543744908676,
+    0.1577625802912448
+   ],
+   "p_not_better": 0.0
+  },
+  "oe+maha": {
+   "auroc": 0.9871125109663317,
+   "ci95": [
+    0.9619184715690531,
+    0.9978980792706896
+   ],
+   "diff_vs_maxprob": 0.09681465821000712,
+   "diff_ci95": [
+    0.039325782690449694,
+    0.21067775998301988
+   ],
+   "p_not_better": 0.0
+  }
+ },
+ "protocol_clusters": {
+  "known": 249,
+  "unknown_languages": 37
+ },
+ "internal": {
+  "1": [
+   {
+    "source": "bloom",
+    "language": "boz",
+    "utterances": 28,
+    "clusters": 7,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "bloom",
+    "language": "bzi",
+    "utterances": 60,
+    "clusters": 40,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "bloom",
+    "language": "English",
+    "utterances": 306,
+    "clusters": 164,
+    "useful": 0.8660130718954249,
+    "useful_ci95": [
+     0.8131471720078906,
+     0.9166666666666666
+    ],
+    "named_correctly": 0.8660130718954249,
+    "not_supported": 0.10784313725490197
+   },
+   {
+    "source": "bloom",
+    "language": "French",
+    "utterances": 60,
+    "clusters": 16,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "bloom",
+    "language": "guj",
+    "utterances": 24,
+    "clusters": 4,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "bloom",
+    "language": "mal",
+    "utterances": 60,
+    "clusters": 11,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "bloom",
+    "language": "mle",
+    "utterances": 6,
+    "clusters": 1,
+    "useful": 1.0,
+    "useful_ci95": [
+     null,
+     null
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "bloom",
+    "language": "myk",
+    "utterances": 60,
+    "clusters": 34,
+    "useful": 0.95,
+    "useful_ci95": [
+     0.8833333333333333,
+     1.0
+    ],
+    "declined": 0.95,
+    "named_instead": {
+     "Q'anjob'al": 2
+    },
+    "mayan_try_two": 0.016666666666666666
+   },
+   {
+    "source": "bloom",
+    "language": "Portuguese",
+    "utterances": 12,
+    "clusters": 2,
+    "useful": 0.9166666666666666,
+    "useful_ci95": [
+     0.8333333333333334,
+     1.0
+    ],
+    "declined": 0.9166666666666666,
+    "named_instead": {
+     "English": 1
+    },
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "bloom",
+    "language": "snk",
+    "utterances": 60,
+    "clusters": 31,
+    "useful": 0.95,
+    "useful_ci95": [
+     0.8928434065934067,
+     1.0
+    ],
+    "declined": 0.95,
+    "named_instead": {
+     "Q'anjob'al": 1
+    },
+    "mayan_try_two": 0.03333333333333333
+   },
+   {
+    "source": "bloom",
+    "language": "tuz",
+    "utterances": 36,
+    "clusters": 6,
+    "useful": 0.9722222222222222,
+    "useful_ci95": [
+     0.9166666666666666,
+     1.0
+    ],
+    "declined": 0.9722222222222222,
+    "named_instead": {
+     "Kaqchikel": 1
+    },
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "bloom",
+    "language": "Tz'utujil",
+    "utterances": 41,
+    "clusters": 2,
+    "useful": 0.21951219512195122,
+    "useful_ci95": [
+     0.19047619047619047,
+     0.25
+    ],
+    "declined": 0.21951219512195122,
+    "named_instead": {
+     "Kaqchikel": 5,
+     "K'iche'": 1
+    },
+    "mayan_try_two": 0.6341463414634146
+   },
+   {
+    "source": "chuj",
+    "language": "Chuj",
+    "utterances": 59,
+    "clusters": 2,
+    "useful": 0.9491525423728814,
+    "useful_ci95": [
+     0.918918918918919,
+     1.0
+    ],
+    "declined": 0.9491525423728814,
+    "named_instead": {
+     "Mam": 1,
+     "Spanish": 1
+    },
+    "mayan_try_two": 0.01694915254237288
+   },
+   {
+    "source": "coerll",
+    "language": "K'iche'",
+    "utterances": 263,
+    "clusters": 9,
+    "useful": 0.8212927756653993,
+    "useful_ci95": [
+     0.7823378964179786,
+     0.9091113841113839
+    ],
+    "named_correctly": 0.5095057034220533,
+    "not_supported": 0.13688212927756654,
+    "sent_to_spanish": 0.0
+   },
+   {
+    "source": "fleurs",
+    "language": "ast",
+    "utterances": 80,
+    "clusters": 1,
+    "useful": 0.875,
+    "useful_ci95": [
+     null,
+     null
+    ],
+    "declined": 0.875,
+    "named_instead": {
+     "Spanish": 10
+    },
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "fleurs",
+    "language": "ces",
+    "utterances": 80,
+    "clusters": 1,
+    "useful": 1.0,
+    "useful_ci95": [
+     null,
+     null
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "fleurs",
+    "language": "English",
+    "utterances": 153,
+    "clusters": 1,
+    "useful": 1.0,
+    "useful_ci95": [
+     null,
+     null
+    ],
+    "named_correctly": 1.0,
+    "not_supported": 0.0
+   },
+   {
+    "source": "fleurs",
+    "language": "French",
+    "utterances": 80,
+    "clusters": 1,
+    "useful": 1.0,
+    "useful_ci95": [
+     null,
+     null
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "fleurs",
+    "language": "glg",
+    "utterances": 80,
+    "clusters": 1,
+    "useful": 1.0,
+    "useful_ci95": [
+     null,
+     null
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "fleurs",
+    "language": "pol",
+    "utterances": 80,
+    "clusters": 1,
+    "useful": 1.0,
+    "useful_ci95": [
+     null,
+     null
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "fleurs",
+    "language": "Portuguese",
+    "utterances": 80,
+    "clusters": 1,
+    "useful": 1.0,
+    "useful_ci95": [
+     null,
+     null
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "fleurs",
+    "language": "Spanish",
+    "utterances": 664,
+    "clusters": 1,
+    "useful": 0.9984939759036144,
+    "useful_ci95": [
+     null,
+     null
+    ],
+    "named_correctly": 0.9984939759036144,
+    "not_supported": 0.0015060240963855422
+   },
+   {
+    "source": "fleurs",
+    "language": "ukr",
+    "utterances": 80,
+    "clusters": 1,
+    "useful": 1.0,
+    "useful_ci95": [
+     null,
+     null
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "fleurs",
+    "language": "vie",
+    "utterances": 80,
+    "clusters": 1,
+    "useful": 1.0,
+    "useful_ci95": [
+     null,
+     null
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "fleurs",
+    "language": "zul",
+    "utterances": 80,
+    "clusters": 1,
+    "useful": 1.0,
+    "useful_ci95": [
+     null,
+     null
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "omnilingual",
+    "language": "Poqomam",
+    "utterances": 264,
+    "clusters": 4,
+    "useful": 0.4318181818181818,
+    "useful_ci95": [
+     0.24817518248175183,
+     0.6299212598425197
+    ],
+    "declined": 0.4318181818181818,
+    "named_instead": {
+     "K'iche'": 33,
+     "Kaqchikel": 30,
+     "Spanish": 4
+    },
+    "mayan_try_two": 0.3143939393939394
+   },
+   {
+    "source": "omnilingual",
+    "language": "Sipakapense",
+    "utterances": 200,
+    "clusters": 4,
+    "useful": 0.275,
+    "useful_ci95": [
+     0.21212121212121213,
+     0.33663366336633666
+    ],
+    "declined": 0.275,
+    "named_instead": {
+     "K'iche'": 52,
+     "Kaqchikel": 5,
+     "Mam": 3
+    },
+    "mayan_try_two": 0.425
+   },
+   {
+    "source": "omnilingual",
+    "language": "Sakapulteko",
+    "utterances": 208,
+    "clusters": 4,
+    "useful": 0.2932692307692308,
+    "useful_ci95": [
+     0.19642857142857142,
+     0.44
+    ],
+    "declined": 0.2932692307692308,
+    "named_instead": {
+     "Kaqchikel": 18,
+     "K'iche'": 14,
+     "Mam": 1,
+     "Spanish": 1
+    },
+    "mayan_try_two": 0.5432692307692307
+   },
+   {
+    "source": "tachiwin",
+    "language": "dih",
+    "utterances": 29,
+    "clusters": 12,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "tachiwin",
+    "language": "Popti' (Jakalteko)",
+    "utterances": 150,
+    "clusters": 58,
+    "useful": 0.94,
+    "useful_ci95": [
+     0.8979591836734694,
+     0.9795918367346939
+    ],
+    "declined": 0.94,
+    "named_instead": {
+     "Q'anjob'al": 5
+    },
+    "mayan_try_two": 0.02666666666666667
+   },
+   {
+    "source": "tachiwin",
+    "language": "Mam",
+    "utterances": 370,
+    "clusters": 30,
+    "useful": 0.8864864864864865,
+    "useful_ci95": [
+     0.8265407469378123,
+     0.9338842975206612
+    ],
+    "named_correctly": 0.8405405405405405,
+    "not_supported": 0.11081081081081082,
+    "sent_to_spanish": 0.0
+   },
+   {
+    "source": "tachiwin",
+    "language": "mfy",
+    "utterances": 30,
+    "clusters": 27,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "tachiwin",
+    "language": "ntp",
+    "utterances": 30,
+    "clusters": 27,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "tachiwin",
+    "language": "ote",
+    "utterances": 30,
+    "clusters": 26,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "tachiwin",
+    "language": "otm",
+    "utterances": 30,
+    "clusters": 12,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "tachiwin",
+    "language": "ott",
+    "utterances": 30,
+    "clusters": 17,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "tachiwin",
+    "language": "pbs",
+    "utterances": 23,
+    "clusters": 9,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "tachiwin",
+    "language": "pmq",
+    "utterances": 30,
+    "clusters": 25,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "tachiwin",
+    "language": "tac",
+    "utterances": 11,
+    "clusters": 5,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "tachiwin",
+    "language": "tar",
+    "utterances": 30,
+    "clusters": 24,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "tachiwin",
+    "language": "toc",
+    "utterances": 2,
+    "clusters": 1,
+    "useful": 1.0,
+    "useful_ci95": [
+     null,
+     null
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "tachiwin",
+    "language": "top",
+    "utterances": 9,
+    "clusters": 3,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "tachiwin",
+    "language": "tos",
+    "utterances": 30,
+    "clusters": 26,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "tachiwin",
+    "language": "yaq",
+    "utterances": 30,
+    "clusters": 27,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "tzijonel",
+    "language": "Kaqchikel",
+    "utterances": 609,
+    "clusters": 44,
+    "useful": 0.7126436781609196,
+    "useful_ci95": [
+     0.6595273326822357,
+     0.7647058823529411
+    ],
+    "named_correctly": 0.6338259441707718,
+    "not_supported": 0.2742200328407225,
+    "sent_to_spanish": 0.009852216748768473
+   }
+  ],
+  "2": [
+   {
+    "source": "bloom",
+    "language": "boz",
+    "utterances": 13,
+    "clusters": 5,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "bloom",
+    "language": "bzi",
+    "utterances": 14,
+    "clusters": 13,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "bloom",
+    "language": "English",
+    "utterances": 88,
+    "clusters": 88,
+    "useful": 0.875,
+    "useful_ci95": [
+     0.8068181818181818,
+     0.9431818181818182
+    ],
+    "named_correctly": 0.875,
+    "not_supported": 0.10227272727272728
+   },
+   {
+    "source": "bloom",
+    "language": "French",
+    "utterances": 27,
+    "clusters": 11,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "bloom",
+    "language": "guj",
+    "utterances": 12,
+    "clusters": 4,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "bloom",
+    "language": "mal",
+    "utterances": 30,
+    "clusters": 11,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "bloom",
+    "language": "mle",
+    "utterances": 3,
+    "clusters": 1,
+    "useful": 1.0,
+    "useful_ci95": [
+     null,
+     null
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "bloom",
+    "language": "myk",
+    "utterances": 21,
+    "clusters": 20,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "bloom",
+    "language": "Portuguese",
+    "utterances": 6,
+    "clusters": 2,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "bloom",
+    "language": "snk",
+    "utterances": 22,
+    "clusters": 21,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "bloom",
+    "language": "tuz",
+    "utterances": 18,
+    "clusters": 6,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "bloom",
+    "language": "Tz'utujil",
+    "utterances": 20,
+    "clusters": 2,
+    "useful": 0.25,
+    "useful_ci95": [
+     0.2,
+     0.3
+    ],
+    "declined": 0.25,
+    "named_instead": {
+     "Kaqchikel": 1
+    },
+    "mayan_try_two": 0.7
+   },
+   {
+    "source": "chuj",
+    "language": "Chuj",
+    "utterances": 29,
+    "clusters": 2,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "coerll",
+    "language": "K'iche'",
+    "utterances": 127,
+    "clusters": 8,
+    "useful": 0.905511811023622,
+    "useful_ci95": [
+     0.8658536585365854,
+     1.0
+    ],
+    "named_correctly": 0.6220472440944882,
+    "not_supported": 0.07086614173228346,
+    "sent_to_spanish": 0.0
+   },
+   {
+    "source": "fleurs",
+    "language": "ast",
+    "utterances": 40,
+    "clusters": 1,
+    "useful": 0.95,
+    "useful_ci95": [
+     null,
+     null
+    ],
+    "declined": 0.95,
+    "named_instead": {
+     "Spanish": 2
+    },
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "fleurs",
+    "language": "ces",
+    "utterances": 40,
+    "clusters": 1,
+    "useful": 1.0,
+    "useful_ci95": [
+     null,
+     null
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "fleurs",
+    "language": "English",
+    "utterances": 76,
+    "clusters": 1,
+    "useful": 1.0,
+    "useful_ci95": [
+     null,
+     null
+    ],
+    "named_correctly": 1.0,
+    "not_supported": 0.0
+   },
+   {
+    "source": "fleurs",
+    "language": "French",
+    "utterances": 40,
+    "clusters": 1,
+    "useful": 1.0,
+    "useful_ci95": [
+     null,
+     null
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "fleurs",
+    "language": "glg",
+    "utterances": 40,
+    "clusters": 1,
+    "useful": 1.0,
+    "useful_ci95": [
+     null,
+     null
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "fleurs",
+    "language": "pol",
+    "utterances": 40,
+    "clusters": 1,
+    "useful": 1.0,
+    "useful_ci95": [
+     null,
+     null
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "fleurs",
+    "language": "Portuguese",
+    "utterances": 40,
+    "clusters": 1,
+    "useful": 1.0,
+    "useful_ci95": [
+     null,
+     null
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "fleurs",
+    "language": "Spanish",
+    "utterances": 332,
+    "clusters": 1,
+    "useful": 1.0,
+    "useful_ci95": [
+     null,
+     null
+    ],
+    "named_correctly": 1.0,
+    "not_supported": 0.0
+   },
+   {
+    "source": "fleurs",
+    "language": "ukr",
+    "utterances": 40,
+    "clusters": 1,
+    "useful": 1.0,
+    "useful_ci95": [
+     null,
+     null
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "fleurs",
+    "language": "vie",
+    "utterances": 40,
+    "clusters": 1,
+    "useful": 1.0,
+    "useful_ci95": [
+     null,
+     null
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "fleurs",
+    "language": "zul",
+    "utterances": 40,
+    "clusters": 1,
+    "useful": 1.0,
+    "useful_ci95": [
+     null,
+     null
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "omnilingual",
+    "language": "Poqomam",
+    "utterances": 131,
+    "clusters": 4,
+    "useful": 0.4580152671755725,
+    "useful_ci95": [
+     0.22058823529411764,
+     0.7142857142857143
+    ],
+    "declined": 0.4580152671755725,
+    "named_instead": {
+     "Kaqchikel": 18,
+     "K'iche'": 14
+    },
+    "mayan_try_two": 0.29770992366412213
+   },
+   {
+    "source": "omnilingual",
+    "language": "Sipakapense",
+    "utterances": 99,
+    "clusters": 4,
+    "useful": 0.29292929292929293,
+    "useful_ci95": [
+     0.22448979591836735,
+     0.36
+    ],
+    "declined": 0.29292929292929293,
+    "named_instead": {
+     "K'iche'": 23,
+     "Kaqchikel": 1
+    },
+    "mayan_try_two": 0.46464646464646464
+   },
+   {
+    "source": "omnilingual",
+    "language": "Sakapulteko",
+    "utterances": 103,
+    "clusters": 4,
+    "useful": 0.3106796116504854,
+    "useful_ci95": [
+     0.16666666666666666,
+     0.5675675675675675
+    ],
+    "declined": 0.3106796116504854,
+    "named_instead": {
+     "Kaqchikel": 11,
+     "K'iche'": 2
+    },
+    "mayan_try_two": 0.5631067961165048
+   },
+   {
+    "source": "tachiwin",
+    "language": "dih",
+    "utterances": 10,
+    "clusters": 10,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "tachiwin",
+    "language": "Popti' (Jakalteko)",
+    "utterances": 55,
+    "clusters": 55,
+    "useful": 0.9818181818181818,
+    "useful_ci95": [
+     0.9454545454545454,
+     1.0
+    ],
+    "declined": 0.9818181818181818,
+    "named_instead": {
+     "Q'anjob'al": 1
+    },
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "tachiwin",
+    "language": "Mam",
+    "utterances": 178,
+    "clusters": 30,
+    "useful": 0.9325842696629213,
+    "useful_ci95": [
+     0.8723015778149654,
+     0.9814871273712737
+    ],
+    "named_correctly": 0.8932584269662921,
+    "not_supported": 0.06179775280898876,
+    "sent_to_spanish": 0.0
+   },
+   {
+    "source": "tachiwin",
+    "language": "mfy",
+    "utterances": 3,
+    "clusters": 3,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "tachiwin",
+    "language": "ntp",
+    "utterances": 3,
+    "clusters": 3,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "tachiwin",
+    "language": "ote",
+    "utterances": 4,
+    "clusters": 4,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "tachiwin",
+    "language": "otm",
+    "utterances": 12,
+    "clusters": 12,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "tachiwin",
+    "language": "ott",
+    "utterances": 10,
+    "clusters": 10,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "tachiwin",
+    "language": "pbs",
+    "utterances": 8,
+    "clusters": 8,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "tachiwin",
+    "language": "pmq",
+    "utterances": 5,
+    "clusters": 5,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "tachiwin",
+    "language": "tac",
+    "utterances": 3,
+    "clusters": 3,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "tachiwin",
+    "language": "tar",
+    "utterances": 6,
+    "clusters": 6,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "tachiwin",
+    "language": "toc",
+    "utterances": 1,
+    "clusters": 1,
+    "useful": 1.0,
+    "useful_ci95": [
+     null,
+     null
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "tachiwin",
+    "language": "top",
+    "utterances": 3,
+    "clusters": 3,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "tachiwin",
+    "language": "tos",
+    "utterances": 4,
+    "clusters": 4,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "tachiwin",
+    "language": "yaq",
+    "utterances": 3,
+    "clusters": 3,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "tzijonel",
+    "language": "Kaqchikel",
+    "utterances": 297,
+    "clusters": 44,
+    "useful": 0.7441077441077442,
+    "useful_ci95": [
+     0.6789056742815033,
+     0.8034064360971139
+    ],
+    "named_correctly": 0.7037037037037037,
+    "not_supported": 0.25252525252525254,
+    "sent_to_spanish": 0.003367003367003367
+   }
+  ],
+  "3": [
+   {
+    "source": "bloom",
+    "language": "boz",
+    "utterances": 8,
+    "clusters": 4,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "bloom",
+    "language": "bzi",
+    "utterances": 6,
+    "clusters": 6,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "bloom",
+    "language": "English",
+    "utterances": 54,
+    "clusters": 54,
+    "useful": 0.8518518518518519,
+    "useful_ci95": [
+     0.7592592592592593,
+     0.9444444444444444
+    ],
+    "named_correctly": 0.8518518518518519,
+    "not_supported": 0.14814814814814814
+   },
+   {
+    "source": "bloom",
+    "language": "French",
+    "utterances": 16,
+    "clusters": 9,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "bloom",
+    "language": "guj",
+    "utterances": 8,
+    "clusters": 4,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "bloom",
+    "language": "mal",
+    "utterances": 19,
+    "clusters": 10,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "bloom",
+    "language": "mle",
+    "utterances": 2,
+    "clusters": 1,
+    "useful": 1.0,
+    "useful_ci95": [
+     null,
+     null
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "bloom",
+    "language": "myk",
+    "utterances": 5,
+    "clusters": 5,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "bloom",
+    "language": "Portuguese",
+    "utterances": 4,
+    "clusters": 2,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "bloom",
+    "language": "snk",
+    "utterances": 7,
+    "clusters": 7,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "bloom",
+    "language": "tuz",
+    "utterances": 12,
+    "clusters": 6,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "bloom",
+    "language": "Tz'utujil",
+    "utterances": 13,
+    "clusters": 2,
+    "useful": 0.15384615384615385,
+    "useful_ci95": [
+     0.14285714285714285,
+     0.16666666666666666
+    ],
+    "declined": 0.15384615384615385,
+    "named_instead": {},
+    "mayan_try_two": 0.8461538461538461
+   },
+   {
+    "source": "chuj",
+    "language": "Chuj",
+    "utterances": 19,
+    "clusters": 2,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "coerll",
+    "language": "K'iche'",
+    "utterances": 85,
+    "clusters": 8,
+    "useful": 0.9176470588235294,
+    "useful_ci95": [
+     0.8898305084745762,
+     1.0
+    ],
+    "named_correctly": 0.6470588235294118,
+    "not_supported": 0.08235294117647059,
+    "sent_to_spanish": 0.0
+   },
+   {
+    "source": "fleurs",
+    "language": "ast",
+    "utterances": 26,
+    "clusters": 1,
+    "useful": 0.9615384615384616,
+    "useful_ci95": [
+     null,
+     null
+    ],
+    "declined": 0.9615384615384616,
+    "named_instead": {
+     "Spanish": 1
+    },
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "fleurs",
+    "language": "ces",
+    "utterances": 26,
+    "clusters": 1,
+    "useful": 1.0,
+    "useful_ci95": [
+     null,
+     null
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "fleurs",
+    "language": "English",
+    "utterances": 51,
+    "clusters": 1,
+    "useful": 1.0,
+    "useful_ci95": [
+     null,
+     null
+    ],
+    "named_correctly": 1.0,
+    "not_supported": 0.0
+   },
+   {
+    "source": "fleurs",
+    "language": "French",
+    "utterances": 26,
+    "clusters": 1,
+    "useful": 1.0,
+    "useful_ci95": [
+     null,
+     null
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "fleurs",
+    "language": "glg",
+    "utterances": 26,
+    "clusters": 1,
+    "useful": 1.0,
+    "useful_ci95": [
+     null,
+     null
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "fleurs",
+    "language": "pol",
+    "utterances": 26,
+    "clusters": 1,
+    "useful": 1.0,
+    "useful_ci95": [
+     null,
+     null
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "fleurs",
+    "language": "Portuguese",
+    "utterances": 26,
+    "clusters": 1,
+    "useful": 1.0,
+    "useful_ci95": [
+     null,
+     null
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "fleurs",
+    "language": "Spanish",
+    "utterances": 221,
+    "clusters": 1,
+    "useful": 1.0,
+    "useful_ci95": [
+     null,
+     null
+    ],
+    "named_correctly": 1.0,
+    "not_supported": 0.0
+   },
+   {
+    "source": "fleurs",
+    "language": "ukr",
+    "utterances": 26,
+    "clusters": 1,
+    "useful": 1.0,
+    "useful_ci95": [
+     null,
+     null
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "fleurs",
+    "language": "vie",
+    "utterances": 26,
+    "clusters": 1,
+    "useful": 1.0,
+    "useful_ci95": [
+     null,
+     null
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "fleurs",
+    "language": "zul",
+    "utterances": 26,
+    "clusters": 1,
+    "useful": 1.0,
+    "useful_ci95": [
+     null,
+     null
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "omnilingual",
+    "language": "Poqomam",
+    "utterances": 86,
+    "clusters": 4,
+    "useful": 0.5232558139534884,
+    "useful_ci95": [
+     0.24444444444444444,
+     0.8292682926829268
+    ],
+    "declined": 0.5232558139534884,
+    "named_instead": {
+     "Kaqchikel": 9,
+     "K'iche'": 6
+    },
+    "mayan_try_two": 0.3023255813953488
+   },
+   {
+    "source": "omnilingual",
+    "language": "Sipakapense",
+    "utterances": 65,
+    "clusters": 4,
+    "useful": 0.26153846153846155,
+    "useful_ci95": [
+     0.125,
+     0.3939393939393939
+    ],
+    "declined": 0.26153846153846155,
+    "named_instead": {
+     "K'iche'": 15
+    },
+    "mayan_try_two": 0.5076923076923077
+   },
+   {
+    "source": "omnilingual",
+    "language": "Sakapulteko",
+    "utterances": 67,
+    "clusters": 4,
+    "useful": 0.3283582089552239,
+    "useful_ci95": [
+     0.18604651162790697,
+     0.5833333333333334
+    ],
+    "declined": 0.3283582089552239,
+    "named_instead": {
+     "Kaqchikel": 5,
+     "K'iche'": 2
+    },
+    "mayan_try_two": 0.5671641791044776
+   },
+   {
+    "source": "tachiwin",
+    "language": "dih",
+    "utterances": 7,
+    "clusters": 7,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "tachiwin",
+    "language": "Popti' (Jakalteko)",
+    "utterances": 37,
+    "clusters": 37,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "tachiwin",
+    "language": "Mam",
+    "utterances": 113,
+    "clusters": 30,
+    "useful": 0.9557522123893806,
+    "useful_ci95": [
+     0.8771929824561403,
+     1.0
+    ],
+    "named_correctly": 0.911504424778761,
+    "not_supported": 0.04424778761061947,
+    "sent_to_spanish": 0.0
+   },
+   {
+    "source": "tachiwin",
+    "language": "otm",
+    "utterances": 6,
+    "clusters": 6,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "tachiwin",
+    "language": "ott",
+    "utterances": 3,
+    "clusters": 3,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "tachiwin",
+    "language": "pbs",
+    "utterances": 6,
+    "clusters": 6,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "tachiwin",
+    "language": "tac",
+    "utterances": 3,
+    "clusters": 3,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "tachiwin",
+    "language": "top",
+    "utterances": 3,
+    "clusters": 3,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0
+   },
+   {
+    "source": "tzijonel",
+    "language": "Kaqchikel",
+    "utterances": 181,
+    "clusters": 44,
+    "useful": 0.7790055248618785,
+    "useful_ci95": [
+     0.7045295835449468,
+     0.845325116872078
+    ],
+    "named_correctly": 0.7513812154696132,
+    "not_supported": 0.2154696132596685,
+    "sent_to_spanish": 0.0055248618784530384
+   }
+  ]
+ },
+ "internal_empty_phones": 13,
+ "external_missing_features": [],
+ "external_empty_phones": 2,
+ "external_short_excluded": 10,
+ "external": {
+  "1": [
+   {
+    "source": "ciempiess",
+    "language": "Spanish",
+    "utterances": 300,
+    "clusters": 20,
+    "useful": 0.13,
+    "useful_ci95": [
+     0.07333333333333333,
+     0.19666666666666666
+    ],
+    "named_correctly": 0.13,
+    "not_supported": 0.87,
+    "seen": "supported language"
+   },
+   {
+    "source": "edacc",
+    "language": "English",
+    "utterances": 169,
+    "clusters": 20,
+    "useful": 0.47928994082840237,
+    "useful_ci95": [
+     0.31094975752389103,
+     0.6296996996996993
+    ],
+    "named_correctly": 0.47928994082840237,
+    "not_supported": 0.4911242603550296,
+    "seen": "supported language"
+   },
+   {
+    "source": "lingualibre",
+    "language": "Kaqchikel",
+    "utterances": 8,
+    "clusters": 1,
+    "useful": 0.125,
+    "useful_ci95": [
+     null,
+     null
+    ],
+    "named_correctly": 0.0,
+    "not_supported": 0.375,
+    "sent_to_spanish": 0.0,
+    "seen": "supported language"
+   },
+   {
+    "source": "voxpopuli",
+    "language": "deu",
+    "utterances": 148,
+    "clusters": 92,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0,
+    "seen": "trained as OTHER"
+   },
+   {
+    "source": "voxpopuli",
+    "language": "English",
+    "utterances": 150,
+    "clusters": 121,
+    "useful": 0.38666666666666666,
+    "useful_ci95": [
+     0.30405405405405406,
+     0.47619047619047616
+    ],
+    "named_correctly": 0.38666666666666666,
+    "not_supported": 0.6133333333333333,
+    "seen": "supported language"
+   },
+   {
+    "source": "voxpopuli",
+    "language": "est",
+    "utterances": 27,
+    "clusters": 6,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0,
+    "seen": "never seen"
+   },
+   {
+    "source": "voxpopuli",
+    "language": "fin",
+    "utterances": 129,
+    "clusters": 27,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0,
+    "seen": "trained as OTHER"
+   },
+   {
+    "source": "voxpopuli",
+    "language": "French",
+    "utterances": 150,
+    "clusters": 92,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0,
+    "seen": "never seen"
+   },
+   {
+    "source": "voxpopuli",
+    "language": "hrv",
+    "utterances": 103,
+    "clusters": 21,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0,
+    "seen": "never seen"
+   },
+   {
+    "source": "voxpopuli",
+    "language": "ita",
+    "utterances": 150,
+    "clusters": 76,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0,
+    "seen": "tuning only"
+   },
+   {
+    "source": "voxpopuli",
+    "language": "lit",
+    "utterances": 27,
+    "clusters": 7,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0,
+    "seen": "never seen"
+   },
+   {
+    "source": "voxpopuli",
+    "language": "pol",
+    "utterances": 149,
+    "clusters": 77,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0,
+    "seen": "never seen"
+   },
+   {
+    "source": "voxpopuli",
+    "language": "ron",
+    "utterances": 150,
+    "clusters": 48,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0,
+    "seen": "trained as OTHER"
+   },
+   {
+    "source": "voxpopuli",
+    "language": "slk",
+    "utterances": 130,
+    "clusters": 26,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0,
+    "seen": "never seen"
+   },
+   {
+    "source": "voxpopuli",
+    "language": "Spanish",
+    "utterances": 150,
+    "clusters": 78,
+    "useful": 0.08666666666666667,
+    "useful_ci95": [
+     0.04429683146246318,
+     0.13988476312419962
+    ],
+    "named_correctly": 0.08666666666666667,
+    "not_supported": 0.9066666666666666,
+    "seen": "supported language"
+   },
+   {
+    "source": "wikitongues",
+    "language": "Garifuna",
+    "utterances": 8,
+    "clusters": 1,
+    "useful": 1.0,
+    "useful_ci95": [
+     null,
+     null
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0,
+    "seen": "never seen"
+   },
+   {
+    "source": "wikitongues",
+    "language": "Lacandon",
+    "utterances": 8,
+    "clusters": 1,
+    "useful": 1.0,
+    "useful_ci95": [
+     null,
+     null
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0,
+    "seen": "never seen"
+   },
+   {
+    "source": "wikitongues",
+    "language": "K'iche'",
+    "utterances": 8,
+    "clusters": 1,
+    "useful": 0.25,
+    "useful_ci95": [
+     null,
+     null
+    ],
+    "named_correctly": 0.0,
+    "not_supported": 0.5,
+    "sent_to_spanish": 0.0,
+    "seen": "supported language"
+   },
+   {
+    "source": "wikitongues",
+    "language": "Sakapulteko",
+    "utterances": 8,
+    "clusters": 1,
+    "useful": 0.75,
+    "useful_ci95": [
+     null,
+     null
+    ],
+    "declined": 0.75,
+    "named_instead": {
+     "K'iche'": 1
+    },
+    "mayan_try_two": 0.125,
+    "seen": "never seen"
+   },
+   {
+    "source": "wikitongues",
+    "language": "Spanish",
+    "utterances": 8,
+    "clusters": 1,
+    "useful": 0.5,
+    "useful_ci95": [
+     null,
+     null
+    ],
+    "named_correctly": 0.5,
+    "not_supported": 0.5,
+    "seen": "supported language"
+   },
+   {
+    "source": "wikitongues",
+    "language": "Yucatec Maya",
+    "utterances": 11,
+    "clusters": 2,
+    "useful": 0.8181818181818182,
+    "useful_ci95": [
+     0.75,
+     1.0
+    ],
+    "declined": 0.8181818181818182,
+    "named_instead": {
+     "Kaqchikel": 2
+    },
+    "mayan_try_two": 0.0,
+    "seen": "trained as OTHER"
+   }
+  ],
+  "3": [
+   {
+    "source": "ciempiess",
+    "language": "Spanish",
+    "utterances": 100,
+    "clusters": 20,
+    "useful": 0.04,
+    "useful_ci95": [
+     0.0,
+     0.1
+    ],
+    "named_correctly": 0.04,
+    "not_supported": 0.96,
+    "seen": "supported language"
+   },
+   {
+    "source": "edacc",
+    "language": "English",
+    "utterances": 45,
+    "clusters": 20,
+    "useful": 0.5333333333333333,
+    "useful_ci95": [
+     0.3488372093023256,
+     0.7045454545454546
+    ],
+    "named_correctly": 0.5333333333333333,
+    "not_supported": 0.4666666666666667,
+    "seen": "supported language"
+   },
+   {
+    "source": "lingualibre",
+    "language": "Kaqchikel",
+    "utterances": 2,
+    "clusters": 1,
+    "useful": 0.0,
+    "useful_ci95": [
+     null,
+     null
+    ],
+    "named_correctly": 0.0,
+    "not_supported": 1.0,
+    "sent_to_spanish": 0.0,
+    "seen": "supported language"
+   },
+   {
+    "source": "voxpopuli",
+    "language": "deu",
+    "utterances": 14,
+    "clusters": 14,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0,
+    "seen": "trained as OTHER"
+   },
+   {
+    "source": "voxpopuli",
+    "language": "English",
+    "utterances": 4,
+    "clusters": 4,
+    "useful": 0.25,
+    "useful_ci95": [
+     0.0,
+     0.75
+    ],
+    "named_correctly": 0.25,
+    "not_supported": 0.75,
+    "seen": "supported language"
+   },
+   {
+    "source": "voxpopuli",
+    "language": "est",
+    "utterances": 5,
+    "clusters": 5,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0,
+    "seen": "never seen"
+   },
+   {
+    "source": "voxpopuli",
+    "language": "fin",
+    "utterances": 26,
+    "clusters": 26,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0,
+    "seen": "trained as OTHER"
+   },
+   {
+    "source": "voxpopuli",
+    "language": "French",
+    "utterances": 15,
+    "clusters": 15,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0,
+    "seen": "never seen"
+   },
+   {
+    "source": "voxpopuli",
+    "language": "hrv",
+    "utterances": 21,
+    "clusters": 21,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0,
+    "seen": "never seen"
+   },
+   {
+    "source": "voxpopuli",
+    "language": "ita",
+    "utterances": 19,
+    "clusters": 19,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0,
+    "seen": "tuning only"
+   },
+   {
+    "source": "voxpopuli",
+    "language": "lit",
+    "utterances": 5,
+    "clusters": 5,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0,
+    "seen": "never seen"
+   },
+   {
+    "source": "voxpopuli",
+    "language": "pol",
+    "utterances": 21,
+    "clusters": 21,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0,
+    "seen": "never seen"
+   },
+   {
+    "source": "voxpopuli",
+    "language": "ron",
+    "utterances": 30,
+    "clusters": 30,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0,
+    "seen": "trained as OTHER"
+   },
+   {
+    "source": "voxpopuli",
+    "language": "slk",
+    "utterances": 26,
+    "clusters": 26,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0,
+    "seen": "never seen"
+   },
+   {
+    "source": "voxpopuli",
+    "language": "Spanish",
+    "utterances": 18,
+    "clusters": 18,
+    "useful": 0.0,
+    "useful_ci95": [
+     0.0,
+     0.0
+    ],
+    "named_correctly": 0.0,
+    "not_supported": 1.0,
+    "seen": "supported language"
+   },
+   {
+    "source": "wikitongues",
+    "language": "Garifuna",
+    "utterances": 2,
+    "clusters": 1,
+    "useful": 1.0,
+    "useful_ci95": [
+     null,
+     null
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0,
+    "seen": "never seen"
+   },
+   {
+    "source": "wikitongues",
+    "language": "Lacandon",
+    "utterances": 2,
+    "clusters": 1,
+    "useful": 1.0,
+    "useful_ci95": [
+     null,
+     null
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0,
+    "seen": "never seen"
+   },
+   {
+    "source": "wikitongues",
+    "language": "K'iche'",
+    "utterances": 2,
+    "clusters": 1,
+    "useful": 1.0,
+    "useful_ci95": [
+     null,
+     null
+    ],
+    "named_correctly": 0.0,
+    "not_supported": 0.0,
+    "sent_to_spanish": 0.0,
+    "seen": "supported language"
+   },
+   {
+    "source": "wikitongues",
+    "language": "Sakapulteko",
+    "utterances": 2,
+    "clusters": 1,
+    "useful": 1.0,
+    "useful_ci95": [
+     null,
+     null
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0,
+    "seen": "never seen"
+   },
+   {
+    "source": "wikitongues",
+    "language": "Spanish",
+    "utterances": 2,
+    "clusters": 1,
+    "useful": 1.0,
+    "useful_ci95": [
+     null,
+     null
+    ],
+    "named_correctly": 1.0,
+    "not_supported": 0.0,
+    "seen": "supported language"
+   },
+   {
+    "source": "wikitongues",
+    "language": "Yucatec Maya",
+    "utterances": 3,
+    "clusters": 2,
+    "useful": 1.0,
+    "useful_ci95": [
+     1.0,
+     1.0
+    ],
+    "declined": 1.0,
+    "named_instead": {},
+    "mayan_try_two": 0.0,
+    "seen": "trained as OTHER"
+   }
+  ]
+ },
+ "external_auroc_all": {
+  "maxprob": {
+   "auroc": 0.8994604290042042,
+   "ci95": [
+    0.8508930408693263,
+    0.937665622193766
+   ]
+  },
+  "oe": {
+   "auroc": 0.9828370950322838,
+   "ci95": [
+    0.9645894248709115,
+    0.9915237981351243
+   ],
+   "diff_vs_maxprob": 0.08337666602807958,
+   "diff_ci95": [
+    0.04199754692015699,
+    0.1293878807229886
+   ],
+   "p_not_better": 0.0
+  }
+ },
+ "external_auroc_never_seen": {
+  "maxprob": {
+   "auroc": 0.9227751018129949,
+   "ci95": [
+    0.875944506266353,
+    0.9552176646524342
+   ]
+  },
+  "oe": {
+   "auroc": 0.9786203047154404,
+   "ci95": [
+    0.9418609323499316,
+    0.9902727438784873
+   ],
+   "diff_vs_maxprob": 0.055845202902445434,
+   "diff_ci95": [
+    0.016061215808785848,
+    0.09502772483105154
+   ],
+   "p_not_better": 0.008
+  }
+ },
+ "external_auroc_voxpopuli_only": {
+  "maxprob": {
+   "auroc": 0.8964373746059042,
+   "ci95": [
+    0.8409244503415537,
+    0.9423256716088336
+   ]
+  },
+  "oe": {
+   "auroc": 0.9863198624247635,
+   "ci95": [
+    0.9769716873617235,
+    0.993583634690408
+   ],
+   "diff_vs_maxprob": 0.08988248781885932,
+   "diff_ci95": [
+    0.04419570283068782,
+    0.14425340484589852
+   ],
+   "p_not_better": 0.0
+  }
+ },
+ "external_auroc_voxpopuli_never_seen": {
+  "maxprob": {
+   "auroc": 0.9253754266211605,
+   "ci95": [
+    0.875851260406647,
+    0.9626492437402717
+   ]
+  },
+  "oe": {
+   "auroc": 0.9827189988623436,
+   "ci95": [
+    0.9721362728491267,
+    0.9913308134224316
+   ],
+   "diff_vs_maxprob": 0.05734357224118314,
+   "diff_ci95": [
+    0.022760028194688413,
+    0.1044033729091717
+   ],
+   "p_not_better": 0.0
+  }
+ },
+ "external_clusters": {
+  "known_speakers": 242,
+  "unknown_languages": 14,
+  "never_seen_languages": 9
+ }
+}
