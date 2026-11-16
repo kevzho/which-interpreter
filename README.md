@@ -80,7 +80,7 @@ More examples: [`side_by_side.md`](results/side_by_side.md). Full tables: [`resu
   - [Wikitongues](https://wikitongues.org) and [Lingua Libre](https://lingualibre.org) (CC-BY-SA)
 - **Noise:** [RIRS_NOISES](https://www.openslr.org/28/) (Apache-2.0), [ESC-50](https://github.com/karolpiczak/ESC-50) (CC-BY-NC), [DEMAND](https://zenodo.org/records/1227121) (CC-BY-SA)
 - **Models:** [`facebook/mms-lid-4017`](https://huggingface.co/facebook/mms-lid-4017) (CC-BY-NC), [`facebook/wav2vec2-xlsr-53-espeak-cv-ft`](https://huggingface.co/facebook/wav2vec2-xlsr-53-espeak-cv-ft) (Apache-2.0). Some sources are non-commercial, so this demo is non-commercial only.
-- **Prior work:** [MMS (Pratap et al., 2023)](https://arxiv.org/abs/2305.13516), [outlier exposure (Hendrycks et al., 2019)](https://arxiv.org/abs/1812.04606), [LEACE (Belrose et al., 2023)](https://arxiv.org/abs/2306.03819).
+- **Prior work:** [Buenfil Aguilar et al., 2025](https://doi.org/10.1007/978-3-031-97907-1_9) (Yucatec Maya vs Spanish speech), [MMS (Pratap et al., 2023)](https://arxiv.org/abs/2305.13516), [outlier exposure (Hendrycks et al., 2019)](https://arxiv.org/abs/1812.04606), [LEACE (Belrose et al., 2023)](https://arxiv.org/abs/2306.03819).
 - **Software:** PyTorch, Transformers, scikit-learn, SciPy, pandas, ffmpeg, Gradio.
 - **Tutorials:** none, library documentation only. [Team: confirm.]
 - **AI tools:** [Claude Code](https://www.anthropic.com/claude-code) (Anthropic) wrote much of the code, ran experiments and helped research and draft, under our direction. Every result comes from this repository's scripts and `results/` files, and the team can explain each step.
