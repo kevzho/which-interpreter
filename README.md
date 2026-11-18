@@ -1,7 +1,7 @@
 # Which Interpreter? Telling a clinic which interpreter to call for Guatemalan Mayan speakers
 
 **Track:** Languages
-**Team:** [REPLACE before submitting: every member's full name]
+**Team:** Solo, Kevin Zhou
 
 ## The problem
 In 2016, Mam and K'iche', Mayan languages from Guatemala, were the 9th and 10th most common languages in US immigration courts, ahead of French ([DOJ EOIR, Table 7](https://www.justice.gov/eoir/page/file/fysb16/download)). Front-desk staff often can't tell them from Spanish, so a Mayan speaker gets a Spanish interpreter, which delays care or leaves them unable to explain their symptoms or case ([CMS-hosted brief](https://cms.gov/files/document/growing-gap-health-equity-indigenous-language-justicepdf.pdf); [CAP, 2023](https://www.americanprogress.org/article/improving-language-access-in-the-u-s-asylum-system/)). Off-the-shelf tools don't fix this: Meta's MMS language identifier sends 24% of Mayan storybook clips to Spanish.
